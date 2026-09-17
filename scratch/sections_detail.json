@@ -1,0 +1,367 @@
+{
+  "linkedStylesheets": [
+    {
+      "id": "grw-public-main-css-css",
+      "href": "https://www.doctorcheck.vn/wp-content/plugins/widget-google-reviews/assets/css/public-main.css?ver=5.5"
+    },
+    {
+      "id": "ldp-header-style-css",
+      "href": "https://www.doctorcheck.vn/wp-content/themes/doctorcheck/assets/css/header-ldp.css?ver=1.0"
+    },
+    {
+      "id": "tabler-icon-css",
+      "href": "https://www.doctorcheck.vn/wp-content/themes/doctorcheck/assets/fonts/dc-icons.min.css?ver=7.1"
+    },
+    {
+      "id": "app-css",
+      "href": "https://www.doctorcheck.vn/wp-content/themes/doctorcheck/assets/css/app.css?ver=1789462956"
+    },
+    {
+      "id": "doctor-boxes-css",
+      "href": "https://www.doctorcheck.vn/wp-content/themes/doctorcheck/assets/css/doctor-boxes.css?ver=1789462956"
+    },
+    {
+      "id": "appv3-css",
+      "href": "https://www.doctorcheck.vn/wp-content/themes/doctorcheck/assets/css/appv3.css?ver=1789462956"
+    },
+    {
+      "id": "responsive-css",
+      "href": "https://www.doctorcheck.vn/wp-content/themes/doctorcheck/assets/css/responsive.css?ver=1789462956"
+    },
+    {
+      "id": "mobile-css",
+      "href": "https://www.doctorcheck.vn/wp-content/themes/doctorcheck/assets/css/kdn.css?ver=1789462956"
+    },
+    {
+      "id": "ldp-nsdd-css",
+      "href": "https://www.doctorcheck.vn/wp-content/themes/doctorcheck/assets/css/ldp-nsdd.css?ver=1789462956"
+    },
+    {
+      "id": "owl-carousel-css-css",
+      "href": "https://www.doctorcheck.vn/wp-content/themes/doctorcheck/assets/lib/owl.carousel.min.css?ver=2.3.4"
+    },
+    {
+      "id": "owl-theme-css-css",
+      "href": "https://www.doctorcheck.vn/wp-content/themes/doctorcheck/assets/lib/owl.theme.default.min.css?ver=2.3.4"
+    },
+    {
+      "id": "splide-css-css",
+      "href": "https://www.doctorcheck.vn/wp-content/themes/doctorcheck/assets/lib/splide.min.css?ver=7.1"
+    },
+    {
+      "id": "flatpickr-css-css",
+      "href": "https://www.doctorcheck.vn/wp-content/themes/doctorcheck/assets/lib/flatpickr.min.css?ver=1770795341"
+    },
+    {
+      "id": "swiper-css-css",
+      "href": "https://www.doctorcheck.vn/wp-content/themes/doctorcheck/assets/lib/swiper-bundle.css?ver=1742631541"
+    },
+    {
+      "id": "flatsome-main-css",
+      "href": "https://www.doctorcheck.vn/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.19.8"
+    },
+    {
+      "id": "flatsome-shop-css",
+      "href": "https://www.doctorcheck.vn/wp-content/themes/flatsome/assets/css/flatsome-shop.css?ver=3.19.8"
+    },
+    {
+      "id": "flatsome-style-css",
+      "href": "https://www.doctorcheck.vn/wp-content/themes/doctorcheck/style.css?ver=3.0"
+    },
+    {
+      "id": "contact-form-7-css",
+      "href": "https://www.doctorcheck.vn/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.0.3"
+    }
+  ],
+  "sections": [
+    {
+      "id": "section_380136169",
+      "cls": "section section-banner",
+      "length": 1203,
+      "rowsCount": 0,
+      "colsCount": 0,
+      "imgsCount": 2,
+      "imgs": [
+        {
+          "src": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/428ac6c9-bd35-483e-db56-281930032d00/w=2560,h=1038"
+        },
+        {
+          "src": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/ccd6b033-d84d-4f06-88f2-fa2bd08aaf00/w=856,h=1256"
+        }
+      ],
+      "slidersCount": 0,
+      "sliders": []
+    },
+    {
+      "id": "section_294013533",
+      "cls": "section section-confuse",
+      "length": 14866,
+      "rowsCount": 12,
+      "colsCount": 16,
+      "imgsCount": 0,
+      "imgs": [],
+      "slidersCount": 2,
+      "sliders": [
+        "class=\"slider-wrapper relative\"",
+        "class=\"slider slider-nav-circle slider-nav-large slider-nav-dark slider-style-focus\""
+      ]
+    },
+    {
+      "id": "section_1967412634",
+      "cls": "section section-advanced",
+      "length": 7365,
+      "rowsCount": 1,
+      "colsCount": 3,
+      "imgsCount": 4,
+      "imgs": [
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/3d696a80-7ac1-4143-c3fc-6e92daad5200/w=534,h=329"
+        },
+        {
+          "src": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/3d696a80-7ac1-4143-c3fc-6e92daad5200/w=534,h=329"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/3d696a80-7ac1-4143-c3fc-6e92daad5200/w=534,h=329"
+        },
+        {
+          "src": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/3d696a80-7ac1-4143-c3fc-6e92daad5200/w=534,h=329"
+        }
+      ],
+      "slidersCount": 0,
+      "sliders": []
+    },
+    {
+      "id": "section_1563108974",
+      "cls": "section section-doctor",
+      "length": 13781,
+      "rowsCount": 3,
+      "colsCount": 9,
+      "imgsCount": 16,
+      "imgs": [
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/9457588e-e353-4e1d-46f5-d1ffa8fd5700/w=1440,h=736"
+        },
+        {
+          "src": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/9457588e-e353-4e1d-46f5-d1ffa8fd5700/w=1440,h=736"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/fe4b3528-d236-4c2c-72e7-87a5dd287800/w=300,h=400"
+        },
+        {
+          "src": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/fe4b3528-d236-4c2c-72e7-87a5dd287800/w=300,h=400"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/fa3c5180-954a-4a59-dd94-3d447bb7a700/w=263,h=400"
+        }
+      ],
+      "slidersCount": 14,
+      "sliders": [
+        "class=\"row row-collapse doctor-slide owl-loaded owl-drag\"",
+        "class=\"owl-stage-outer\"",
+        "class=\"owl-stage\"",
+        "class=\"owl-item active\"",
+        "class=\"owl-item active\"",
+        "class=\"owl-item active\"",
+        "class=\"owl-item active\"",
+        "class=\"owl-item\"",
+        "class=\"owl-item\"",
+        "class=\"owl-item\"",
+        "class=\"owl-nav\"",
+        "class=\"owl-prev disabled\"",
+        "class=\"owl-next\"",
+        "class=\"owl-dots disabled\""
+      ]
+    },
+    {
+      "id": "section_818310656",
+      "cls": "section section-facilities",
+      "length": 9820,
+      "rowsCount": 2,
+      "colsCount": 7,
+      "imgsCount": 12,
+      "imgs": [
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/78304e55-5a75-4c92-4e70-284df81aa800/w=874,h=582"
+        },
+        {
+          "src": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/78304e55-5a75-4c92-4e70-284df81aa800/w=874,h=582"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/703a1139-9dab-4e78-b6e3-2c43858c6400/w=874,h=582"
+        },
+        {
+          "src": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/703a1139-9dab-4e78-b6e3-2c43858c6400/w=874,h=582"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/4a217bbc-bd4a-4234-c715-bea676e88b00/w=874,h=582"
+        }
+      ],
+      "slidersCount": 0,
+      "sliders": []
+    },
+    {
+      "id": "section_1936328654",
+      "cls": "section section-service circle-blur",
+      "length": 15911,
+      "rowsCount": 6,
+      "colsCount": 18,
+      "imgsCount": 12,
+      "imgs": [
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/e4515038-e50c-45f6-f35d-8255929a6f00/w=625,h=400",
+          "alt": "Gói Khuyến Cáo Dành Cho Nam"
+        },
+        {
+          "src": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/e4515038-e50c-45f6-f35d-8255929a6f00/w=625,h=400",
+          "alt": "Gói Khuyến Cáo Dành Cho Nam"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/9e90b45a-e67c-4570-0afe-de7f4b40a700/w=625,h=400",
+          "alt": "Gói Chuyên Sâu Dành Cho Nam"
+        },
+        {
+          "src": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/9e90b45a-e67c-4570-0afe-de7f4b40a700/w=625,h=400",
+          "alt": "Gói Chuyên Sâu Dành Cho Nam"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/887ac26c-5b5c-4732-f2fe-37f2b4a4e200/w=625,h=400",
+          "alt": "Gói Sống Thọ Dành Cho Nam"
+        }
+      ],
+      "slidersCount": 0,
+      "sliders": []
+    },
+    {
+      "id": "section_991765975",
+      "cls": "section section-suggest dark",
+      "length": 21224,
+      "rowsCount": 4,
+      "colsCount": 6,
+      "imgsCount": 0,
+      "imgs": [],
+      "slidersCount": 0,
+      "sliders": []
+    },
+    {
+      "id": "section_1899109699",
+      "cls": "section section-customer",
+      "length": 12782,
+      "rowsCount": 2,
+      "colsCount": 5,
+      "imgsCount": 12,
+      "imgs": [
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c8f18d38-0720-41fa-89f9-8b088f3dbe00/w=1020,h=536",
+          "alt": "Có Người Nhà Bị Ung Thư Đại Tràng, Cô Liên Quyết Định Đến Doctor Check Để Tầm Soát Ung Thư"
+        },
+        {
+          "src": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c8f18d38-0720-41fa-89f9-8b088f3dbe00/w=1020,h=536",
+          "alt": "Có Người Nhà Bị Ung Thư Đại Tràng, Cô Liên Quyết Định Đến Doctor Check Để Tầm Soát Ung Thư"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c8f18d38-0720-41fa-89f9-8b088f3dbe00/w=1020,h=536"
+        },
+        {
+          "src": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c8f18d38-0720-41fa-89f9-8b088f3dbe00/w=1020,h=536"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/a1c13271-35cc-4174-e705-b03beb227e00/w=1020,h=536",
+          "alt": "Bị Tiểu Đường 26 Năm Nên Chú Hồng Anh Muốn Kiểm Tra Sức Khỏe Định Kỳ"
+        }
+      ],
+      "slidersCount": 9,
+      "sliders": [
+        "class=\"feedback-swiper-wrap\"",
+        "class=\"swiper feedback-swiper swiper-initialized swiper-horizontal swiper-backface-hidden\"",
+        "class=\"swiper-wrapper\"",
+        "class=\"swiper-slide swiper-slide-active\"",
+        "class=\"swiper-slide swiper-slide-next\"",
+        "class=\"swiper-slide\"",
+        "class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock\"",
+        "class=\"swiper-pagination-bullet swiper-pagination-bullet-active\"",
+        "class=\"swiper-notification\""
+      ]
+    },
+    {
+      "id": "section_1178718493",
+      "cls": "section section-cta dark",
+      "length": 8561,
+      "rowsCount": 3,
+      "colsCount": 5,
+      "imgsCount": 6,
+      "imgs": [
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/8d532359-b30c-430c-907e-a6b16e54b400/w=1440,h=643"
+        },
+        {
+          "src": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/8d532359-b30c-430c-907e-a6b16e54b400/w=1440,h=643"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/0b7df4e6-60fa-42b4-f53b-0adb11d32900/w=566,h=510"
+        },
+        {
+          "src": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/0b7df4e6-60fa-42b4-f53b-0adb11d32900/w=566,h=510"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/0b7df4e6-60fa-42b4-f53b-0adb11d32900/w=566,h=510"
+        }
+      ],
+      "slidersCount": 0,
+      "sliders": []
+    },
+    {
+      "id": "section_1915240304",
+      "cls": "section section-faq",
+      "length": 5052,
+      "rowsCount": 1,
+      "colsCount": 1,
+      "imgsCount": 0,
+      "imgs": [],
+      "slidersCount": 0,
+      "sliders": []
+    },
+    {
+      "id": "section_514095607",
+      "cls": "section section-banner-cta",
+      "length": 6068,
+      "rowsCount": 3,
+      "colsCount": 5,
+      "imgsCount": 4,
+      "imgs": [
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/4c785467-130c-4cdf-cf32-c3e216d74200/w=1709,h=795"
+        },
+        {
+          "src": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/4c785467-130c-4cdf-cf32-c3e216d74200/w=1709,h=795"
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20xmlns=",
+          "dataSrc": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/2ffefde0-bef2-422f-4060-a4654ffb5b00/w=545,h=963"
+        },
+        {
+          "src": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/2ffefde0-bef2-422f-4060-a4654ffb5b00/w=545,h=963"
+        }
+      ],
+      "slidersCount": 0,
+      "sliders": []
+    }
+  ]
+}

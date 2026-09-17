@@ -1,0 +1,646 @@
+@media (max-width:1640px){
+    .box-aaci{
+        bottom: 15% !important;
+    }
+    .box-sub_text{
+        bottom: 9% !important;
+    }
+}
+.page-id-5164 #wrapper,
+.page-id-5164 #main {
+    background-color: #F5F5F7;
+}
+
+.page-id-5164 .section {
+    border-bottom: 10px solid #FFF;
+}
+
+.kdn_sub-text {
+    line-height: 1;
+}
+
+.kdn_sub-text em {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+h1.kdn_main-title {
+    font-size: 45px !important;
+    line-height: 1.7;
+    color: #000 !important;
+}
+
+h1.kdn_main-title strong {
+    line-height: 1.7;
+    color: #03576E !important;
+}
+
+.kdn_sub-text em strong {
+    color: #e11d2e;
+}
+
+.kdn_btn span {
+    font-size: 24px;
+}
+
+.kdn_title h2 {
+    font-size: 45px !important;
+    color: #000;
+}
+
+.kdn_title h2 strong {
+    color: #03576E;
+}
+.kdn_reason .row .col-inner .icon-box{
+    transition: .5s ease-in-out;
+    padding: 20px;
+
+}
+.kdn_reason .row .col-inner .icon-box:hover{
+    background-color: #fff;
+    border-radius: 12px;
+    transform: scale(1.05);
+    transition: .5s ease;
+    box-shadow: 0px 20px 60px -20px rgba(0, 0, 0, 0.25);
+}
+.health-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #0b2b3a;
+}
+
+.health-checklist li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 6px 0;
+}
+
+.health-checklist .check {
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
+    color: #0a6ea8;
+    /* xanh tick */
+}
+
+/* Full-width section background */
+.kdn_plans_section {
+    background: #f5f5f7;
+    padding: 28px 0 !important;
+}
+
+/* Force row full-bleed */
+.kdn_plans_row {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Column spacing */
+.kdn_plan_col {
+    padding: 14px !important;
+}
+
+/* Card */
+.kdn_plan_card {
+    position: relative;
+    padding: 30px 28px 26px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
+    height: 100%;
+}
+
+.kdn_plan_white {
+    background: #fff;
+}
+
+.kdn_plan_blue {
+    background: linear-gradient(180deg, #EAFAFF 0%, #FFFFFF 100%);
+}
+
+.kdn_plan_pink {
+    background: linear-gradient(180deg, #FFEAEA 0%, #FFFFFF 100%);
+}
+
+/* Head */
+.kdn_plan_head {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.kdn_plan_title {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 1.15;
+    color: #111827;
+}
+
+.kdn_plan_title h3 {
+    position: relative;
+}
+
+.kdn_plan_sub {
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #4b5563;
+}
+
+/* Base badge */
+.kdn_plan_title .kdn_badge_popular::after,
+.kdn_plan_title .kdn_badge_vip::after {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 28px;
+    border-radius: 999px;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #fff;
+    transform: translate(30px, -6px);
+    white-space: nowrap;
+    height: auto;
+}
+
+/* Popular */
+.kdn_plan_title .kdn_badge_popular::after {
+    content: "Phổ biến nhất";
+    background: #03576E;
+}
+
+/* VIP */
+.kdn_plan_title .kdn_badge_vip::after {
+    content: "VIP";
+    background: #e11d2e;
+}
+
+
+/* Checklist */
+.kdn_checklist {
+    list-style: none;
+    padding: 0;
+    margin: 16px auto 18px;
+    max-width: 420px;
+}
+
+.kdn_checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.kdn_tick {
+    width: 18px;
+    flex: 0 0 18px;
+    color: #0a6ea8;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 1;
+    margin-top: 2px;
+}
+
+/* CTA */
+.kdn_plan_cta {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.kdn_plan_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 35px;
+    border-radius: 99px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+    color: #111827;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.kdn_plan_btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 26px rgba(0, 0, 0, .10);
+}
+
+.kdn_plan_btn_blue {
+    background: #E1F9FF;
+    border: 1px solid #00C8FF;
+    border-radius: 100px;
+}
+.kdn_report .icon-box{
+    align-items: center;
+    margin-bottom: 15px;
+}
+.kdn_report .icon-box h3{
+    font-size: 18px;
+}
+.kdn_report .col p strong{
+    text-decoration: underline;
+}
+.kdn_btn_download {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #03576E;
+    color: #FFFFFF !important;
+    margin-top: 30px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 0;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+
+    text-decoration: none;
+    transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+
+.kdn_btn_download:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 26px rgba(0, 0, 0, .14);
+    filter: brightness(1.03);
+}
+
+.kdn_btn_download_icon {
+    width: 24px;
+    height: 28px;
+    display: block;
+    flex: 0 0 auto;
+}
+
+.kdn_btn_download_text {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/* SECTION background + spacing */
+.kdn_hr_section {
+    background: #f5f5f7;
+    padding: 38px 0 44px !important;
+}
+
+/* content wrap */
+.kdn_hr_wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+/* Head */
+.kdn_hr_head {
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.kdn_hr_title {
+    margin: 0 0 10px;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 1.15;
+    color: #111;
+}
+
+.kdn_hr_sub {
+    font-size: 15px;
+    font-weight: 500;
+    color: #4b5563;
+}
+
+/* Process layout */
+.kdn_hr_process {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+    padding: 18px 0 10px;
+    margin: 0 auto;
+}
+
+/* Center line: chia đoạn màu như ảnh (không dùng gradient) */
+.kdn_hr_line {
+    position: absolute;
+    left: 3%;
+    right: 3%;
+    top: 48px;
+    /* canh theo tâm icon */
+    height: 3px;
+    border-radius: 999px;
+    background:
+        linear-gradient(to right,
+            #2f76ff 0% 20%,
+            #8b3dff 20% 40%,
+            #05b3d6 40% 60%,
+            #17c74a 60% 80%,
+            #ff8a00 80% 100%);
+    opacity: .95;
+}
+
+/* Step */
+.kdn_hr_step {
+    position: relative;
+    z-index: 2;
+    flex: 1 1 0;
+    text-align: center;
+    min-width: 0;
+}
+
+/* Icon circle */
+.kdn_hr_icon {
+    width: 82px;
+    height: 82px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .10);
+    margin-bottom: 14px;
+}
+
+.kdn_hr_icon img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Colors */
+.kdn_hr_c1 {
+    background: #2f76ff;
+}
+
+.kdn_hr_c2 {
+    background: #8b3dff;
+}
+
+.kdn_hr_c3 {
+    background: #05b3d6;
+}
+
+.kdn_hr_c4 {
+    background: #17c74a;
+}
+
+.kdn_hr_c5 {
+    background: #ff8a00;
+}
+
+/* Text under icons */
+.kdn_hr_step_no {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.kdn_hr_step_title {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: .25px;
+    color: #111;
+    margin-bottom: 6px;
+}
+
+.kdn_hr_step_desc {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4b5563;
+    line-height: 1.45;
+}
+.kdn_event .box-text-bottom h3{
+    display: none;
+}
+.kdn_event .box-text-bottom .box-text h3{
+    display: block;
+    text-align: left;
+    font-size: 24px;
+}
+/* Footer quote */
+.kdn_hr_footer {
+    text-align: center;
+    margin-top: 22px;
+}
+
+.kdn_hr_quote {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 1.35;
+    color: #03576E;
+    /* màu brand */
+}
+
+.kdn_consult_form {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+    padding: 26px 26px 20px;
+}
+
+.kdn_consult_form h2 {
+    margin: 0 0 10px;
+    font-size: 35px !important;
+    font-weight: 800;
+    color: #03576E;
+    text-align: center;
+}
+
+.kdn_label {
+    display: block;
+    font-weight: 700;
+    color: #111827;
+    margin: 10px 0 6px;
+    font-size: 18px;
+}
+
+.kdn_req {
+    color: #e11d2e;
+}
+
+.kdn_consult_form .dc_input {
+    width: 100%;
+}
+
+.kdn_consult_form .wpcf7-form-control-wrap {
+    display: block;
+}
+
+.kdn_consult_form input[type="text"],
+.kdn_consult_form input[type="tel"],
+.kdn_consult_form input[type="email"] {
+    width: 100%;
+    height: 44px;
+    border-radius: 10px;
+    border: 1px solid rgba(17, 24, 39, .14);
+    padding: 0 14px;
+    box-shadow: none;
+}
+
+.kdn_consult_form input::placeholder {
+    color: rgba(17, 24, 39, .45);
+    font-size: 14px;
+}
+
+.kdn_note {
+    width: 100%;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.kdn_note em {
+    color: #2563eb;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.45;
+    display: inline-block;
+}
+
+.kdn_btn_submit {
+    width: 100%;
+    background: #03576E;
+    color: #fff;
+    border: 0;
+    border-radius: 999px;
+    height: 54px;
+    line-height: 27px;
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: unset;
+    margin: 0;
+}
+
+.kdn_btn_submit:hover {
+    filter: brightness(1.05);
+}
+
+.kdn_hotline {
+    width: 100%;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.kdn_hotline_phone {
+    color: #e11d2e;
+    font-weight: 900;
+    text-decoration: none;
+    margin-left: 6px;
+}
+
+.kdn_media .row {
+    justify-content: center;
+}
+
+.kdn_media .gallery-col img,
+.kdn_partner .gallery-col img {
+    object-fit: contain;
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .kdn_hr_title {
+        font-size: 30px;
+    }
+
+    .kdn_hr_quote {
+        font-size: 22px;
+    }
+
+    .kdn_hr_process {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 849px) {
+    .kdn_hr_process {
+        flex-direction: column;
+        gap: 16px;
+        padding: 8px 0 0;
+    }
+
+    .kdn_hr_line {
+        display: none;
+    }
+
+    .kdn_hr_step {
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .kdn_hr_icon {
+        width: 64px;
+        height: 64px;
+        margin: 0;
+    }
+
+    .kdn_hr_icon img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .kdn_hr_step_no {
+        margin-top: 2px;
+        margin-bottom: 6px;
+    }
+
+    .kdn_hr_footer {
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 549px) {
+    .kdn_plans_section {
+        padding: 18px 0 !important;
+    }
+
+    .kdn_plan_col {
+        padding: 10px !important;
+    }
+
+    .kdn_plan_card {
+        padding: 22px 18px;
+        border-radius: 16px;
+    }
+
+    .kdn_plan_title {
+        font-size: 21px;
+    }
+
+    .kdn_badge {
+        top: 14px;
+        right: 14px;
+    }
+
+    .kdn_checklist {
+        max-width: 100%;
+    }
+
+    .kdn_hr_section {
+        padding: 26px 0 30px !important;
+    }
+
+    .kdn_hr_title {
+        font-size: 24px;
+    }
+
+    .kdn_hr_quote {
+        font-size: 20px;
+    }
+}

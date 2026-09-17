@@ -1,0 +1,914 @@
+/* ================================================================
+   ABOUT US PAGE – Flatsome-matched CSS
+   Derived from doctorcheck.vn WordPress theme
+   ================================================================ */
+
+/* ---------- CSS Variables ---------- */
+.about-us-page {
+  --color-main: #005570;
+  --color-second: #ffb500;
+  --blue-sky: #87e3db;
+  --bg-cyan: #eef7fa;
+  --base-text-color: #2a2f38;
+  --container-width: 1250px;
+  font-family: 'SVN-SofiaPro', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--base-text-color);
+  background-color: #fdfdf6;
+}
+
+/* ---------- Headings ---------- */
+.about-us-page h1,
+.about-us-page h2,
+.about-us-page h3,
+.about-us-page h4,
+.about-us-page h5,
+.about-us-page h6 {
+  color: #005570;
+  font-family: inherit;
+  line-height: 1.35;
+}
+
+/* ---------- Layout: Container ---------- */
+.about-us-page .container,
+.about-us-page .section-content {
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ---------- Layout: Row (flexbox grid) ---------- */
+.about-us-page .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.about-us-page .row-collapse {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.about-us-page .row-collapse > .col > .col-inner {
+  padding: 0;
+}
+
+.about-us-page .align-middle {
+  align-items: center;
+}
+
+.about-us-page .align-equal > .col {
+  display: flex;
+}
+
+.about-us-page .align-equal > .col > .col-inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Layout: Columns ---------- */
+.about-us-page .col {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-us-page .row-collapse > .col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.about-us-page .col-inner {
+  position: relative;
+}
+
+/* Large breakpoint columns */
+@media (min-width: 850px) {
+  .about-us-page .large-4 { width: 33.3333%; }
+  .about-us-page .large-5 { width: 41.6667%; }
+  .about-us-page .large-6 { width: 50%; }
+  .about-us-page .large-7 { width: 58.3333%; }
+  .about-us-page .large-8 { width: 66.6667%; }
+  .about-us-page .large-12 { width: 100%; }
+}
+
+/* Medium breakpoint columns */
+@media (min-width: 550px) and (max-width: 849px) {
+  .about-us-page .medium-4 { width: 33.3333%; }
+  .about-us-page .medium-6 { width: 50%; }
+  .about-us-page .medium-8 { width: 66.6667%; }
+  .about-us-page .medium-12 { width: 100%; }
+}
+
+/* Small breakpoint – everything stacks */
+.about-us-page .small-12 { width: 100%; }
+
+/* ---------- Responsive Helpers ---------- */
+@media (min-width: 550px) {
+  .about-us-page .show-for-small { display: none !important; }
+}
+
+@media (max-width: 549px) {
+  .about-us-page .hide-for-small { display: none !important; }
+  .about-us-page .show-for-small { display: block !important; }
+}
+
+/* ---------- Section ---------- */
+.about-us-page .section {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-us-page .section-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.about-us-page .section-bg img.bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-us-page .section-content {
+  position: relative;
+  z-index: 1;
+}
+
+.about-us-page .fill {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------- Gap Element ---------- */
+.about-us-page .gap-element {
+  display: block;
+  height: auto;
+}
+
+/* ---------- Image Helpers ---------- */
+.about-us-page .img-inner img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-us-page .text-right {
+  text-align: right;
+}
+
+.about-us-page .text-center {
+  text-align: center;
+}
+
+.about-us-page .text-left {
+  text-align: left;
+}
+
+/* ================================================================
+   SECTION 1: BANNER ABOUT
+   ================================================================ */
+.about-us-page .section-banner-about {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: linear-gradient(135deg, #fdfdf6 0%, #eef7fa 100%);
+}
+
+.about-us-page .section-banner-about .col-inner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.about-us-page .about-main-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #005570;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 549px) {
+  .about-us-page .about-main-title {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .about-us-page .section-banner-about .text-right {
+    text-align: center;
+  }
+}
+
+/* Circle blur decorative (on the left column) */
+.about-us-page .circle-blur {
+  position: relative;
+}
+
+.about-us-page .circle-blur::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(135, 227, 219, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  top: -40px;
+  left: -60px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ---------- CTA Button ---------- */
+.about-us-page .btn-appointment {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background-color: #ffb500;
+  color: #005570;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 99px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(255, 181, 0, 0.3);
+  text-decoration: none;
+}
+
+.about-us-page .btn-appointment:hover {
+  background-color: #e0a000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 181, 0, 0.4);
+}
+
+.about-us-page .button-gradient-secondary {
+  background: linear-gradient(135deg, #ffb500, #ffa000);
+  color: #005570;
+  padding: 14px 28px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 99px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(255, 181, 0, 0.3);
+}
+
+.about-us-page .button-gradient-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 181, 0, 0.4);
+}
+
+/* ================================================================
+   SECTION 2: ACHIEVEMENT (Giấy phép Sở Y Tế)
+   ================================================================ */
+.about-us-page .section-achivement {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.about-us-page .section-achivement h2 {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #005570;
+  line-height: 1.35;
+  margin-bottom: 16px;
+}
+
+.about-us-page .section-achivement p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #4d5565;
+  margin: 0;
+}
+
+.about-us-page .section-achivement .col-inner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* ================================================================
+   SECTION 3: VISION & MISSION
+   ================================================================ */
+.about-us-page .section-vision {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #eef7fa;
+  position: relative;
+}
+
+/* Shape Divider */
+.about-us-page .ux-shape-divider {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 2;
+}
+
+.about-us-page .ux-shape-divider--bottom {
+  bottom: 0;
+}
+
+.about-us-page .ux-shape-divider--bottom svg {
+  display: block;
+  width: 100%;
+  height: 45px;
+}
+
+.about-us-page .ux-shape-fill {
+  fill: #ffffff;
+}
+
+@media (min-width: 550px) {
+  .about-us-page .ux-shape-divider--bottom svg {
+    height: 122px;
+  }
+}
+
+/* Vision/Mission Row */
+.about-us-page .row-vision {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+/* Icon Box */
+.about-us-page .icon-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us-page .icon-box-top {
+  align-items: flex-start;
+}
+
+.about-us-page .icon-box-center {
+  align-items: center;
+}
+
+.about-us-page .icon-box-img {
+  margin-bottom: 12px;
+  flex-shrink: 0;
+}
+
+.about-us-page .icon-box-img img {
+  width: 100%;
+  height: auto;
+}
+
+.about-us-page .row-vision h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #005570;
+  margin-bottom: 8px;
+}
+
+.about-us-page .row-vision p {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #4d5565;
+  margin: 0;
+}
+
+.about-us-page .row-vision .col-inner {
+  padding: 10px 20px;
+}
+
+/* ================================================================
+   SECTION 4: COMMITMENTS (5 cam kết)
+   ================================================================ */
+.about-us-page .section-commit {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.about-us-page .section-commit .section-bg img {
+  object-position: top center;
+}
+
+.about-us-page .tag-heading {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-us-page .section-commit .heading h2 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #005570;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Commitment Cards Grid */
+.about-us-page .row-commit {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+  gap: 0;
+}
+
+.about-us-page .row-commit > .col {
+  padding: 12px;
+}
+
+.about-us-page .row-commit .icon-box {
+  background: #ffffff;
+  padding: 28px 22px;
+  border-radius: 16px;
+  border: 1px solid #eef7fa;
+  box-shadow: 0 8px 28px rgba(0, 71, 91, 0.06);
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-us-page .row-commit .icon-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 71, 91, 0.12);
+}
+
+.about-us-page .row-commit h3 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #005570;
+  margin-top: 14px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.about-us-page .row-commit p {
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: #556270;
+  margin: 0;
+}
+
+.about-us-page .row-commit .icon-box-img {
+  margin: 0 auto 4px;
+}
+
+/* ================================================================
+   SECTION 5: GALLERY (Accordion + Carousel)
+   ================================================================ */
+.about-us-page .section-gallery {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about-us-page .section-gallery h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #005570;
+  margin-bottom: 8px;
+}
+
+.about-us-page .section-gallery > .section-content > .row:first-child p {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #4d5565;
+  margin: 0;
+}
+
+/* Gallery Wrapper */
+.about-us-page .dc-gallery-wrapper {
+  margin-top: 30px;
+}
+
+/* Accordion Sidebar */
+.about-us-page .dc-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 20px;
+}
+
+@media (max-width: 549px) {
+  .about-us-page .dc-accordion {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-right: 0;
+    padding-bottom: 10px;
+    gap: 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .about-us-page .accordion-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-size: 12.5px;
+    padding: 10px 14px;
+  }
+}
+
+.about-us-page .accordion-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #005570;
+  background-color: #f8fbfc;
+  border: 1px solid #eef2f6;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.about-us-page .accordion-btn:hover {
+  background-color: #eef7fa;
+}
+
+.about-us-page .accordion-btn.active {
+  background-color: #005570;
+  color: #ffffff;
+  border-color: #005570;
+  box-shadow: 0 4px 16px rgba(0, 85, 112, 0.25);
+}
+
+/* Gallery Nav Buttons */
+.about-us-page .gallery-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #005570;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.about-us-page .gallery-nav-btn:hover {
+  background: #ffb500;
+  color: #005570;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.about-us-page .prev-btn { left: 14px; }
+.about-us-page .next-btn { right: 14px; }
+
+/* ================================================================
+   SECTION 6: FACILITIES (Equipment Cards)
+   ================================================================ */
+.about-us-page .section-facilities {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about-us-page .section-facilities .heading h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #005570;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.about-us-page .section-facilities .heading p {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #4d5565;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Equipment Card Grid */
+.about-us-page .row-facilities {
+  margin-top: 30px;
+  row-gap: 0;
+}
+
+.about-us-page .row-facilities > .col {
+  padding: 0;
+}
+
+.about-us-page .box-overlay {
+  position: relative;
+  overflow: hidden;
+  background: #003040;
+}
+
+.about-us-page .box-image {
+  position: relative;
+}
+
+.about-us-page .image-overlay-add {
+  position: relative;
+}
+
+.about-us-page .box-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 874 / 582;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-us-page .box:hover .box-image img {
+  transform: scale(1.06);
+}
+
+.about-us-page .image-overlay-add .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 48, 64, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.about-us-page .box:hover .image-overlay-add .overlay {
+  background-color: rgba(0, 48, 64, 0.05);
+}
+
+/* Text overlay at bottom */
+.about-us-page .box-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px 20px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 40, 52, 0.92) 0%,
+    rgba(0, 40, 52, 0.5) 50%,
+    transparent 100%
+  );
+  color: #ffffff;
+}
+
+.about-us-page .box-text h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #ffb500;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.about-us-page .box-text p {
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0;
+}
+
+/* Customer Reviews Row */
+.about-us-page .row-check {
+  margin-top: 50px;
+}
+
+.about-us-page .row-check h2 {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #005570;
+  margin-bottom: 20px;
+  line-height: 1.35;
+}
+
+.about-us-page .row-check .col-inner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Video banner thumbnail */
+.about-us-page .banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.about-us-page .banner-inner {
+  position: relative;
+}
+
+.about-us-page .banner-bg img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-us-page .banner-layers {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================================================================
+   SECTION 7: CTA BANNER
+   ================================================================ */
+.about-us-page .section-banner-cta {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.about-us-page .section-banner-cta .banner {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 50px rgba(0, 71, 91, 0.12);
+}
+
+.about-us-page .section-banner-cta .banner-bg img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Desktop CTA overlay */
+.about-us-page #banner-315037503 .banner-inner {
+  position: relative;
+}
+
+.about-us-page #banner-315037503 .banner-layers {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+.about-us-page #banner-315037503 .text-box {
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 36px 32px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Mobile CTA banner */
+.about-us-page #banner-1878632260 .banner-inner {
+  position: relative;
+}
+
+.about-us-page #banner-1878632260 .banner-layers {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.about-us-page #banner-1878632260 .text-box {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 24px 20px;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* CTA Title Styling */
+.about-us-page .dc-title.yellow h2 {
+  color: #005570;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.about-us-page .dc-title.yellow h2 span {
+  color: #ffb500;
+}
+
+.about-us-page .footer-cta-content {
+  text-align: center;
+  font-size: 13.5px;
+  color: #556270;
+  margin-bottom: 16px;
+}
+
+.about-us-page .footer-cta-content p {
+  margin: 2px 0;
+}
+
+.about-us-page .footer-cta-content p:first-child {
+  font-weight: 700;
+  color: #005570;
+}
+
+/* ================================================================
+   VIDEO PLAY BUTTON
+   ================================================================ */
+.about-us-page .open-video {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #005570;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.about-us-page .open-video:hover {
+  background: #ffb500;
+  color: #005570;
+  transform: scale(1.15);
+  box-shadow: 0 10px 40px rgba(255, 181, 0, 0.4);
+}
+
+/* ================================================================
+   RESPONSIVE TWEAKS
+   ================================================================ */
+@media (max-width: 849px) {
+  .about-us-page .section-commit .heading h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-us-page .row-vision {
+    padding-top: 30px;
+  }
+
+  .about-us-page .row-commit > .col {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 549px) {
+  .about-us-page .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about-us-page .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about-us-page .col-inner {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .about-us-page .section-achivement h2 {
+    font-size: 1.35rem;
+  }
+
+  .about-us-page .section-gallery h2 {
+    font-size: 1.3rem;
+  }
+
+  .about-us-page .section-facilities .heading h2 {
+    font-size: 1.3rem;
+  }
+
+  .about-us-page .row-check h2 {
+    font-size: 1.3rem;
+  }
+
+  .about-us-page .section-commit .heading h2 {
+    font-size: 1.25rem;
+  }
+
+  .about-us-page .row-commit .icon-box {
+    padding: 20px 16px;
+    border-radius: 12px;
+  }
+
+  .about-us-page .box-text {
+    padding: 16px 14px;
+  }
+
+  .about-us-page .box-text h3 {
+    font-size: 0.95rem;
+  }
+
+  .about-us-page .box-text p {
+    font-size: 11.5px;
+  }
+
+  .about-us-page .dc-title.yellow h2 {
+    font-size: 1.2rem;
+  }
+
+  .about-us-page .row-facilities {
+    row-gap: 0;
+  }
+}

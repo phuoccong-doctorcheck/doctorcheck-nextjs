@@ -1,0 +1,220 @@
+{
+  "fontDetails": [
+    {
+      "file": "dc-icons.woff2",
+      "size": 744244
+    },
+    {
+      "file": "fl-icons.woff2",
+      "size": 7560
+    },
+    {
+      "file": "SVN-SofiaPro-Black.woff2",
+      "size": 62260
+    },
+    {
+      "file": "SVN-SofiaPro-Bold.woff2",
+      "size": 60764
+    },
+    {
+      "file": "SVN-SofiaPro-Light.woff2",
+      "size": 59056
+    },
+    {
+      "file": "SVN-SofiaPro-Regular.woff2",
+      "size": 58940
+    },
+    {
+      "file": "SVN-SofiaPro-SemiBold.woff2",
+      "size": 62032
+    }
+  ],
+  "fontFaceRules": [
+    {
+      "file": "app.css",
+      "rules": [
+        "@font-face {\n    font-family: 'SVN-Sofia Pro';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Bold.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Bold.woff') format('woff');\n    font-weight: bold;\n    font-style: normal;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'SVN-Sofia Pro';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-ExtraLightItalic.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-ExtraLightItalic.woff') format('woff');\n    font-weight: 200;\n    font-style: italic;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'SVN-Sofia Pro';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-BoldItalic.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-BoldItalic.woff') format('woff');\n    font-weight: bold;\n    font-style: italic;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'SVN-Sofia Pro';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-ExtraLight.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-ExtraLight.woff') format('woff');\n    font-weight: 200;\n    font-style: normal;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'SVN-Sofia Pro';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-LightItalic.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-LightItalic.woff') format('woff');\n    font-weight: 300;\n    font-style: italic;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'SVN-Sofia Pro';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-MediumItalic.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-MediumItalic.woff') format('woff');\n    font-weight: 500;\n    font-style: italic;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'SVN-Sofia Pro';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Italic.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Italic.woff') format('woff');\n    font-weight: normal;\n    font-style: italic;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'SVN-Sofia Pro';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Light.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Light.woff') format('woff');\n    font-weight: 300;\n    font-style: normal;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'SVN-Sofia Pro';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Medium.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Medium.woff') format('woff');\n    font-weight: 500;\n    font-style: normal;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'SVN-Sofia Pro';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Regular.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Regular.woff') format('woff');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'SVN-Sofia Pro';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-SemiBoldItalic.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-SemiBoldItalic.woff') format('woff');\n    font-weight: 600;\n    font-style: italic;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'SVN-Sofia Pro';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-UltraLightItalic.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-UltraLightItalic.woff') format('woff');\n    font-weight: 200;\n    font-style: italic;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'SVN-Sofia Pro';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-SemiBold.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-SemiBold.woff') format('woff');\n    font-weight: 600;\n    font-style: normal;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'SVN-Sofia Pro';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-UltraLight.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-UltraLight.woff') format('woff');\n    font-weight: 200;\n    font-style: normal;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'SVN-Sofia Pro';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-BlackItalic.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-BlackItalic.woff') format('woff');\n    font-weight: 900;\n    font-style: italic;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'SVN-Sofia Pro';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Black.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Black.woff') format('woff');\n    font-weight: 900;\n    font-style: normal;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'Savoye LET Plain';\n    font-style: normal;\n    font-weight: normal;\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SavoyeLetPlain.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/SavoyeLetPlain.woff') format('woff');\n        \n}",
+        "@font-face {\n    font-family: 'Fz Rubik';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Regular.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Regular.woff') format('woff');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'Fz Rubik Med';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Medium.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Medium.woff') format('woff');\n    font-weight: 500;\n    font-style: normal;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'Fz Rubik';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Light.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Light.woff') format('woff');\n    font-weight: 300;\n    font-style: normal;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'Fz Rubik';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Bold.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Bold.woff') format('woff');\n    font-weight: bold;\n    font-style: normal;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'Fz Rubik';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Black.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Black.woff') format('woff');\n    font-weight: 900;\n    font-style: normal;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'Fz Rubik ExtBd';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-ExtraBold.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-ExtraBold.woff') format('woff');\n    font-weight: bold;\n    font-style: normal;\n    font-display: swap;\n}",
+        "@font-face {\n    font-family: 'Fz Rubik SemBd';\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-SemiBold.woff2') format('woff2'),\n        url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-SemiBold.woff') format('woff');\n    font-weight: 600;\n    font-style: normal;\n    font-display: swap;\n}"
+      ]
+    },
+    {
+      "file": "dc-icons.min.css",
+      "rules": [
+        "@font-face{font-family:\"dc-icons\";font-style:normal;font-weight:400;src:url(\"./dc-fonts/dc-icons.eot?v2.36.0\");src:url(\"./dc-fonts/dc-icons.eot?#iefix-v2.36.0\") format(\"embedded-opentype\"),url(\"./dc-fonts/dc-icons.woff2?v2.36.0\") format(\"woff2\"),url(\"./dc-fonts/dc-icons.woff?\") format(\"woff\"),url(\"./vietsite-fonts/vietsite-icons.ttf?v2.36.0\") format(\"truetype\")}"
+      ]
+    },
+    {
+      "file": "ldp-nsdd.css",
+      "rules": [
+        "@font-face {\r\n    font-family: 'SVN-Sofia Pro';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Bold.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Bold.woff') format('woff');\r\n    font-weight: bold;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'SVN-Sofia Pro';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-ExtraLightItalic.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-ExtraLightItalic.woff') format('woff');\r\n    font-weight: 200;\r\n    font-style: italic;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'SVN-Sofia Pro';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-BoldItalic.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-BoldItalic.woff') format('woff');\r\n    font-weight: bold;\r\n    font-style: italic;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'SVN-Sofia Pro';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-ExtraLight.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-ExtraLight.woff') format('woff');\r\n    font-weight: 200;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'SVN-Sofia Pro';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-LightItalic.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-LightItalic.woff') format('woff');\r\n    font-weight: 300;\r\n    font-style: italic;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'SVN-Sofia Pro';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-MediumItalic.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-MediumItalic.woff') format('woff');\r\n    font-weight: 500;\r\n    font-style: italic;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'SVN-Sofia Pro';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Italic.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Italic.woff') format('woff');\r\n    font-weight: normal;\r\n    font-style: italic;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'SVN-Sofia Pro';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Light.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Light.woff') format('woff');\r\n    font-weight: 300;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'SVN-Sofia Pro';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Medium.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Medium.woff') format('woff');\r\n    font-weight: 500;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'SVN-Sofia Pro';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Regular.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Regular.woff') format('woff');\r\n    font-weight: normal;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'SVN-Sofia Pro';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-SemiBoldItalic.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-SemiBoldItalic.woff') format('woff');\r\n    font-weight: 600;\r\n    font-style: italic;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'SVN-Sofia Pro';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-UltraLightItalic.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-UltraLightItalic.woff') format('woff');\r\n    font-weight: 200;\r\n    font-style: italic;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'SVN-Sofia Pro';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-SemiBold.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-SemiBold.woff') format('woff');\r\n    font-weight: 600;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'SVN-Sofia Pro';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-UltraLight.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-UltraLight.woff') format('woff');\r\n    font-weight: 200;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'SVN-Sofia Pro';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-BlackItalic.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-BlackItalic.woff') format('woff');\r\n    font-weight: 900;\r\n    font-style: italic;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'SVN-Sofia Pro';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Black.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/SVN-SofiaPro-Black.woff') format('woff');\r\n    font-weight: 900;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'Savoye LET Plain';\r\n    font-style: normal;\r\n    font-weight: normal;\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/SavoyeLetPlain.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/SavoyeLetPlain.woff') format('woff');\r\n        \r\n}",
+        "@font-face {\r\n    font-family: 'Fz Rubik';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Regular.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Regular.woff') format('woff');\r\n    font-weight: normal;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'Fz Rubik Med';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Medium.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Medium.woff') format('woff');\r\n    font-weight: 500;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'Fz Rubik';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Light.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Light.woff') format('woff');\r\n    font-weight: 300;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'Fz Rubik';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Bold.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Bold.woff') format('woff');\r\n    font-weight: bold;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'Fz Rubik';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Black.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-Black.woff') format('woff');\r\n    font-weight: 900;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'Fz Rubik ExtBd';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-ExtraBold.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-ExtraBold.woff') format('woff');\r\n    font-weight: bold;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}",
+        "@font-face {\r\n    font-family: 'Fz Rubik SemBd';\r\n    src: url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-SemiBold.woff2') format('woff2'),\r\n        url('/wp-content/themes/doctorcheck/assets/fonts/FzRubik-SemiBold.woff') format('woff');\r\n    font-weight: 600;\r\n    font-style: normal;\r\n    font-display: swap;\r\n}"
+      ]
+    },
+    {
+      "file": "swiper-bundle.css",
+      "rules": [
+        "@font-face {\r\n    font-family: 'swiper-icons';\r\n    src: url('data:application/font-woff;charset=utf-8;base64, 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');\r\n    font-weight: 400;\r\n    font-style: normal;\r\n  }"
+      ]
+    },
+    {
+      "file": "homepage.html",
+      "rules": [
+        "@font-face {\r\n\t\t\t\tfont-family: \"fl-icons\";\r\n\t\t\t\tfont-display: block;\r\n\t\t\t\tsrc: url(https://www.doctorcheck.vn/wp-content/themes/flatsome/assets/css/icons/fl-icons.eot?v=3.19.8);\r\n\t\t\t\tsrc:\r\n\t\t\t\t\turl(https://www.doctorcheck.vn/wp-content/themes/flatsome/assets/css/icons/fl-icons.eot#iefix?v=3.19.8) format(\"embedded-opentype\"),\r\n\t\t\t\t\turl(https://www.doctorcheck.vn/wp-content/themes/flatsome/assets/css/icons/fl-icons.woff2?v=3.19.8) format(\"woff2\"),\r\n\t\t\t\t\turl(https://www.doctorcheck.vn/wp-content/themes/flatsome/assets/css/icons/fl-icons.ttf?v=3.19.8) format(\"truetype\"),\r\n\t\t\t\t\turl(https://www.doctorcheck.vn/wp-content/themes/flatsome/assets/css/icons/fl-icons.woff?v=3.19.8) format(\"woff\"),\r\n\t\t\t\t\turl(https://www.doctorcheck.vn/wp-content/themes/flatsome/assets/css/icons/fl-icons.svg?v=3.19.8#fl-icons) format(\"svg\");\r\n\t\t\t}",
+        "@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:fallback;src:url('https://www.doctorcheck.vn/wp-content/plugins/woocommerce/assets/fonts/Inter-VariableFont_slnt,wght.woff2') format('woff2');font-stretch:normal;}",
+        "@font-face{font-family:Cardo;font-style:normal;font-weight:400;font-display:fallback;src:url('https://www.doctorcheck.vn/wp-content/plugins/woocommerce/assets/fonts/cardo_normal_400.woff2') format('woff2');}"
+      ]
+    }
+  ],
+  "fontFamilyUsage": {
+    "'SVN-Sofia Pro'": [
+      "app.css",
+      "ldp-nsdd.css"
+    ],
+    "'Savoye LET Plain'": [
+      "app.css",
+      "ldp-nsdd.css"
+    ],
+    "'Fz Rubik'": [
+      "app.css",
+      "ldp-nsdd.css"
+    ],
+    "'Fz Rubik Med'": [
+      "app.css",
+      "ldp-nsdd.css"
+    ],
+    "'Fz Rubik ExtBd'": [
+      "app.css",
+      "ldp-nsdd.css"
+    ],
+    "'Fz Rubik SemBd'": [
+      "app.css",
+      "ldp-nsdd.css"
+    ],
+    "\"dc-icons\"": [
+      "app.css",
+      "dc-icons.min.css",
+      "responsive.css"
+    ],
+    "'SVN-Sofia Pro',  sans-serif": [
+      "app.css",
+      "ldp-nsdd.css"
+    ],
+    "'SVN-Sofia Pro', sans-serif": [
+      "app.css"
+    ],
+    "\"dc-icons\" !important": [
+      "app.css"
+    ],
+    "\"Montserrat\", sans-serif": [
+      "app.css"
+    ],
+    "Arial, sans-serif": [
+      "app.css"
+    ],
+    "inherit": [
+      "appv3.css",
+      "flatpickr.min.css"
+    ],
+    "\"vietsite-icons\" !important": [
+      "dc-icons.min.css"
+    ],
+    "fl-icons}.show-password-input.display-password:after{content:\"\"": [
+      "flatsome-shop.css"
+    ],
+    "fl-icons}#login-form-popup .woocommerce-notices-wrapper:not(:empty){padding:20px 20px 0}#login-form-popup .woocommerce-form{margin-bottom:0}#login-form-popup:not(:has(.account-register-inner)){max-width:440px}#login-form-popup .account-container.lightbox-inner>.account-login-inner{padding-left:15px": [
+      "flatsome-shop.css"
+    ],
+    "Helvetica,Arial,Sans-serif": [
+      "flatsome-shop.css"
+    ],
+    "sans-serif}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none": [
+      "flatsome.css"
+    ],
+    "\"object-fit: cover": [
+      "flatsome.css"
+    ],
+    "fl-icons!important": [
+      "flatsome.css"
+    ],
+    "sans-serif": [
+      "flatsome.css"
+    ],
+    "Arial,Sans-serif!important": [
+      "flatsome.css"
+    ],
+    "Arial,monospace": [
+      "flatsome.css"
+    ],
+    "fl-icons": [
+      "flatsome.css"
+    ],
+    "Georgia}.is-xxxlarge{font-size:2.5em}.is-xxlarge{font-size:2em}.is-xlarge{font-size:1.5em}.is-larger{font-size:1.3em}.is-large{font-size:1.15em}.is-small,.is-small.button{font-size:.8em}.is-smaller{font-size:.75em}.is-xsmall{font-size:.7em}.is-xxsmall{font-size:.6em}@media(max-width:549px){.is-xxlarge{font-size:2.5em}.is-xlarge{font-size:1.8em}.is-larger{font-size:1.2em}.is-large{font-size:1em}}.box-text a:not(.button),.box-text h1,.box-text h2,.box-text h3,.box-text h4,.box-text h5,.box-text h6{line-height:1.3": [
+      "flatsome.css"
+    ],
+    "Arial,sans-serif": [
+      "flatsome.css"
+    ],
+    "inherit!important": [
+      "public-main.css"
+    ],
+    "\"Helvetica Neue\",Helvetica,Arial,sans-serif!important": [
+      "public-main.css"
+    ],
+    "Helvetica Neue,Helvetica,Arial,sans-serif!important": [
+      "public-main.css"
+    ],
+    "\"UTM Avo\", sans-serif !important": [
+      "responsive.css"
+    ],
+    "'swiper-icons'": [
+      "swiper-bundle.css"
+    ],
+    "swiper-icons": [
+      "swiper-bundle.css"
+    ]
+  }
+}

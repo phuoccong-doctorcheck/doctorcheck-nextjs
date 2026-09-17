@@ -1,0 +1,667 @@
+[
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/9c47f8ce-3635-4598-2d0e-6c7e9a9ab200/w=399,h=396",
+    "section": "Header",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/logo-sticky.webp",
+    "usage": "Sticky header white logo",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/700da2d8-a2da-4897-3616-647bc8083d00/w=281,h=281,fit=crop",
+    "section": "Header",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/logo-header.webp",
+    "usage": "Header main brand logo",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/9c47f8ce-3635-4598-2d0e-6c7e9a9ab200/w=399,h=396",
+    "section": "Header",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/logo-sticky.webp",
+    "usage": "Sticky header white logo",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/428ac6c9-bd35-483e-db56-281930032d00/w=2560,h=1038",
+    "section": "Section 1: Hero Banner",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/banner-desktop-master.webp",
+    "usage": "Desktop Hero Banner (2560x1038)",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/ccd6b033-d84d-4f06-88f2-fa2bd08aaf00/w=856,h=1256",
+    "section": "Section 1: Hero Banner",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/banner-mobile-master.webp",
+    "usage": "Mobile Hero Banner (856x1256)",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/3d696a80-7ac1-4143-c3fc-6e92daad5200/w=534,h=329",
+    "section": "Section 3: 5 Clinical Benefits (Advanced)",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/benefits-banner-master.webp",
+    "usage": "5 Quyền lợi clinical intro banner",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/3d696a80-7ac1-4143-c3fc-6e92daad5200/w=534,h=329",
+    "section": "Section 3: 5 Clinical Benefits (Advanced)",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/benefits-banner-master.webp",
+    "usage": "5 Quyền lợi clinical intro banner",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/3d696a80-7ac1-4143-c3fc-6e92daad5200/w=534,h=329",
+    "section": "Section 3: 5 Clinical Benefits (Advanced)",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/benefits-banner-master.webp",
+    "usage": "5 Quyền lợi clinical intro banner",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/3d696a80-7ac1-4143-c3fc-6e92daad5200/w=534,h=329",
+    "section": "Section 3: 5 Clinical Benefits (Advanced)",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/benefits-banner-master.webp",
+    "usage": "5 Quyền lợi clinical intro banner",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/9457588e-e353-4e1d-46f5-d1ffa8fd5700/w=1440,h=736",
+    "section": "Section 4: Doctors Carousel",
+    "existingAsset": "UNRESOLVED",
+    "usage": "bg attachment- size- perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/9457588e-e353-4e1d-46f5-d1ffa8fd5700/w=1440,h=736",
+    "section": "Section 4: Doctors Carousel",
+    "existingAsset": "UNRESOLVED",
+    "usage": "bg attachment- size-",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/fe4b3528-d236-4c2c-72e7-87a5dd287800/w=300,h=400",
+    "section": "Section 4: Doctors Carousel",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/doctors/trinh-ai-nhi.webp",
+    "usage": "BSCKII Trịnh Ái Nhi portrait",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/fe4b3528-d236-4c2c-72e7-87a5dd287800/w=300,h=400",
+    "section": "Section 4: Doctors Carousel",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/doctors/trinh-ai-nhi.webp",
+    "usage": "BSCKII Trịnh Ái Nhi portrait",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/fa3c5180-954a-4a59-dd94-3d447bb7a700/w=263,h=400",
+    "section": "Section 4: Doctors Carousel",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/doctors/chau-quynh-phi-nha.webp",
+    "usage": "BSCKII Châu Quỳnh Phi Nhã portrait",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/fa3c5180-954a-4a59-dd94-3d447bb7a700/w=263,h=400",
+    "section": "Section 4: Doctors Carousel",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/doctors/chau-quynh-phi-nha.webp",
+    "usage": "BSCKII Châu Quỳnh Phi Nhã portrait",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/e2437733-41f5-42f7-278b-afcddd382f00/w=300,h=400",
+    "section": "Section 4: Doctors Carousel",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/doctors/nguyen-ngoc-quynh-dung.webp",
+    "usage": "ThS. BSCKII Nguyễn Ngọc Quỳnh Dung portrait",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/e2437733-41f5-42f7-278b-afcddd382f00/w=300,h=400",
+    "section": "Section 4: Doctors Carousel",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/doctors/nguyen-ngoc-quynh-dung.webp",
+    "usage": "ThS. BSCKII Nguyễn Ngọc Quỳnh Dung portrait",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/9fafa9a3-97a5-4895-2715-bf56ee418b00/w=300,h=400",
+    "section": "Section 4: Doctors Carousel",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/doctors/nguyen-hong-thanh.webp",
+    "usage": "ThS. BSCKII Nguyễn Hồng Thanh portrait",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/9fafa9a3-97a5-4895-2715-bf56ee418b00/w=300,h=400",
+    "section": "Section 4: Doctors Carousel",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/doctors/nguyen-hong-thanh.webp",
+    "usage": "ThS. BSCKII Nguyễn Hồng Thanh portrait",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c3a06dc1-81e7-4287-ff3f-13bea17bc700/w=300,h=400",
+    "section": "Section 4: Doctors Carousel",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/doctors/luu-ngoc-mai.webp",
+    "usage": "ThS. BSCKI Lưu Ngọc Mai portrait",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c3a06dc1-81e7-4287-ff3f-13bea17bc700/w=300,h=400",
+    "section": "Section 4: Doctors Carousel",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/doctors/luu-ngoc-mai.webp",
+    "usage": "ThS. BSCKI Lưu Ngọc Mai portrait",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/b9ca289f-001e-4d7b-aff4-99654da0b900/w=270,h=400",
+    "section": "Section 4: Doctors Carousel",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/doctors/thai-viet-nguyen.webp",
+    "usage": "BSCKI Thái Việt Nguyên portrait",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/b9ca289f-001e-4d7b-aff4-99654da0b900/w=270,h=400",
+    "section": "Section 4: Doctors Carousel",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/doctors/thai-viet-nguyen.webp",
+    "usage": "BSCKI Thái Việt Nguyên portrait",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c8dffc2a-eb71-4d2f-27a7-1acabb8fc900/w=314,h=400",
+    "section": "Section 4: Doctors Carousel",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/doctors/dang-nguyen-nhat-thanh-thi.webp",
+    "usage": "BS Đặng Nguyễn Nhật Thanh Thi portrait",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c8dffc2a-eb71-4d2f-27a7-1acabb8fc900/w=314,h=400",
+    "section": "Section 4: Doctors Carousel",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/doctors/dang-nguyen-nhat-thanh-thi.webp",
+    "usage": "BS Đặng Nguyễn Nhật Thanh Thi portrait",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/78304e55-5a75-4c92-4e70-284df81aa800/w=874,h=582",
+    "section": "Section 5: Facilities & Equipment",
+    "existingAsset": "UNRESOLVED",
+    "usage": "attachment- size- perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/78304e55-5a75-4c92-4e70-284df81aa800/w=874,h=582",
+    "section": "Section 5: Facilities & Equipment",
+    "existingAsset": "UNRESOLVED",
+    "usage": "attachment- size-",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/703a1139-9dab-4e78-b6e3-2c43858c6400/w=874,h=582",
+    "section": "Section 5: Facilities & Equipment",
+    "existingAsset": "UNRESOLVED",
+    "usage": "attachment- size- perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/703a1139-9dab-4e78-b6e3-2c43858c6400/w=874,h=582",
+    "section": "Section 5: Facilities & Equipment",
+    "existingAsset": "UNRESOLVED",
+    "usage": "attachment- size-",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/4a217bbc-bd4a-4234-c715-bea676e88b00/w=874,h=582",
+    "section": "Section 5: Facilities & Equipment",
+    "existingAsset": "UNRESOLVED",
+    "usage": "attachment- size- perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/4a217bbc-bd4a-4234-c715-bea676e88b00/w=874,h=582",
+    "section": "Section 5: Facilities & Equipment",
+    "existingAsset": "UNRESOLVED",
+    "usage": "attachment- size-",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/d0946de2-a6a8-4c32-82c6-f2da3e64a300/w=874,h=582",
+    "section": "Section 5: Facilities & Equipment",
+    "existingAsset": "UNRESOLVED",
+    "usage": "attachment- size- perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/d0946de2-a6a8-4c32-82c6-f2da3e64a300/w=874,h=582",
+    "section": "Section 5: Facilities & Equipment",
+    "existingAsset": "UNRESOLVED",
+    "usage": "attachment- size-",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/5635de35-86cf-437c-07a6-91b577176c00/w=874,h=582",
+    "section": "Section 5: Facilities & Equipment",
+    "existingAsset": "UNRESOLVED",
+    "usage": "attachment- size- perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/5635de35-86cf-437c-07a6-91b577176c00/w=874,h=582",
+    "section": "Section 5: Facilities & Equipment",
+    "existingAsset": "UNRESOLVED",
+    "usage": "attachment- size-",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/878ede28-24d7-4976-be0d-f183342b3600/w=874,h=582",
+    "section": "Section 5: Facilities & Equipment",
+    "existingAsset": "UNRESOLVED",
+    "usage": "attachment- size- perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/878ede28-24d7-4976-be0d-f183342b3600/w=874,h=582",
+    "section": "Section 5: Facilities & Equipment",
+    "existingAsset": "UNRESOLVED",
+    "usage": "attachment- size-",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/e4515038-e50c-45f6-f35d-8255929a6f00/w=625,h=400",
+    "section": "Section 6: Pricing Packages",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Gói Khuyến Cáo Dành Cho Nam",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/e4515038-e50c-45f6-f35d-8255929a6f00/w=625,h=400",
+    "section": "Section 6: Pricing Packages",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Gói Khuyến Cáo Dành Cho Nam",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/9e90b45a-e67c-4570-0afe-de7f4b40a700/w=625,h=400",
+    "section": "Section 6: Pricing Packages",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Gói Chuyên Sâu Dành Cho Nam",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/9e90b45a-e67c-4570-0afe-de7f4b40a700/w=625,h=400",
+    "section": "Section 6: Pricing Packages",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Gói Chuyên Sâu Dành Cho Nam",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/887ac26c-5b5c-4732-f2fe-37f2b4a4e200/w=625,h=400",
+    "section": "Section 6: Pricing Packages",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Gói Sống Thọ Dành Cho Nam",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/887ac26c-5b5c-4732-f2fe-37f2b4a4e200/w=625,h=400",
+    "section": "Section 6: Pricing Packages",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Gói Sống Thọ Dành Cho Nam",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/f95b8991-eaad-4b0d-0e10-363256915b00/w=625,h=400",
+    "section": "Section 6: Pricing Packages",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Gói Khuyến Cáo Dành Cho Nữ",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/f95b8991-eaad-4b0d-0e10-363256915b00/w=625,h=400",
+    "section": "Section 6: Pricing Packages",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Gói Khuyến Cáo Dành Cho Nữ",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/ca8d1686-7b25-4e2b-b648-376b7cc69800/w=625,h=400",
+    "section": "Section 6: Pricing Packages",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Gói Chuyên Sâu Dành Cho Nữ",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/ca8d1686-7b25-4e2b-b648-376b7cc69800/w=625,h=400",
+    "section": "Section 6: Pricing Packages",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Gói Chuyên Sâu Dành Cho Nữ",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/f298c0dc-622c-4fc2-8f74-e4d83e1d5300/w=625,h=400",
+    "section": "Section 6: Pricing Packages",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Gói Sống Thọ Dành Cho Nữ",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/f298c0dc-622c-4fc2-8f74-e4d83e1d5300/w=625,h=400",
+    "section": "Section 6: Pricing Packages",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Gói Sống Thọ Dành Cho Nữ",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c8f18d38-0720-41fa-89f9-8b088f3dbe00/w=1020,h=536",
+    "section": "Section 8: Customer Stories",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Có Người Nhà Bị Ung Thư Đại Tràng, Cô Liên Quyết Định Đến Doctor Check Để Tầm Soát Ung Thư",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c8f18d38-0720-41fa-89f9-8b088f3dbe00/w=1020,h=536",
+    "section": "Section 8: Customer Stories",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Có Người Nhà Bị Ung Thư Đại Tràng, Cô Liên Quyết Định Đến Doctor Check Để Tầm Soát Ung Thư",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c8f18d38-0720-41fa-89f9-8b088f3dbe00/w=1020,h=536",
+    "section": "Section 8: Customer Stories",
+    "existingAsset": "UNRESOLVED",
+    "usage": "perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c8f18d38-0720-41fa-89f9-8b088f3dbe00/w=1020,h=536",
+    "section": "Section 8: Customer Stories",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Content image",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/a1c13271-35cc-4174-e705-b03beb227e00/w=1020,h=536",
+    "section": "Section 8: Customer Stories",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Bị Tiểu Đường 26 Năm Nên Chú Hồng Anh Muốn Kiểm Tra Sức Khỏe Định Kỳ",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/a1c13271-35cc-4174-e705-b03beb227e00/w=1020,h=536",
+    "section": "Section 8: Customer Stories",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Bị Tiểu Đường 26 Năm Nên Chú Hồng Anh Muốn Kiểm Tra Sức Khỏe Định Kỳ",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/a1c13271-35cc-4174-e705-b03beb227e00/w=1020,h=536",
+    "section": "Section 8: Customer Stories",
+    "existingAsset": "UNRESOLVED",
+    "usage": "perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/a1c13271-35cc-4174-e705-b03beb227e00/w=1020,h=536",
+    "section": "Section 8: Customer Stories",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Content image",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c2435d61-05c2-492e-be58-c88a81822e00/w=800,h=800,fit=crop",
+    "section": "Section 8: Customer Stories",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Gần một tháng, tôi ăn không ngon, ngủ cũng không yên.",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c2435d61-05c2-492e-be58-c88a81822e00/w=800,h=800,fit=crop",
+    "section": "Section 8: Customer Stories",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Gần một tháng, tôi ăn không ngon, ngủ cũng không yên.",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c2435d61-05c2-492e-be58-c88a81822e00/w=800,h=800,fit=crop",
+    "section": "Section 8: Customer Stories",
+    "existingAsset": "UNRESOLVED",
+    "usage": "perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c2435d61-05c2-492e-be58-c88a81822e00/w=800,h=800,fit=crop",
+    "section": "Section 8: Customer Stories",
+    "existingAsset": "UNRESOLVED",
+    "usage": "Content image",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/8d532359-b30c-430c-907e-a6b16e54b400/w=1440,h=643",
+    "section": "Section 9: Consultation & Booking",
+    "existingAsset": "UNRESOLVED",
+    "usage": "bg attachment-original size-original perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/8d532359-b30c-430c-907e-a6b16e54b400/w=1440,h=643",
+    "section": "Section 9: Consultation & Booking",
+    "existingAsset": "UNRESOLVED",
+    "usage": "bg attachment-original size-original",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/0b7df4e6-60fa-42b4-f53b-0adb11d32900/w=566,h=510",
+    "section": "Section 9: Consultation & Booking",
+    "existingAsset": "UNRESOLVED",
+    "usage": "attachment-large size-large perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/0b7df4e6-60fa-42b4-f53b-0adb11d32900/w=566,h=510",
+    "section": "Section 9: Consultation & Booking",
+    "existingAsset": "UNRESOLVED",
+    "usage": "attachment-large size-large",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/0b7df4e6-60fa-42b4-f53b-0adb11d32900/w=566,h=510",
+    "section": "Section 9: Consultation & Booking",
+    "existingAsset": "UNRESOLVED",
+    "usage": "attachment-large size-large perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/0b7df4e6-60fa-42b4-f53b-0adb11d32900/w=566,h=510",
+    "section": "Section 9: Consultation & Booking",
+    "existingAsset": "UNRESOLVED",
+    "usage": "attachment-large size-large",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/4c785467-130c-4cdf-cf32-c3e216d74200/w=1709,h=795",
+    "section": "Section 11: Banner CTA",
+    "existingAsset": "UNRESOLVED",
+    "usage": "bg attachment-original size-original perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/4c785467-130c-4cdf-cf32-c3e216d74200/w=1709,h=795",
+    "section": "Section 11: Banner CTA",
+    "existingAsset": "UNRESOLVED",
+    "usage": "bg attachment-original size-original",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/2ffefde0-bef2-422f-4060-a4654ffb5b00/w=545,h=963",
+    "section": "Section 11: Banner CTA",
+    "existingAsset": "UNRESOLVED",
+    "usage": "bg attachment-original size-original perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/2ffefde0-bef2-422f-4060-a4654ffb5b00/w=545,h=963",
+    "section": "Section 11: Banner CTA",
+    "existingAsset": "UNRESOLVED",
+    "usage": "bg attachment-original size-original",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://www.doctorcheck.vn/wp-content/uploads/2024/08/Group-55.svg",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/logo.webp",
+    "usage": "Footer brand logo",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://www.doctorcheck.vn/wp-content/uploads/2024/08/Group-55.svg",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "/sites/doctorcheck-vn/root/images/logo.webp",
+    "usage": "Footer brand logo",
+    "confidence": "exact"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/f3f3b7f7-c4ce-43c8-af24-519104db2300/w=138,h=138,fit=crop",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/f3f3b7f7-c4ce-43c8-af24-519104db2300/w=138,h=138,fit=crop",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/ace98b0d-bbca-4754-79ee-051f8d1eed00/w=130,h=129",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/ace98b0d-bbca-4754-79ee-051f8d1eed00/w=130,h=129",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/2b7b8fbd-e9bc-4bc2-f945-1f67511e3300/w=240,h=80",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/2b7b8fbd-e9bc-4bc2-f945-1f67511e3300/w=240,h=80",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/3ed80f1d-e6dd-4655-a6a4-4cc2b94c7e00/w=240,h=80",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/3ed80f1d-e6dd-4655-a6a4-4cc2b94c7e00/w=240,h=80",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/d96f4486-b723-40f6-c019-4acd309da200/w=616,h=293",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/d96f4486-b723-40f6-c019-4acd309da200/w=616,h=293",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/ab016d59-2112-4dd3-aed0-fe9713f29500/w=271,h=271,fit=crop",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/ab016d59-2112-4dd3-aed0-fe9713f29500/w=271,h=271,fit=crop",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/32ae2686-3420-411b-6872-8a8ab6295300/w=1250,h=1250,fit=crop",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/32ae2686-3420-411b-6872-8a8ab6295300/w=1250,h=1250,fit=crop",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/d96f4486-b723-40f6-c019-4acd309da200/w=616,h=293",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/d96f4486-b723-40f6-c019-4acd309da200/w=616,h=293",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/f3f3b7f7-c4ce-43c8-af24-519104db2300/w=138,h=138,fit=crop",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/f3f3b7f7-c4ce-43c8-af24-519104db2300/w=138,h=138,fit=crop",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/ab016d59-2112-4dd3-aed0-fe9713f29500/w=271,h=271,fit=crop",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/ab016d59-2112-4dd3-aed0-fe9713f29500/w=271,h=271,fit=crop",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/32ae2686-3420-411b-6872-8a8ab6295300/w=1250,h=1250,fit=crop",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original perfmatters-lazy",
+    "confidence": "unresolved"
+  },
+  {
+    "originalReference": "https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/32ae2686-3420-411b-6872-8a8ab6295300/w=1250,h=1250,fit=crop",
+    "section": "Section 12: Footer Main",
+    "existingAsset": "UNRESOLVED (External/Third-party badge)",
+    "usage": "attachment-original size-original",
+    "confidence": "unresolved"
+  }
+]
