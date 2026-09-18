@@ -2,6 +2,13 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 @import "../styles/flatsome-core.css";
+@import "../styles/pricing.css";
+@import "../styles/clinical-hub.css";
+@import "../styles/package-comparison.css";
+@import "../styles/clinical-protocols.css";
+@import "../styles/clinical-guide.css";
+@import "../styles/utility-legal.css";
+@import "../styles/knowledge-hub.css";
 
 @custom-variant dark (&:is(.dark *));
 

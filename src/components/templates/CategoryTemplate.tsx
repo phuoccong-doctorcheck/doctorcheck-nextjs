@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { TopBar } from '@/components/sites/doctorcheck-vn/root/TopBar';
 import { Header } from '@/components/sites/doctorcheck-vn/root/Header';
 import { Footer } from '@/components/sites/doctorcheck-vn/root/Footer';
 import { FloatingWidgets } from '@/components/sites/doctorcheck-vn/root/FloatingWidgets';
@@ -22,7 +21,7 @@ export function CategoryTemplate({ category }: CategoryTemplateProps) {
   const [currentPage, setCurrentPage] = useState(1);
 
   // Retrieve articles with full metadata (featuredImageUrl, excerpt, etc.)
-  const articles = getArticlesByCategory(category.id);
+  const articles = getArticlesByCategory(Number(category.id));
   const totalPages = Math.ceil(articles.length / PAGE_SIZE);
 
   const paginatedArticles = articles.slice(
@@ -32,7 +31,6 @@ export function CategoryTemplate({ category }: CategoryTemplateProps) {
 
   return (
     <div className="min-h-screen flex flex-col bg-white selection:bg-[#FFB500] selection:text-[#00475B]">
-      <TopBar />
       <Header />
 
       <main className="flex-1">

@@ -1,6 +1,7 @@
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import { resolveEndoscopySubpath } from '@/lib/routing/resolve-content';
+import { redirectService } from '@/services/redirect.service';
 import { staticPagesData } from '@/lib/routing/pages-data';
 import { PageTemplate } from '@/components/templates/PageTemplate';
 import { generateHubBreadcrumbJsonLd } from '@/lib/seo/structured-data';
@@ -21,30 +22,39 @@ export async function generateMetadata({ params }: SubpathPageProps): Promise<Me
   const { subpath } = await params;
   const content = resolveEndoscopySubpath(subpath);
 
-  if (content.type === 'notFound') {
+  if (content.type !== 'notFound') {
+    const title = `${content.title} | Trung Tâm Nội Soi Tiêu Hóa Doctor Check`;
+    const description = `${content.title} - Chuyên khoa Tiêu Hóa & Nội Soi Dạ Dày, Đại Tràng Tiền Mê Chuẩn Quốc Tế tại Doctor Check.`;
+
     return {
-      title: 'Không Tìm Thấy Trang - Doctor Check',
+      title,
+      description,
+      alternates: {
+        canonical: content.canonicalUrl,
+      },
+      openGraph: {
+        title,
+        description,
+        url: content.canonicalUrl,
+        siteName: 'Doctor Check',
+        locale: 'vi_VN',
+        type: 'website',
+      },
+    };
+  }
+
+  const fullPath = `/trung-tam-noi-soi-tieu-hoa-doctor-check/${subpath.join('/')}/`;
+  const dynamicRedirect = await redirectService.resolveDynamicRedirect(fullPath);
+  if (dynamicRedirect && dynamicRedirect.isActive) {
+    return {
+      title: 'Đang chuyển hướng - Doctor Check',
       robots: { index: false, follow: false },
     };
   }
 
-  const title = `${content.title} | Trung Tâm Nội Soi Tiêu Hóa Doctor Check`;
-  const description = `${content.title} - Chuyên khoa Tiêu Hóa & Nội Soi Dạ Dày, Đại Tràng Tiền Mê Chuẩn Quốc Tế tại Doctor Check.`;
-
   return {
-    title,
-    description,
-    alternates: {
-      canonical: content.canonicalUrl,
-    },
-    openGraph: {
-      title,
-      description,
-      url: content.canonicalUrl,
-      siteName: 'Doctor Check',
-      locale: 'vi_VN',
-      type: 'website',
-    },
+    title: 'Không Tìm Thấy Trang - Doctor Check',
+    robots: { index: false, follow: false },
   };
 }
 
@@ -53,6 +63,11 @@ export default async function EndoscopySubpathPage({ params }: SubpathPageProps)
   const content = resolveEndoscopySubpath(subpath);
 
   if (content.type === 'notFound' || !content.data?.page) {
+    const fullPath = `/trung-tam-noi-soi-tieu-hoa-doctor-check/${subpath.join('/')}/`;
+    const dynamicRedirect = await redirectService.resolveDynamicRedirect(fullPath);
+    if (dynamicRedirect && dynamicRedirect.isActive) {
+      redirect(dynamicRedirect.targetPath);
+    }
     notFound();
   }
 

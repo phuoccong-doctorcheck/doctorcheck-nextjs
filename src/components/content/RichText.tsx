@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect, useRef } from 'react';
 
 interface RichTextProps {
   contentHtml: string;
@@ -6,6 +8,75 @@ interface RichTextProps {
 }
 
 export function RichText({ contentHtml, className = '' }: RichTextProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    // 1. Interactive Tabs Handler
+    const handleTabClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const tabLink = target.closest('.tabbed-content .nav li.tab a') as HTMLAnchorElement | null;
+      if (!tabLink) return;
+
+      const href = tabLink.getAttribute('href');
+      if (!href || !href.startsWith('#')) return;
+
+      e.preventDefault();
+      const tabLi = tabLink.closest('li.tab') as HTMLElement;
+      const nav = tabLink.closest('.nav') as HTMLElement;
+      const tabbedContent = tabLink.closest('.tabbed-content') as HTMLElement;
+
+      if (nav && tabLi) {
+        nav.querySelectorAll('li.tab').forEach((li) => li.classList.remove('active'));
+        tabLi.classList.add('active');
+      }
+
+      if (tabbedContent) {
+        const targetId = href.slice(1);
+        const panels = tabbedContent.querySelectorAll(':scope > .tab-panels > .panel, :scope .tab-panels > .panel');
+        panels.forEach((p) => p.classList.remove('active'));
+
+        const targetPanel = tabbedContent.querySelector(`#${targetId}, [id="${targetId}"]`);
+        if (targetPanel) {
+          targetPanel.classList.add('active');
+        }
+      }
+    };
+
+    // 2. Interactive Accordion Handler
+    const handleAccordionClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const accTitle = target.closest('.accordion-title') as HTMLElement | null;
+      if (!accTitle) return;
+
+      e.preventDefault();
+      const accItem = accTitle.closest('.accordion-item') as HTMLElement | null;
+      if (!accItem) return;
+
+      const isActive = accItem.classList.contains('active');
+      const accordion = accItem.closest('.accordion') as HTMLElement | null;
+
+      // Close siblings if in standard single-expand accordion
+      if (accordion) {
+        accordion.querySelectorAll('.accordion-item').forEach((item) => item.classList.remove('active'));
+      }
+
+      if (!isActive) {
+        accItem.classList.add('active');
+      }
+    };
+
+    container.addEventListener('click', handleTabClick);
+    container.addEventListener('click', handleAccordionClick);
+
+    return () => {
+      container.removeEventListener('click', handleTabClick);
+      container.removeEventListener('click', handleAccordionClick);
+    };
+  }, [contentHtml]);
+
   if (!contentHtml) return null;
 
   // Detect whether this content is structured using Flatsome / UX Builder markup
@@ -13,11 +84,14 @@ export function RichText({ contentHtml, className = '' }: RichTextProps) {
     contentHtml.includes('class="section') ||
     contentHtml.includes('class="row') ||
     contentHtml.includes('class="banner') ||
-    contentHtml.includes('class="col ');
+    contentHtml.includes('class="col ') ||
+    contentHtml.includes('class="dc-med') ||
+    contentHtml.includes('class="dc-kkg');
 
   if (isUxBuilder) {
     return (
       <div
+        ref={containerRef}
         className={`flatsome-content ${className}`}
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
@@ -26,6 +100,7 @@ export function RichText({ contentHtml, className = '' }: RichTextProps) {
 
   return (
     <div
+      ref={containerRef}
       className={`prose prose-slate max-w-none
         prose-headings:text-[#005570] prose-headings:font-bold
         prose-h1:text-2xl sm:prose-h1:text-3xl prose-h1:mb-6
@@ -42,3 +117,4 @@ export function RichText({ contentHtml, className = '' }: RichTextProps) {
     />
   );
 }
+

@@ -1,0 +1,556 @@
+/* ================================================================
+   HEALTH CHECKUP & PACKAGE COMPARISON STYLES (FAMILY 3)
+   DoctorCheck.vn Forensic Reconstruction
+   Scoped under .package-family-page to prevent cross-template leakage
+   ================================================================ */
+
+.package-family-page {
+  --dc-main: #005570;
+  --dc-primary: #005570;
+  --dc-navy: #005570;
+  --dc-secondary: #FFB500;
+  --dc-gold: #FFB500;
+  --dc-sky: #87E3DB;
+  --dc-tint: #EEF7FA;
+  --dc-cream: #FDFDF6;
+  --dc-price: #CD0000;
+  --dc-warning: #C00000;
+  --dc-danger-bg: #FFE8E8;
+  --container-width: 1250px;
+  background-color: #FFFFFF;
+  color: #2A2F38;
+  font-family: 'SVN-Sofia Pro', 'SVN-SofiaPro', system-ui, -apple-system, sans-serif;
+  overflow-x: clip;
+}
+
+/* ================================================================
+   1. HERO BANNER & AUDIENCE HEADERS (section-banner-v3, male, female)
+   ================================================================ */
+
+.package-family-page .section-banner-v3 {
+  position: relative;
+  padding: 2.5rem 0 3.5rem 0;
+  background-color: #F8FBFC;
+}
+
+.package-family-page .section-banner-v3.male {
+  background: linear-gradient(180deg, #EEF7FA 0%, #FFFFFF 100%);
+}
+
+.package-family-page .section-banner-v3.female {
+  background: linear-gradient(180deg, #FFF5F7 0%, #FFFFFF 100%);
+}
+
+.package-family-page .title-left {
+  width: 100%;
+  max-width: 100%;
+}
+
+.package-family-page .title-bold {
+  font-weight: 900 !important;
+  font-size: 36px !important;
+  line-height: 44px !important;
+  color: #005570;
+  margin-bottom: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .package-family-page .title-bold {
+    font-size: 44px !important;
+    line-height: 52px !important;
+  }
+}
+
+.package-family-page .bg-text-gradient {
+  background: linear-gradient(135deg, #005570 0%, #0088B0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.package-family-page .bg-text-gradient.red {
+  background: linear-gradient(135deg, #CD0000 0%, #E63946 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.package-family-page .text-has-bg {
+  display: inline-block;
+  background-color: #005570;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  margin-bottom: 0.75rem;
+}
+
+/* ================================================================
+   2. DID YOU KNOW / CONTEXT STATS (section-dyk)
+   ================================================================ */
+
+.package-family-page .section-dyk {
+  background-color: #FEFFE9;
+  border-top: 1px solid #FFE699;
+  border-bottom: 1px solid #FFE699;
+  padding: 2.5rem 0;
+}
+
+.package-family-page .section-dyk .col-inner {
+  background: #FFFFFF;
+  border-radius: 14px;
+  padding: 1.5rem;
+  border: 1px solid #FFE699;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* ================================================================
+   3. RISK TIMELINE & AGE GROUPS (section-risk, timeline)
+   ================================================================ */
+
+.package-family-page .section-risk {
+  padding: 3.5rem 0;
+  background-color: #FFFFFF;
+}
+
+.package-family-page .timeline-container {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.package-family-page .timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.package-family-page .timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  background: #F8FBFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+}
+
+.package-family-page .age-badge {
+  background-color: #005570;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border-radius: 9999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.package-family-page .symptoms-content {
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ================================================================
+   4. TABBED PACKAGE SYSTEM (section-product-pricing, dc-tab-pricing)
+   ================================================================ */
+
+.package-family-page .tabbed-content {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.package-family-page .tabbed-content .nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  gap: 0.75rem;
+}
+
+.package-family-page .tabbed-content .nav li.tab {
+  margin: 0;
+}
+
+.package-family-page .tabbed-content .nav li.tab a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.75rem;
+  border-radius: 12px;
+  background-color: #EEF7FA;
+  color: #005570;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1.5px solid #DDE4EA;
+  user-select: none;
+}
+
+.package-family-page .tabbed-content .nav li.tab a h3,
+.package-family-page .tabbed-content .nav li.tab a span {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+}
+
+.package-family-page .tabbed-content .nav li.tab.active a,
+.package-family-page .tabbed-content .nav li.tab a:hover {
+  background-color: #005570;
+  color: #FFFFFF;
+  border-color: #005570;
+  box-shadow: 0 4px 14px rgba(0, 85, 112, 0.25);
+}
+
+.package-family-page .tabbed-content .nav li.tab.active a h3,
+.package-family-page .tabbed-content .nav li.tab.active a span {
+  color: #FFFFFF;
+}
+
+/* Tab Panels Handling */
+.package-family-page .tab-panels {
+  position: relative;
+  width: 100%;
+}
+
+.package-family-page .tab-panels > .panel {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.package-family-page .tab-panels > .panel.active,
+.package-family-page .tab-panels > .panel:first-child {
+  display: block;
+  opacity: 1;
+}
+
+/* When a panel has active class, hide default first-child if another is active */
+.package-family-page .tab-panels:has(> .panel.active) > .panel:not(.active) {
+  display: none;
+  opacity: 0;
+}
+
+/* ================================================================
+   5. PACKAGE CARDS & BENEFIT CARDS (package-ldp, benefit-card)
+   ================================================================ */
+
+.package-family-page .benefit-card,
+.package-family-page .package-ldp,
+.package-family-page .kdn_plan_card {
+  background: #FFFFFF;
+  border: 1.5px solid #DDE4EA;
+  border-radius: 16px;
+  padding: 1.75rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  position: relative;
+  height: 100%;
+}
+
+.package-family-page .benefit-card:hover,
+.package-family-page .package-ldp:hover,
+.package-family-page .kdn_plan_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px -4px rgba(0, 85, 112, 0.15);
+  border-color: #005570;
+}
+
+.package-family-page .dc-package-title,
+.package-family-page .package-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #005570;
+  margin-bottom: 0.5rem;
+}
+
+.package-family-page .dc-package-pricing,
+.package-family-page .package-price,
+.package-family-page .service-price,
+.package-family-page .dc-medpro-price {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #CD0000;
+  margin: 0.5rem 0 1rem 0;
+  display: block;
+}
+
+.package-family-page .kdn_badge_popular,
+.package-family-page .kdn_badge_vip,
+.package-family-page .img-badge {
+  position: absolute;
+  top: -12px;
+  right: 16px;
+  background-color: #FFB500;
+  color: #00475B;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ================================================================
+   6. COMPARISON MATRIX & SERVICE TABLES (PAGE-LEVEL OVERFLOW = 0)
+   ================================================================ */
+
+.package-family-page .comparison-table,
+.package-family-page .price-table,
+.package-family-page .kkg-scroll,
+.package-family-page .table-responsive {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.5rem 0 2.5rem 0;
+  border-radius: 14px;
+  background: #FFFFFF;
+  border: 1px solid #DDE4EA;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.package-family-page .pricing-table,
+.package-family-page table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+}
+
+.package-family-page .pricing-table .header-table,
+.package-family-page table thead tr {
+  background-color: #005570;
+  color: #FFFFFF;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.package-family-page .pricing-table .header-table .pricing-cell,
+.package-family-page table thead th {
+  padding: 14px 16px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #FFFFFF;
+  text-align: center;
+  border: 1px solid #00475B;
+}
+
+.package-family-page .pricing-table .header-table .pricing-cell:first-child,
+.package-family-page table thead th:first-child {
+  text-align: left;
+}
+
+.package-family-page .pricing-row,
+.package-family-page table tbody tr {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #EDF2F7;
+  transition: background-color 0.15s ease;
+}
+
+.package-family-page table tbody tr {
+  display: table-row;
+}
+
+.package-family-page .pricing-row:nth-child(even),
+.package-family-page table tbody tr:nth-child(even) {
+  background-color: #F8FBFC;
+}
+
+.package-family-page .pricing-row:hover,
+.package-family-page table tbody tr:hover {
+  background-color: #EEF7FA;
+}
+
+.package-family-page .pricing-cell,
+.package-family-page table tbody td {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 0.875rem;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.45;
+  border-right: 1px solid #F1F5F9;
+}
+
+.package-family-page table tbody td {
+  display: table-cell;
+  border: 1px solid #E2E8F0;
+  vertical-align: middle;
+}
+
+.package-family-page .pricing-cell:first-child,
+.package-family-page table tbody td:first-child {
+  flex: 1.4;
+  justify-content: flex-start;
+  text-align: left;
+  font-weight: 600;
+  color: #005570;
+  background-color: rgba(240, 247, 249, 0.4);
+}
+
+.package-family-page .pricing-cell img[src*="check"],
+.package-family-page table img[src*="check"] {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ================================================================
+   7. TRUST, CUSTOMER REVIEWS & 6 REASONS
+   ================================================================ */
+
+.package-family-page .dc-review-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.package-family-page .section-customer-ns {
+  background-color: #00475B;
+  color: #FFFFFF;
+  padding: 3.5rem 0;
+}
+
+.package-family-page .section-customer-ns h2,
+.package-family-page .section-customer-ns h3 {
+  color: #FFFFFF !important;
+}
+
+/* ================================================================
+   8. ACCORDIONS & FAQS (accordion-benifit, accordion)
+   ================================================================ */
+
+.package-family-page .accordion {
+  width: 100%;
+}
+
+.package-family-page .accordion-item {
+  border-bottom: 1px solid #E2E8F0;
+  padding: 0.75rem 0;
+}
+
+.package-family-page .accordion-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #005570;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.package-family-page .accordion-inner {
+  padding: 0.75rem 0;
+  color: #4A5568;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ================================================================
+   9. CTA & BOOKING FORM (dc_form, form-v3, btn-booking)
+   ================================================================ */
+
+.package-family-page .dc_form,
+.package-family-page .form-v3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 700px;
+  margin: 1.5rem auto 0 auto;
+}
+
+.package-family-page .dc_input {
+  flex: 1 1 260px;
+}
+
+.package-family-page .dc_input input,
+.package-family-page .dc_input select {
+  width: 100%;
+  height: 48px;
+  padding: 0 1rem;
+  border: 1.5px solid #DDE4EA;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #2A2F38;
+  background-color: #FFFFFF;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.package-family-page .dc_input input:focus,
+.package-family-page .dc_input select:focus {
+  border-color: #005570;
+  box-shadow: 0 0 0 3px rgba(0, 85, 112, 0.15);
+}
+
+.package-family-page .btn-booking,
+.package-family-page .dc_submit input[type="submit"],
+.package-family-page a.button.primary,
+.package-family-page button.button.primary {
+  background: linear-gradient(135deg, #FFB500 0%, #E6A300 100%);
+  color: #00475B !important;
+  font-weight: 800;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.75rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(255, 181, 0, 0.35);
+  text-decoration: none;
+}
+
+.package-family-page .btn-booking:hover,
+.package-family-page .dc_submit input[type="submit"]:hover,
+.package-family-page a.button.primary:hover,
+.package-family-page button.button.primary:hover {
+  background: linear-gradient(135deg, #FFC024 0%, #F5AB00 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(255, 181, 0, 0.45);
+}
+
+/* ================================================================
+   10. RESPONSIVE CONSTRAINTS (390px Mobile & Tablet Safety)
+   ================================================================ */
+
+@media screen and (max-width: 768px) {
+  .package-family-page .tabbed-content .nav li.tab a {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .package-family-page .title-bold {
+    font-size: 26px !important;
+    line-height: 34px !important;
+  }
+  
+  .package-family-page .dc-package-pricing,
+  .package-family-page .package-price,
+  .package-family-page .service-price {
+    font-size: 1.4rem;
+  }
+}

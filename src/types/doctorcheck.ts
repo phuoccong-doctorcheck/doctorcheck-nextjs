@@ -112,11 +112,15 @@ export interface PageContent {
 }
 
 export interface CategoryItem {
-  id: number;
+  id: number | string;
   name: string;
   slug: string;
   count: number;
+  totalArticles?: number;
   description?: string;
+  seoTitle?: string;
+  seoDescription?: string;
+  sortOrder?: number;
   dataClassification: 'VERIFIED_PRODUCTION';
 }
 

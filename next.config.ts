@@ -23,6 +23,66 @@ const nextConfig: NextConfig = {
     ],
   },
   trailingSlash: true,
+  async headers() {
+    const isProd = process.env.NODE_ENV === 'production';
+
+    const scriptSrc = isProd
+      ? "script-src 'self' 'unsafe-inline'"
+      : "script-src 'self' 'unsafe-inline' 'unsafe-eval'";
+
+    const cspDirectives = [
+      "default-src 'self'",
+      scriptSrc,
+      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+      "font-src 'self' https://fonts.gstatic.com data:",
+      "img-src 'self' data: blob: https://imagedelivery.net https://doctorcheck.vn https://www.doctorcheck.vn https://img.youtube.com https://*.r2.cloudflarestorage.com https://*.amazonaws.com",
+      "media-src 'self' data: blob: https://imagedelivery.net https://doctorcheck.vn",
+      "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com",
+      "connect-src 'self' https://imagedelivery.net https://*.r2.cloudflarestorage.com https://*.amazonaws.com",
+      "base-uri 'self'",
+      "form-action 'self'",
+      "frame-ancestors 'self'",
+    ];
+
+    const cspHeaderValue = cspDirectives.join('; ');
+
+    const standardHeaders = [
+      {
+        key: 'Content-Security-Policy',
+        value: cspHeaderValue,
+      },
+      {
+        key: 'X-Content-Type-Options',
+        value: 'nosniff',
+      },
+      {
+        key: 'X-Frame-Options',
+        value: 'SAMEORIGIN',
+      },
+      {
+        key: 'Referrer-Policy',
+        value: 'strict-origin-when-cross-origin',
+      },
+      {
+        key: 'Permissions-Policy',
+        value: 'camera=(), microphone=(), geolocation=()',
+      },
+    ];
+
+    if (isProd) {
+      standardHeaders.push({
+        key: 'Strict-Transport-Security',
+        value: 'max-age=31536000; includeSubDomains; preload',
+      });
+    }
+
+    return [
+      {
+        source: '/:path*',
+        headers: standardHeaders,
+      },
+    ];
+  },
   async redirects() {
     return [
       {

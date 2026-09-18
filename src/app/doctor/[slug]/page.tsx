@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { doctorsData } from '@/lib/data/doctors';
+import { doctorRepository } from '@/repositories';
 import { DoctorTemplate } from '@/components/templates/DoctorTemplate';
 import { generateDoctorJsonLd } from '@/lib/seo/structured-data';
 
@@ -9,14 +9,15 @@ interface DoctorPageProps {
 }
 
 export async function generateStaticParams() {
-  return doctorsData.map((doc) => ({
+  const doctors = await doctorRepository.getAll();
+  return doctors.map((doc) => ({
     slug: doc.id,
   }));
 }
 
 export async function generateMetadata({ params }: DoctorPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const doctor = doctorsData.find((d) => d.id === slug);
+  const doctor = await doctorRepository.getBySlug(slug);
 
   if (!doctor) {
     return {
@@ -49,7 +50,7 @@ export async function generateMetadata({ params }: DoctorPageProps): Promise<Met
 
 export default async function DoctorProfilePage({ params }: DoctorPageProps) {
   const { slug } = await params;
-  const doctor = doctorsData.find((d) => d.id === slug);
+  const doctor = await doctorRepository.getBySlug(slug);
 
   if (!doctor) {
     notFound();

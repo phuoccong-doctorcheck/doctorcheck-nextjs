@@ -1,0 +1,497 @@
+[
+  {
+    "slug": "thuoc-va-vat-tu-y-te",
+    "title": "Thuốc và Vật tư y tế",
+    "path": "/thuoc-va-vat-tu-y-te/",
+    "isNested": false,
+    "htmlLength": 57811,
+    "status": "REMAINING",
+    "family": "Clinical Quality, Trust & Protocols"
+  },
+  {
+    "slug": "doi-ngu-bac-si-doctorcheck",
+    "title": "Đội Ngũ Bác Sĩ",
+    "path": "/doi-ngu-bac-si-doctorcheck/",
+    "isNested": false,
+    "htmlLength": 7691,
+    "status": "REMAINING",
+    "family": "Clinical Quality, Trust & Protocols"
+  },
+  {
+    "slug": "bang-gia-dich-vu",
+    "title": "Bảng Giá Dịch Vụ",
+    "path": "/bang-gia-dich-vu/",
+    "isNested": false,
+    "htmlLength": 99077,
+    "status": "LOCKED — PRICING",
+    "family": "Pricing Matrix / Table (Locked)"
+  },
+  {
+    "slug": "ve-doctor-check",
+    "title": "Về Doctor Check",
+    "path": "/ve-doctor-check/",
+    "isNested": false,
+    "htmlLength": 77169,
+    "status": "LOCKED — ABOUT",
+    "family": "About Us (Locked)"
+  },
+  {
+    "slug": "noi-soi-dai-trang",
+    "title": "Nội soi đại tràng",
+    "path": "/noi-soi-dai-trang/",
+    "isNested": false,
+    "htmlLength": 48708,
+    "status": "REMAINING",
+    "family": "Clinical Endoscopy & Specialty Hub"
+  },
+  {
+    "slug": "noi-soi-da-day",
+    "title": "Nội soi dạ dày",
+    "path": "/noi-soi-da-day/",
+    "isNested": false,
+    "htmlLength": 50587,
+    "status": "REMAINING",
+    "family": "Clinical Endoscopy & Specialty Hub"
+  },
+  {
+    "slug": "kham-suc-khoe-doanh-nghiep",
+    "title": "Khám sức khỏe doanh nghiệp",
+    "path": "/kham-suc-khoe-doanh-nghiep/",
+    "isNested": false,
+    "htmlLength": 43418,
+    "status": "REMAINING",
+    "family": "Health Checkup & Package Comparison"
+  },
+  {
+    "slug": "bao-chi-dua-tin",
+    "title": "Báo chí đưa tin",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/bao-chi-dua-tin/",
+    "isNested": "bao-chi-dua-tin",
+    "htmlLength": 111976,
+    "status": "REMAINING",
+    "family": "Clinical Quality, Trust & Protocols"
+  },
+  {
+    "slug": "kien-thuc-ung-thu-da-day",
+    "title": "Kiến thức ung thư dạ dày",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/tam-soat-ung-thu-da-day-tai-doctor-check/kien-thuc-ung-thu-da-day/",
+    "isNested": "tam-soat-ung-thu-da-day-tai-doctor-check/kien-thuc-ung-thu-da-day",
+    "htmlLength": 11895,
+    "status": "REMAINING",
+    "family": "Cancer Screening Knowledge Hub"
+  },
+  {
+    "slug": "kien-thuc-ung-thu-dai-trang",
+    "title": "Kiến thức ung thư đại tràng",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/tam-soat-ung-thu-dai-trang-tai-doctor-check/kien-thuc-ung-thu-dai-trang/",
+    "isNested": "tam-soat-ung-thu-dai-trang-tai-doctor-check/kien-thuc-ung-thu-dai-trang",
+    "htmlLength": 13959,
+    "status": "REMAINING",
+    "family": "Cancer Screening Knowledge Hub"
+  },
+  {
+    "slug": "benh-ly-dai-trang",
+    "title": "Bệnh lý đại tràng",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/chuyen-khoa-dai-trang/benh-ly-dai-trang/",
+    "isNested": "chuyen-khoa-dai-trang/benh-ly-dai-trang",
+    "htmlLength": 48132,
+    "status": "REMAINING",
+    "family": "Clinical Symptom & Pathology Guide"
+  },
+  {
+    "slug": "trieu-chung-dai-trang",
+    "title": "Triệu chứng đại tràng",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/chuyen-khoa-dai-trang/trieu-chung-dai-trang/",
+    "isNested": "chuyen-khoa-dai-trang/trieu-chung-dai-trang",
+    "htmlLength": 45113,
+    "status": "REMAINING",
+    "family": "Clinical Symptom & Pathology Guide"
+  },
+  {
+    "slug": "trieu-chung-da-day",
+    "title": "Triệu chứng dạ dày",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/chuyen-khoa-da-day/trieu-chung-da-day/",
+    "isNested": "chuyen-khoa-da-day/trieu-chung-da-day",
+    "htmlLength": 45069,
+    "status": "REMAINING",
+    "family": "Clinical Symptom & Pathology Guide"
+  },
+  {
+    "slug": "bang-gia-2026",
+    "title": "Bảng giá 2026",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/bang-gia-2026/",
+    "isNested": "bang-gia-2026",
+    "htmlLength": 53776,
+    "status": "LOCKED — PRICING",
+    "family": "Pricing Matrix / Table (Locked)"
+  },
+  {
+    "slug": "benh-ly-da-day",
+    "title": "Bệnh lý dạ dày",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/chuyen-khoa-da-day/benh-ly-da-day/",
+    "isNested": "chuyen-khoa-da-day/benh-ly-da-day",
+    "htmlLength": 49410,
+    "status": "REMAINING",
+    "family": "Clinical Symptom & Pathology Guide"
+  },
+  {
+    "slug": "quyen-loi-bhyt-bhtn",
+    "title": "Quyền lợi BHYT &#038; BHTN",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/quyen-loi-bhyt-bhtn/",
+    "isNested": "quyen-loi-bhyt-bhtn",
+    "htmlLength": 46437,
+    "status": "REMAINING",
+    "family": "Clinical Quality, Trust & Protocols"
+  },
+  {
+    "slug": "noi-soi-dai-trang-chan-doan-benh-ly",
+    "title": "Nội soi đại tràng chẩn đoán bệnh lý",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/chuyen-khoa-dai-trang/noi-soi-dai-trang-chan-doan-benh-ly/",
+    "isNested": "chuyen-khoa-dai-trang/noi-soi-dai-trang-chan-doan-benh-ly",
+    "htmlLength": 124778,
+    "status": "REMAINING",
+    "family": "Clinical Endoscopy & Specialty Hub"
+  },
+  {
+    "slug": "noi-soi-da-day-chan-doan-benh-ly",
+    "title": "Nội soi dạ dày chẩn đoán bệnh lý",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/chuyen-khoa-da-day/noi-soi-da-day-chan-doan-benh-ly/",
+    "isNested": "chuyen-khoa-da-day/noi-soi-da-day-chan-doan-benh-ly",
+    "htmlLength": 123449,
+    "status": "REMAINING",
+    "family": "Clinical Endoscopy & Specialty Hub"
+  },
+  {
+    "slug": "quy-trinh-noi-soi-dai-trang",
+    "title": "Quy trình nội soi đại tràng",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/tam-soat-ung-thu-dai-trang-tai-doctor-check/quy-trinh-noi-soi-dai-trang/",
+    "isNested": "tam-soat-ung-thu-dai-trang-tai-doctor-check/quy-trinh-noi-soi-dai-trang",
+    "htmlLength": 26520,
+    "status": "REMAINING",
+    "family": "Clinical Quality, Trust & Protocols"
+  },
+  {
+    "slug": "quy-trinh-noi-soi-da-day",
+    "title": "Quy trình nội soi dạ dày",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/tam-soat-ung-thu-da-day-tai-doctor-check/quy-trinh-noi-soi-da-day/",
+    "isNested": "tam-soat-ung-thu-da-day-tai-doctor-check/quy-trinh-noi-soi-da-day",
+    "htmlLength": 32278,
+    "status": "REMAINING",
+    "family": "Clinical Quality, Trust & Protocols"
+  },
+  {
+    "slug": "tam-soat-ung-thu-dai-trang-tai-doctor-check",
+    "title": "Tầm soát ung thư đại tràng",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/tam-soat-ung-thu-dai-trang-tai-doctor-check/",
+    "isNested": "tam-soat-ung-thu-dai-trang-tai-doctor-check",
+    "htmlLength": 58955,
+    "status": "REMAINING",
+    "family": "Clinical Endoscopy & Specialty Hub"
+  },
+  {
+    "slug": "tam-soat-ung-thu-da-day-tai-doctor-check",
+    "title": "Tầm soát ung thư dạ dày",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/tam-soat-ung-thu-da-day-tai-doctor-check/",
+    "isNested": "tam-soat-ung-thu-da-day-tai-doctor-check",
+    "htmlLength": 55554,
+    "status": "REMAINING",
+    "family": "Clinical Endoscopy & Specialty Hub"
+  },
+  {
+    "slug": "chuyen-khoa-dai-trang",
+    "title": "Chuyên khoa đại tràng",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/chuyen-khoa-dai-trang/",
+    "isNested": "chuyen-khoa-dai-trang",
+    "htmlLength": 65143,
+    "status": "REMAINING",
+    "family": "Clinical Endoscopy & Specialty Hub"
+  },
+  {
+    "slug": "chuyen-khoa-da-day",
+    "title": "Chuyên khoa dạ dày",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/chuyen-khoa-da-day/",
+    "isNested": "chuyen-khoa-da-day",
+    "htmlLength": 67576,
+    "status": "REMAINING",
+    "family": "Clinical Endoscopy & Specialty Hub"
+  },
+  {
+    "slug": "10-tieu-chuan-vang",
+    "title": "10 tiêu chuẩn vàng",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/10-tieu-chuan-vang/",
+    "isNested": "10-tieu-chuan-vang",
+    "htmlLength": 165939,
+    "status": "REMAINING",
+    "family": "Clinical Quality, Trust & Protocols"
+  },
+  {
+    "slug": "goi-tam-soat-nu",
+    "title": "Gói tầm soát nữ",
+    "path": "/goi-tam-soat-nu/",
+    "isNested": false,
+    "htmlLength": 60153,
+    "status": "REMAINING",
+    "family": "Health Checkup & Package Comparison"
+  },
+  {
+    "slug": "so-sanh-3-goi-kham-nu",
+    "title": "So sánh 3 gói khám nữ",
+    "path": "/so-sanh-3-goi-kham-nu/",
+    "isNested": false,
+    "htmlLength": 37663,
+    "status": "REMAINING",
+    "family": "Health Checkup & Package Comparison"
+  },
+  {
+    "slug": "goi-tam-soat-nam",
+    "title": "Gói tầm soát nam",
+    "path": "/goi-tam-soat-nam/",
+    "isNested": false,
+    "htmlLength": 52887,
+    "status": "REMAINING",
+    "family": "Health Checkup & Package Comparison"
+  },
+  {
+    "slug": "so-sanh-3-goi-kham-nam",
+    "title": "So sánh 3 gói khám nam",
+    "path": "/so-sanh-3-goi-kham-nam/",
+    "isNested": false,
+    "htmlLength": 35817,
+    "status": "REMAINING",
+    "family": "Health Checkup & Package Comparison"
+  },
+  {
+    "slug": "buon-non-non-keo-dai",
+    "title": "Buồn nôn, nôn kéo dài",
+    "path": "/buon-non-non-keo-dai/",
+    "isNested": false,
+    "htmlLength": 49958,
+    "status": "REMAINING",
+    "family": "Clinical Symptom & Pathology Guide"
+  },
+  {
+    "slug": "dau-thuong-vi",
+    "title": "Đau thượng vị kéo dài",
+    "path": "/dau-thuong-vi/",
+    "isNested": false,
+    "htmlLength": 50405,
+    "status": "LOCKED — COLLISION ARTICLE",
+    "family": "Article Collision (Protected)"
+  },
+  {
+    "slug": "tieu-chay",
+    "title": "Tiêu chảy kéo dài",
+    "path": "/tieu-chay/",
+    "isNested": false,
+    "htmlLength": 49746,
+    "status": "LOCKED — COLLISION ARTICLE",
+    "family": "Article Collision (Protected)"
+  },
+  {
+    "slug": "di-ngoai-ra-mau",
+    "title": "Đi ngoài ra máu",
+    "path": "/di-ngoai-ra-mau/",
+    "isNested": false,
+    "htmlLength": 48042,
+    "status": "LOCKED — COLLISION ARTICLE",
+    "family": "Article Collision (Protected)"
+  },
+  {
+    "slug": "tao-bon",
+    "title": "Táo bón kéo dài",
+    "path": "/tao-bon/",
+    "isNested": false,
+    "htmlLength": 48517,
+    "status": "LOCKED — COLLISION ARTICLE",
+    "family": "Article Collision (Protected)"
+  },
+  {
+    "slug": "dieu-tri-tao-bon-di-cau-ra-mau",
+    "title": "Điều trị táo bón đi cầu ra máu",
+    "path": "/dieu-tri-tao-bon-di-cau-ra-mau/",
+    "isNested": false,
+    "htmlLength": 60099,
+    "status": "REMAINING",
+    "family": "Clinical Symptom & Pathology Guide"
+  },
+  {
+    "slug": "loi-ich-goi-song-tho",
+    "title": "Lợi ích gói sống thọ",
+    "path": "/loi-ich-goi-song-tho/",
+    "isNested": false,
+    "htmlLength": 17876,
+    "status": "REMAINING",
+    "family": "Health Checkup & Package Comparison"
+  },
+  {
+    "slug": "kham-tong-quat",
+    "title": "Khám tổng quát",
+    "path": "/kham-tong-quat/",
+    "isNested": false,
+    "htmlLength": 34717,
+    "status": "REMAINING",
+    "family": "Health Checkup & Package Comparison"
+  },
+  {
+    "slug": "trung-tam-noi-soi-tieu-hoa-doctor-check",
+    "title": "Trung Tâm Nội Soi Tiêu Hóa Doctor Check",
+    "path": "/trung-tam-noi-soi-tieu-hoa-doctor-check/",
+    "isNested": false,
+    "htmlLength": 151198,
+    "status": "REMAINING",
+    "family": "Clinical Endoscopy & Specialty Hub"
+  },
+  {
+    "slug": "bang-gia-noi-soi-da-day",
+    "title": "Bảng giá nội soi dạ dày",
+    "path": "/trung-tam-noi-soi-tieu-hoa/bang-gia-noi-soi-da-day/",
+    "isNested": "bang-gia-noi-soi-da-day",
+    "htmlLength": 51338,
+    "status": "REMAINING",
+    "family": "Health Checkup & Package Comparison"
+  },
+  {
+    "slug": "trung-tam-noi-soi-tieu-hoa",
+    "title": "Trung Tâm Nội Soi Tiêu Hóa DoctorCheck",
+    "path": "/trung-tam-noi-soi-tieu-hoa/",
+    "isNested": false,
+    "htmlLength": 99153,
+    "status": "REMAINING",
+    "family": "Clinical Endoscopy & Specialty Hub"
+  },
+  {
+    "slug": "bang-gia-kham-tong-quat-new",
+    "title": "Bảng giá khám tổng quát new",
+    "path": "/bang-gia-kham-tong-quat-new/",
+    "isNested": false,
+    "htmlLength": 139356,
+    "status": "REMAINING",
+    "family": "Health Checkup & Package Comparison"
+  },
+  {
+    "slug": "chinh-sach-quyen-rieng-tu",
+    "title": "Chính sách quyền riêng tư",
+    "path": "/chinh-sach-quyen-rieng-tu/",
+    "isNested": false,
+    "htmlLength": 4663,
+    "status": "REMAINING",
+    "family": "Utility, Contact & Legal Content"
+  },
+  {
+    "slug": "so-sanh-goi-kham-tong-quat-danh-cho-nu",
+    "title": "So sánh Gói Khám Tổng Quát dành cho Nữ",
+    "path": "/so-sanh-goi-kham-tong-quat-danh-cho-nu/",
+    "isNested": false,
+    "htmlLength": 116186,
+    "status": "REMAINING",
+    "family": "Health Checkup & Package Comparison"
+  },
+  {
+    "slug": "so-sanh-goi-kham-tong-quat-danh-cho-nam",
+    "title": "So sánh Gói Khám Tổng Quát dành cho Nam",
+    "path": "/so-sanh-goi-kham-tong-quat-danh-cho-nam/",
+    "isNested": false,
+    "htmlLength": 113610,
+    "status": "REMAINING",
+    "family": "Health Checkup & Package Comparison"
+  },
+  {
+    "slug": "bang-gia-kham-suc-khoe-tong-quat",
+    "title": "Bảng giá khám sức khỏe tổng quát",
+    "path": "/bang-gia-kham-suc-khoe-tong-quat/",
+    "isNested": false,
+    "htmlLength": 284173,
+    "status": "REMAINING",
+    "family": "Health Checkup & Package Comparison"
+  },
+  {
+    "slug": "bang-gia-kham-tong-quat",
+    "title": "Bảng giá khám tổng quát",
+    "path": "/bang-gia-kham-tong-quat/",
+    "isNested": false,
+    "htmlLength": 279960,
+    "status": "REMAINING",
+    "family": "Health Checkup & Package Comparison"
+  },
+  {
+    "slug": "cam-on",
+    "title": "Cảm ơn",
+    "path": "/cam-on/",
+    "isNested": false,
+    "htmlLength": 912,
+    "status": "REMAINING",
+    "family": "Utility, Contact & Legal Content"
+  },
+  {
+    "slug": "lien-he",
+    "title": "Liên hệ",
+    "path": "/lien-he/",
+    "isNested": false,
+    "htmlLength": 12168,
+    "status": "REMAINING",
+    "family": "Utility, Contact & Legal Content"
+  },
+  {
+    "slug": "bang-gia-dich-vu-tam-soat-benh-tai-doctor-check",
+    "title": "Bảng Giá Dịch Vụ Tầm Soát Bệnh Tại Doctor Check",
+    "path": "/bang-gia-dich-vu-tam-soat-benh-tai-doctor-check/",
+    "isNested": false,
+    "htmlLength": 212126,
+    "status": "LOCKED — PRICING",
+    "family": "Pricing Matrix / Table (Locked)"
+  },
+  {
+    "slug": "cac-yeu-to-cua-mot-dia-chi-tam-soat-benh-trong-mo",
+    "title": "Các yếu tố của một địa chỉ tầm soát bệnh trong mơ",
+    "path": "/cac-yeu-to-cua-mot-dia-chi-tam-soat-benh-trong-mo/",
+    "isNested": false,
+    "htmlLength": 40219,
+    "status": "REMAINING",
+    "family": "Health Checkup & Package Comparison"
+  },
+  {
+    "slug": "loi-ich-khi-kham-tong-quat-tai-doctor-check",
+    "title": "Lợi ích khi khám tổng quát tại Doctor Check",
+    "path": "/loi-ich-khi-kham-tong-quat-tai-doctor-check/",
+    "isNested": false,
+    "htmlLength": 44256,
+    "status": "REMAINING",
+    "family": "Health Checkup & Package Comparison"
+  },
+  {
+    "slug": "blog",
+    "title": "Blog",
+    "path": "/blog/",
+    "isNested": false,
+    "htmlLength": 0,
+    "status": "REMAINING",
+    "family": "Utility, Contact & Legal Content"
+  },
+  {
+    "slug": "ve-chung-toi",
+    "title": "Về chúng tôi",
+    "path": "/ve-chung-toi/",
+    "isNested": false,
+    "htmlLength": 77169,
+    "status": "LOCKED — ABOUT",
+    "family": "About Us (Locked)"
+  },
+  {
+    "slug": "dich-vu",
+    "title": "Dịch vụ",
+    "path": "/dich-vu/",
+    "isNested": false,
+    "htmlLength": 770,
+    "status": "REMAINING",
+    "family": "Utility, Contact & Legal Content"
+  },
+  {
+    "slug": "trang-chu",
+    "title": "Trang chủ",
+    "path": "/",
+    "isNested": false,
+    "htmlLength": 97999,
+    "status": "LOCKED — HOMEPAGE",
+    "family": "Homepage (Locked)"
+  }
+]

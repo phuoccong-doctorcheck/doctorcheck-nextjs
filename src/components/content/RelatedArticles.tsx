@@ -15,9 +15,9 @@ export function RelatedArticles({ articles, categoryName }: RelatedArticlesProps
   }
 
   return (
-    <section className="border-t border-gray-200/80 pt-10 mt-12">
+    <section className="border-t border-[#DDE4EA] pt-10 mt-12 font-sans">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-xl sm:text-2xl font-bold text-[#00475B]">
+        <h2 className="text-xl sm:text-2xl font-bold text-[#005570]">
           Bài Viết Cùng Chuyên Mục {categoryName ? `(${categoryName})` : ''}
         </h2>
       </div>
@@ -35,7 +35,7 @@ export function RelatedArticles({ articles, categoryName }: RelatedArticlesProps
           return (
             <article
               key={item.id}
-              className="group bg-white border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col"
+              className="group bg-white border border-[#DDE4EA] rounded-xl overflow-hidden hover:shadow-md transition-all duration-300 flex flex-col"
             >
               {item.featuredImageUrl && (
                 <div className="relative aspect-[16/10] overflow-hidden bg-gray-100">
@@ -44,7 +44,7 @@ export function RelatedArticles({ articles, categoryName }: RelatedArticlesProps
                     alt={item.featuredImageAlt || item.title}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-cover group-hover:scale-104 transition-transform duration-300"
                   />
                 </div>
               )}
@@ -52,26 +52,26 @@ export function RelatedArticles({ articles, categoryName }: RelatedArticlesProps
               <div className="p-5 flex-1 flex flex-col justify-between">
                 <div>
                   {formattedDate && (
-                    <div className="flex items-center gap-1.5 text-xs text-gray-400 mb-2">
-                      <Calendar className="w-3.5 h-3.5" />
+                    <div className="flex items-center gap-1.5 text-xs text-[#64748B] mb-2">
+                      <Calendar className="w-3.5 h-3.5 text-[#005570]" />
                       <span>{formattedDate}</span>
                     </div>
                   )}
 
-                  <h3 className="font-bold text-[#00475B] text-base group-hover:text-[#00A896] transition-colors line-clamp-2 leading-snug">
+                  <h3 className="font-bold text-[#005570] text-base group-hover:text-[#FFB500] transition-colors line-clamp-2 leading-snug">
                     <Link href={`/${item.slug}/`}>
                       {item.title}
                     </Link>
                   </h3>
 
                   {item.excerpt && (
-                    <p className="text-xs text-gray-600 line-clamp-2 mt-2 leading-relaxed">
+                    <p className="text-xs text-[#4D5565] line-clamp-2 mt-2 leading-relaxed">
                       {item.excerpt}
                     </p>
                   )}
                 </div>
 
-                <div className="mt-4 pt-3 border-t border-gray-50 flex items-center text-xs font-semibold text-[#00A896] group-hover:translate-x-1 transition-transform">
+                <div className="mt-4 pt-3 border-t border-[#EEF7FA] flex items-center text-xs font-semibold text-[#005570] group-hover:text-[#FFB500] group-hover:translate-x-1 transition-all">
                   <Link href={`/${item.slug}/`} className="flex items-center gap-1">
                     Đọc tiếp <ArrowRight className="w-3.5 h-3.5" />
                   </Link>

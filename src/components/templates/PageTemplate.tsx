@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { TopBar } from '@/components/sites/doctorcheck-vn/root/TopBar';
 import { Header } from '@/components/sites/doctorcheck-vn/root/Header';
 import { Footer } from '@/components/sites/doctorcheck-vn/root/Footer';
 import { FloatingWidgets } from '@/components/sites/doctorcheck-vn/root/FloatingWidgets';
@@ -14,6 +13,14 @@ import { RichText } from '@/components/content/RichText';
 import type { PageRouteMetadata } from '@/lib/routing/route-types';
 import type { PageContent } from '@/types/doctorcheck';
 import { AboutUsPage } from '@/components/sites/doctorcheck-vn/about/AboutUsPage';
+import { PricingTemplate } from '@/components/templates/PricingTemplate';
+import { ClinicalEndoscopyTemplate } from '@/components/templates/ClinicalEndoscopyTemplate';
+import { PackageComparisonTemplate } from '@/components/templates/PackageComparisonTemplate';
+import { ClinicalProtocolsTemplate } from '@/components/templates/ClinicalProtocolsTemplate';
+import { ClinicalGuideTemplate } from '@/components/templates/ClinicalGuideTemplate';
+import { UtilityLegalTemplate } from '@/components/templates/UtilityLegalTemplate';
+import { KnowledgeHubTemplate } from '@/components/templates/KnowledgeHubTemplate';
+import { classifyPageFamily, PageFamilyType } from '@/lib/routing/page-family-policy';
 import { ChevronRight, MapPin, Phone, Clock } from 'lucide-react';
 
 interface PageTemplateProps {
@@ -23,11 +30,10 @@ interface PageTemplateProps {
 
 export function PageTemplate({ page, pageContent }: PageTemplateProps) {
   const content = pageContent || getPageBySlug(page.slug);
+  const family = classifyPageFamily(page.slug);
   const isDoctorDirectory = page.slug === 'doi-ngu-bac-si-doctorcheck';
   const isContactPage = page.slug === 'lien-he';
-  const isAboutPage = page.slug === 've-chung-toi' || page.slug === 've-doctor-check';
 
-  // Check whether content is composed of UX Builder layout elements
   const isUxBuilder = Boolean(
     content?.contentHtml &&
       (content.contentHtml.includes('class="section') ||
@@ -35,10 +41,13 @@ export function PageTemplate({ page, pageContent }: PageTemplateProps) {
         content.contentHtml.includes('class="row'))
   );
 
-  if (isAboutPage) {
+  if (family === PageFamilyType.PRICING) {
+    return <PricingTemplate page={page} pageContent={content} />;
+  }
+
+  if (family === PageFamilyType.ABOUT) {
     return (
       <div className="min-h-screen flex flex-col bg-white selection:bg-[#FFB500] selection:text-[#00475B]">
-        <TopBar />
         <Header />
         <main id="main" className="flex-1">
           <AboutUsPage />
@@ -49,9 +58,32 @@ export function PageTemplate({ page, pageContent }: PageTemplateProps) {
     );
   }
 
+  if (family === PageFamilyType.CLINICAL_ENDOSCOPY_HUB) {
+    return <ClinicalEndoscopyTemplate page={page} pageContent={content} />;
+  }
+
+  if (family === PageFamilyType.CLINICAL_SYMPTOM_GUIDE) {
+    return <ClinicalGuideTemplate page={page} pageContent={content} />;
+  }
+
+  if (family === PageFamilyType.PACKAGE_COMPARISON) {
+    return <PackageComparisonTemplate page={page} pageContent={content} />;
+  }
+
+  if (family === PageFamilyType.CLINICAL_QUALITY_PROTOCOLS) {
+    return <ClinicalProtocolsTemplate page={page} pageContent={content} />;
+  }
+
+  if (family === PageFamilyType.KNOWLEDGE_HUB) {
+    return <KnowledgeHubTemplate page={page} pageContent={content} />;
+  }
+
+  if (family === PageFamilyType.UTILITY_LEGAL) {
+    return <UtilityLegalTemplate page={page} pageContent={content} />;
+  }
+
   return (
     <div className="min-h-screen flex flex-col bg-white selection:bg-[#FFB500] selection:text-[#00475B]">
-      <TopBar />
       <Header />
 
       <main className="flex-1">

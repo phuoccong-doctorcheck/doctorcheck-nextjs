@@ -1,0 +1,1030 @@
+
+/* === FILE: flatsome.css === */
+.button.open-video i {
+  top:-.027em
+}
+
+.accordion-inner {
+  display:none;
+  padding:1em 2.3em
+}
+
+.accordion-title {
+  border-top:1px solid #ddd;
+  display:block;
+  font-size:110%;
+  padding:.6em 2.3em;
+  position:relative;
+  transition:border .2s ease-out,background-color .3s
+}
+
+.dark .accordion-title {
+  border-color:hsla(0,0%,100%,.2)
+}
+
+.accordion-title.active {
+  background-color:rgba(0,0,0,.03);
+  border-color:var(--fs-color-primary);
+  color:var(--fs-color-primary);
+  font-weight:700
+}
+
+.dark .accordion-title.active {
+  color:#fff
+}
+
+.accordion .toggle {
+  border-radius:999px;
+  height:1.5em;
+  left:0;
+  margin-right:5px;
+  position:absolute;
+  top:.3em;
+  transform-origin:50% 47%;
+  width:2.3em
+}
+
+.accordion .active .toggle {
+  color:currentColor;
+  opacity:1
+}
+
+
+/* === FILE: app.css === */
+/* .section .accordion .toggle {
+  left: unset;
+  
+    right: 0;
+  
+}
+
+.video-button-wrapper .button {
+  padding: 0 !important;
+  
+}
+
+.section-confuse .video-button-wrapper .button.icon.circle {
+  font-size: 30px;
+  
+}
+
+.section-advanced .accordion {
+  margin-bottom: 20px;
+  
+}
+
+.section-advanced .accordion button {
+  left: unset;
+  
+    right: -5px;
+  
+}
+
+.section-advanced .accordion .accordion-item:first-child a {
+  border: none;
+  
+}
+
+.section-advanced .accordion .accordion-item a {
+  position: relative;
+  
+    font-size: 20px;
+  
+    background-color: #F5F5F7;
+  
+    padding: 16px 30px 16px 16px;
+  
+    border-radius: 20px;
+  
+    line-height: 28px;
+  
+    align-items: center;
+  
+    margin-bottom: 20px;
+  
+    border: none;
+  
+}
+
+.section-advanced .accordion .accordion-item a.active::before {
+  content: '';
+  
+    position: absolute;
+  
+    left: 0;
+  
+    top: 0;
+  
+    height: 100%;
+  
+    width: 6px;
+  
+    border-radius: 99px;
+  
+    background-color: var(--color-main);
+  
+}
+
+.section-advanced .accordion .accordion-title {
+  padding-right: 50px;
+  
+}
+
+.section-advanced .accordion .accordion-title.active {
+  background-color: var(--bg-cyan);
+  
+    border-radius: 12px 12px 0 0;
+  
+    border: none;
+  
+    margin-bottom: 0;
+  
+}
+
+.section-advanced .accordion .accordion-inner {
+  background-color: var(--bg-cyan);
+  
+    padding-left: 15px;
+  
+    margin-bottom: 20px;
+  
+    /* border-radius: 0 0 12px 12px;
+   */
+}
+
+.video-button-wrapper {
+  display: flex;
+  
+    justify-content: center;
+  
+}
+
+.section-customer-review .video-button-wrapper a {
+  background: var(--color-main) !important;
+  
+}
+
+.video-button-wrapper a {
+  color: #FFF;
+  
+    width: 60px;
+  
+    height: 60px;
+  
+    display: flex !important;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    /* line-height: 2.4em !important;
+   */
+}
+
+.video-button-wrapper a, .video-button-wrapper a {
+  line-height: 2.4em !important;
+  
+}
+
+.video-button-wrapper a > i, .video-button-wrapper a > i {
+  border-radius: 50%;
+  
+    width: 60px;
+  
+    height: 60px;
+  
+    font-size: 30px !important;
+  
+    font-size: unset;
+  
+    top: 0 !important;
+  
+    line-height: 60px;
+  
+}
+
+.home .section-faq .accordion .accordion-inner {
+  padding-left: 50px;
+  
+}
+
+.accordion h3 {
+  margin-bottom: 0;
+  
+    font-size: 20px;
+  
+}
+
+.section-faq .accordion-title {
+  padding: 22px 15px !important;
+   
+    padding-left: 50px !important;
+  
+}
+
+.section-faq .accordion-item:first-child .accordion-title {
+  border-top: none !important;
+  
+}
+
+.section-faq .accordion-title.active {
+  background: transparent;
+  
+}
+
+.section .accordion-inner {
+  padding: 10px 15px;
+  
+}
+
+.section-faq .accordion .toggle {
+  top:16px;
+  
+    margin: 0;
+  
+    opacity: 1;
+  
+}
+
+.section-faq .accordion span {
+  font-size: 18px;
+  
+    font-weight: bold;
+  
+}
+
+/* .section-faq .accordion-item a {
+  padding-top: 20px;
+  
+    padding-bottom: 20px;
+  
+}
+
+.section-process .accordion-image.current {
+  display: block !important;
+  
+}
+
+.section-process .row .accordion-item {
+  margin-bottom: 16px;
+  
+}
+
+.section-process .row .accordion-item p {
+  margin-bottom: 0;
+  
+}
+
+.section-process .row .accordion-title {
+  background-color: #fff;
+  
+    padding:16px 24px;
+  
+    border-radius: 8px;
+     
+    border: none;
+  
+    padding-right: 50px;
+  
+}
+
+.section-process .row .accordion-inner {
+  background-color: #fff;
+  
+    padding:16px 24px;
+  
+    border-radius:0 0 8px 8px;
+  
+}
+
+.section-process .row .accordion-title.active {
+  border-radius: 8px 8px 0 0;
+  
+    background: #FDD985;
+  
+}
+
+.section-process .accordion .toggle {
+  left: unset;
+  
+    right: 0;
+  
+    transform: rotate(-90deg);
+  
+}
+
+.section-process .accordion a.active .toggle {
+  transform: rotate(0);
+  
+}
+
+.section-customer .accordion .toggle {
+  right: 0;
+  
+    left: unset;
+  
+}
+
+.section-customer .accordion {
+  border-bottom: 1px solid #ddd;
+  
+    margin-bottom: 20px;
+  
+}
+
+.section-customer .accordion button {
+  /* display: none;
+   */
+}
+
+.section-customer .accordion .accordion-item:first-child a {
+  border: none;
+  
+}
+
+.section-customer .accordion .accordion-item a {
+  padding-left: 15px;
+  
+    position: relative;
+  
+    font-size: 20px;
+  
+    padding-right: 50px;
+  
+}
+
+.section-customer .accordion .accordion-item a.active::before {
+  content: '';
+  
+    position: absolute;
+  
+    left: 0;
+  
+    top: 0;
+  
+    height: 100%;
+  
+    width: 6px;
+  
+    border-radius: 99px;
+  
+    background-color: var(--color-main);
+  
+}
+
+.section-customer .accordion .accordion-title {
+  padding-right: 15px;
+  
+}
+
+.section-customer .accordion .accordion-title.active {
+  background-color: var(--bg-cyan);
+  
+    border-radius: 12px 12px 0 0;
+  
+    border: none;
+  
+}
+
+.section-customer .accordion .accordion-inner {
+  background-color: var(--bg-cyan);
+  
+    padding-left: 15px;
+  
+    /* border-radius: 0 0 12px 12px;
+   */
+}
+
+.accordion-content-image {
+  margin-top: 10px;
+  
+}
+
+.section-customer .accordion-inner {
+  padding: 10px 15px;
+  
+}
+
+.single .accordion-title h3 {
+  color: #2A2F38;
+  
+    display: inline;
+  
+}
+
+.single .accordion-title.active h3 {
+  color: #005570;
+  
+}
+
+.single .accordion-title {
+  color: #2A2F38;
+  
+}
+
+.single .accordion-title.active {
+  color: #005570;
+  
+}
+
+.reference .accordion-title {
+  background-color: #FFF;
+  
+    border: none !important;
+  
+    padding-left: 40px;
+  
+}
+
+.reference .accordion-title h3 {
+  background-color: #FFF;
+  
+    border: none !important;
+  
+    font-size: 36px;
+  
+    color: #2A2F38;
+  
+}
+
+.reference .accordion-title.active {
+  background-color: #FFF;
+  
+    border: none !important;
+  
+}
+
+.reference .accordion-title.active .toggle {
+  transform: rotate(-180deg) translateY(50%);
+  
+}
+
+.reference .accordion .toggle {
+  width: auto !important;
+  
+    top: 50%;
+  
+    transform: translateY(-50%);
+  
+}
+
+.accordion h2 {
+  margin-bottom: 0;
+  
+}
+
+*/
+/* End bác sĩ */
+/* Lợi ích */
+.accordion-benifit .row .accordion-item {
+  margin-bottom: 16px;
+  
+}
+
+.accordion-benifit .row .accordion-inner {
+  background-color: #fff;
+  
+    padding: 16px 24px;
+  
+    border-radius: 0 0 8px 8px;
+  
+}
+
+.accordion-benifit .accordion-title.active {
+  border-radius: 8px 8px 0 0;
+  
+    background: #FDD985;
+  
+}
+
+.accordion-benifit .accordion-title {
+  background-color: #EDEEF2;
+  
+    padding: 16px 24px;
+  
+    border-radius: 8px;
+  
+    border: none;
+  
+    padding-right: 55px;
+  
+    font-weight: bold;
+  
+}
+
+.accordion-benifit .accordion .toggle {
+  top: 50%;
+  
+    transform: translateY(-50%);
+  
+}
+
+.accordion-benifit .accordion .toggle {
+  left: unset;
+  
+    right: 0;
+  
+}
+
+.accordion-benifit .accordion .toggle i {
+  left: unset;
+  
+    right: 0;
+  
+}
+
+.accordion-benifit .accordion .accordion-title.active .toggle i::before {
+  content: url('/wp-content/uploads/2024/11/arrow-down.svg');
+  
+}
+
+.accordion-benifit .accordion .accordion-title .toggle i::before {
+  content: url('/wp-content/uploads/2024/12/silver-right.svg');
+  
+}
+
+.dc-gallery-wrapper.row-collapse>.dc-accordion {
+  display: flex;
+  
+    flex-direction: column;
+  
+    padding-right: 30px !important;
+  
+}
+
+.accordion-btn {
+  padding: 15px;
+  
+    margin-bottom: 34px;
+  
+    background-color: #f7f7f7;
+  
+    border: none;
+  
+    text-align: left;
+  
+    cursor: pointer;
+  
+    transition: background 0.3s ease;
+  
+    border-radius: 12px;
+  
+    display: flex;
+  
+    align-items: center;
+  
+    gap: 20px;
+  
+    justify-content: space-between;
+  
+    width: 100%;
+  
+}
+
+.accordion-btn.active {
+  background-color: #ffcc66;
+  
+    color: #fff;
+  
+}
+
+.accordion-btn.active svg {
+  background-color: #C68D0B;
+  
+    transform: rotate(90deg);
+  
+    transition: .3s ease;
+  
+}
+
+.accordion-btn svg {
+  background-color: #D3DCDF;
+  
+    width: 40px;
+  
+    height: 40px;
+  
+    border-radius: 15px;
+  
+    color: #FFF;
+  
+}
+
+
+/* === FILE: appv3.css === */
+.dc-medpro-reasons .accordion-item .accordion-title {
+  padding: 25px 85px;
+  
+}
+
+.single-product .section-benefit-new .accordion-title {
+  border-top: none;
+  
+    margin-top: -30px;
+  
+}
+
+.single-product .section-benefit-new .accordion-title.active {
+  background-color: transparent;
+  
+}
+
+.single-product .section-benefit-new .accordion .toggle {
+  left: 44%;
+  
+    top: unset;
+  
+    bottom: -25px;
+  
+}
+
+.single-product .section-benefit-new .accordion_title {
+  display: inline-block;
+  
+    color: #FDB715 !important;
+  
+    padding: 6px 20px;
+  
+    background: #02556E;
+  
+    border-radius: 100px;
+  
+    width: 125px !important;
+  
+    text-align: center;
+  
+    margin-bottom: 0;
+  
+    height: auto !important;
+  
+    position: relative;
+  
+    top: -31px;
+  
+    margin-left: 12px;
+  
+}
+
+.row-benefit .row>.col>.col-inner .accordion-title h3 {
+  font-size: 24px;
+  
+}
+
+.row-benefit .row>.col>.col-inner .accordion-item {
+  padding-bottom: 30px;
+  
+}
+
+.row-benefit .row>.col>.col-inner .accordion-title {
+  padding: 20px;
+  
+}
+
+.row-benefit .row>.col>.col-inner .accordion-item:has(a.active) {
+  padding-bottom: 0px;
+  
+}
+
+.section-process-new .accordion-title {
+  padding: 0;
+  
+    padding-right: 45px;
+  
+    background-color: #fff;
+  
+    border-radius: 8px;
+  
+    margin-bottom: 20px;
+  
+}
+
+.section-process-new .accordion-title h3 {
+  display: flex;
+  
+    flex-wrap: wrap;
+  
+    gap: 10px;
+  
+    height: auto;
+  
+    padding: 6px;
+  
+}
+
+.section-process-new .accordion-title h3 p {
+  margin-bottom: 0;
+  
+    width: calc(100% - 100px);
+  
+    font-weight: 500;
+  
+}
+
+.section-process-new .accordion-title h3 div {
+  display: inline-flex;
+  
+    background: #FDB715;
+  
+    border-radius: 100px;
+  
+    padding: 4px 12px;
+  
+    align-items: center;
+  
+    width: 90px;
+  
+    height: 46px;
+  
+    text-align: center;
+  
+}
+
+.section-process-new .accordion .toggle {
+  left: unset;
+  
+    right: 0px;
+  
+    top: 32%;
+  
+    background-color: #CCCCCC;
+  
+    border-radius: 8px;
+  
+    color: #000
+}
+
+.accordion-inner li {
+  font-size: 24px;
+  
+}
+
+.dc-medpro-reasons .accordion-title button {
+  right: 0 !important;
+  
+    left: unset;
+  
+}
+
+.dc-medpro-reasons .accordion-title button i:before {
+  content: url('/wp-content/uploads/2025/04/touch.svg');
+  
+}
+
+.dc-medpro-reasons .accordion span {
+  width: 45px !important;
+  
+    height: 45px !important;
+  
+    line-height: 45px;
+  
+}
+
+.dc-medpro-reasons .accordion .accordion-title h3 div {
+  position: absolute;
+  
+    left: 8px;
+  
+    top: 50%;
+  
+    transform: translateY(-50%);
+  
+    background: #03566E;
+  
+    width: 60px;
+  
+    height: 60px;
+  
+    text-align: center;
+  
+    border-radius: 50%;
+  
+    color: #FFF;
+  
+    font-size: 36px;
+  
+    font-weight: 700;
+  
+}
+
+.dc-medpro-reasons .accordion .accordion-title h3 p {
+  margin-bottom: 0;
+  
+}
+
+.dc-medpro-reasons .accordion-item {
+  background-color: #FEFFE9;
+  
+    border-radius: 20px;
+  
+    margin-bottom: 15px;
+  
+}
+
+.dc-medpro-reasons .accordion-item .accordion-title {
+  border-top: none;
+  
+}
+
+.dc-medpro-reasons .accordion-item .accordion-title.active {
+  background-color: transparent !important;
+  
+}
+
+.dc-medpro-reasons .accordion-item img {
+  border-radius: 12px;
+  
+    margin-bottom: 10px;
+  
+}
+
+.dc-medpro-reasons .accordion-item .toggle {
+  opacity: 1;
+  
+    top: 50%;
+  
+    transform: translateY(-50%);
+  
+}
+
+.dc-medpro-reasons .accordion h3 {
+  font-size: 24px;
+  
+    font-weight: 500;
+  
+    line-height: 60px;
+  
+}
+
+body .section-faq-v3 .accordion-title {
+  background-color: #F5F5F7;
+  
+    border-radius: 12px;
+  
+    border: none;
+  
+    margin: 15px;
+  
+    font-size: 22px;
+  
+}
+
+body .section-faq-v3 .accordion-title.active {
+  background-color: #03566E;
+  
+    color: #FFF;
+  
+}
+
+body .section-faq-v3 .accordion-title h3 {
+  font-size: 24px;
+  
+}
+
+body .section-faq-v3 .accordion-title.active h3 {
+  background-color: #03566E;
+  
+    color: #FFF;
+  
+}
+
+body .section-faq-v3 .accordion .toggle {
+  left: unset;
+  
+    right: 0;
+  
+}
+
+.section-process-new .accordion-title h3 {
+  display: flex !important;
+  
+        flex-wrap: wrap;
+  
+        gap: 10px;
+  
+        height: auto;
+  
+        padding: 6px;
+  
+}
+
+.section-process-new .accordion-title h3 p {
+  width: calc(100% - 110px);
+  
+}
+
+.section-process-new .accordion-title h3 div {
+  width: 100px;
+  
+}
+
+.dc-medpro-reasons .accordion .accordion-title h3 div {
+  width: 45px;
+  
+        height: 45px;
+  
+}
+
+.dc-medpro-reasons .accordion h3 {
+  line-height: 1.2;
+  
+}
+
+.dc-medpro-reasons .accordion-item .accordion-title {
+  padding: 20px 40px 20px 60px;
+  
+}
+
+.dc-medpro-reasons .accordion .accordion-title h3 div {
+  font-size: 30px;
+  
+        line-height: 45px;
+  
+}
+
+
+/* === FILE: responsive.css === */
+/* Hiển thị slider dưới mỗi accordion */
+    .accordion-content {
+  display: none;
+   /* Mặc định ẩn */
+}
+
+.accordion-content.active {
+  display: block;
+   /* Hiển thị khi mở accordion */
+        margin-top: 10px;
+  
+}
+
+.accordion span {
+  font-size: 18px;
+  
+}
+
+.section-advanced .flickity-slider>div:not(.col) {
+  width: 80% !important;
+  
+}
+
+.section-advanced .row .col:first-child,.section-advanced .row .col:nth-child(2) {
+  padding-bottom: 0 !important;
+  
+}
+
+.section-advanced h2 {
+  font-size: 26px !important;
+  
+}
+
+.section-customer .row-customer .col .video-button-wrapper a {
+  font-size: 21px;
+  
+}
+
+.section-faq .accordion span {
+  font-size: 16px;
+  
+}
+
+.section-faq .accordion .toggle {
+  left: unset;
+  
+        right: 0;
+  
+}
+
+.section-faq .accordion-item .accordion-title {
+  padding: 15px 45px 15px 0 !important;
+  
+}
+
+.home .section-faq .accordion .accordion-inner {
+  padding-left: 0;
+  
+}
+
+.section-customer .accordion {
+  text-align: left;
+  
+}
+
+.dc-gallery-wrapper.row-collapse>.dc-accordion {
+  padding: 15px !important;
+  
+}
+
+.accordion-item:last-child .accordion-btn {
+  margin-bottom: 0;
+  
+}
+
+.section-gallery .accordion-item:last-child .thumb-carousel:last-child {
+  margin-bottom: 0 !important;
+  
+}
+
+.accordion-benifit.after .row {
+  flex-direction: column-reverse;
+  
+}
+

@@ -33,29 +33,29 @@ export function ArticleMetadata({
   const isUpdated = formattedModified && formattedModified !== formattedDate;
 
   return (
-    <div className="flex flex-wrap items-center gap-y-2 gap-x-4 sm:gap-x-6 text-xs text-gray-500 py-3 border-y border-gray-100 my-4">
+    <div className="flex flex-wrap items-center gap-y-2 gap-x-4 sm:gap-x-6 text-xs text-[#64748B] py-3.5 border-y border-[#DDE4EA] my-4 font-sans">
       {formattedDate && (
         <div className="flex items-center gap-1.5">
-          <Calendar className="w-3.5 h-3.5 text-[#00A896] flex-shrink-0" />
-          <span>Ngày đăng: <strong className="text-gray-700">{formattedDate}</strong></span>
+          <Calendar className="w-3.5 h-3.5 text-[#005570] flex-shrink-0" />
+          <span>Ngày đăng: <strong className="text-[#2A2F38] font-semibold">{formattedDate}</strong></span>
         </div>
       )}
 
       {isUpdated && (
         <div className="flex items-center gap-1.5">
-          <RefreshCw className="w-3.5 h-3.5 text-[#00A896] flex-shrink-0" />
-          <span>Cập nhật: <strong className="text-gray-700">{formattedModified}</strong></span>
+          <RefreshCw className="w-3.5 h-3.5 text-[#005570] flex-shrink-0" />
+          <span>Cập nhật: <strong className="text-[#2A2F38] font-semibold">{formattedModified}</strong></span>
         </div>
       )}
 
       <div className="flex items-center gap-1.5">
-        <UserCheck className="w-3.5 h-3.5 text-[#00A896] flex-shrink-0" />
-        <span>{authorTitle}{authorName && authorName !== 'BSCKII Doctor Check' ? `: ${authorName}` : ''}</span>
+        <UserCheck className="w-3.5 h-3.5 text-[#005570] flex-shrink-0" />
+        <span className="text-[#2A2F38]">{authorTitle}{authorName && authorName !== 'BSCKII Doctor Check' && authorName !== 'admin' ? `: ${authorName}` : ''}</span>
       </div>
 
       <div className="flex items-center gap-1.5">
-        <ShieldCheck className="w-3.5 h-3.5 text-[#00A896] flex-shrink-0" />
-        <span className="text-[#00A896] font-semibold">100% Y học chứng cứ</span>
+        <ShieldCheck className="w-3.5 h-3.5 text-[#005570] flex-shrink-0" />
+        <span className="text-[#005570] font-semibold">100% Y học chứng cứ</span>
       </div>
     </div>
   );

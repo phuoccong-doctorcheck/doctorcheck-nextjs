@@ -171,289 +171,616 @@
 }
 
 /* ================================================================
-   SECTION 1: BANNER ABOUT
+   SECTION 1: BANNER ABOUT (Hero)
    ================================================================ */
 .about-us-page .section-banner-about {
-  padding-top: 0;
-  padding-bottom: 0;
-  background: linear-gradient(135deg, #fdfdf6 0%, #eef7fa 100%);
+  padding-top: 45px;
+  padding-bottom: 35px;
+  background-color: #fcfbf7;
 }
 
-.about-us-page .section-banner-about .col-inner {
-  padding-top: 20px;
-  padding-bottom: 20px;
+@media (min-width: 850px) {
+  .about-us-page .section-banner-about {
+    padding-top: 55px;
+    padding-bottom: 45px;
+  }
+}
+
+.about-us-page .row-banner-about {
+  display: flex;
+  align-items: center;
 }
 
 .about-us-page .about-main-title {
-  font-size: 2.2rem;
+  font-size: 36px;
   font-weight: 800;
-  line-height: 1.25;
+  line-height: 1.3;
   color: #005570;
   margin-bottom: 24px;
+  letter-spacing: -0.2px;
 }
 
-@media (max-width: 549px) {
+@media (max-width: 849px) {
   .about-us-page .about-main-title {
-    font-size: 1.5rem;
-    margin-bottom: 16px;
-    text-align: center;
-  }
-  .about-us-page .section-banner-about .text-right {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 22px;
     text-align: center;
   }
 }
 
-/* Circle blur decorative (on the left column) */
-.about-us-page .circle-blur {
-  position: relative;
+@media (max-width: 480px) {
+  .about-us-page .about-main-title {
+    font-size: 24px;
+  }
 }
 
-.about-us-page .circle-blur::before {
-  content: '';
+/* CTA Consultation Button */
+.about-us-page .btn-consult-now {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 32px;
+  background-color: #ffb500;
+  color: #ffffff !important;
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(255, 181, 0, 0.42);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.about-us-page .btn-consult-now:hover {
+  background-color: #ffa300;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(255, 181, 0, 0.55);
+}
+
+.about-us-page .btn-consult-now:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(255, 181, 0, 0.35);
+}
+
+.about-us-page .btn-consult-now svg {
+  stroke: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.about-us-page .btn-consult-now:hover svg {
+  transform: translateX(3px);
+}
+
+/* Mobile Overlapping Button */
+.about-us-page .btn-consult-now-mobile {
   position: absolute;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(135, 227, 219, 0.2) 0%, transparent 70%);
-  border-radius: 50%;
-  top: -40px;
-  left: -60px;
-  z-index: -1;
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  white-space: nowrap;
+  padding: 13px 32px;
+  font-size: 15px;
+  box-shadow: 0 6px 20px rgba(255, 181, 0, 0.48);
+}
+
+.about-us-page .btn-consult-now-mobile:hover {
+  transform: translateX(-50%) translateY(-2px);
+}
+
+/* Doctor Hero Card Container */
+.about-us-page .doctor-hero-card-container {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+@media (max-width: 849px) {
+  .about-us-page .doctor-hero-card-container {
+    max-width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+}
+
+/* Top-Right Decorative Yellow Square Accent */
+.about-us-page .doctor-hero-accent-square {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 84px;
+  height: 84px;
+  background-color: #ffb500;
+  border-radius: 20px;
+  z-index: 1;
   pointer-events: none;
 }
 
-/* ---------- CTA Button ---------- */
-.about-us-page .btn-appointment {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 28px;
-  background-color: #ffb500;
-  color: #005570;
-  font-weight: 700;
-  font-size: 14px;
-  border-radius: 99px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  box-shadow: 0 4px 14px rgba(255, 181, 0, 0.3);
-  text-decoration: none;
+@media (max-width: 849px) {
+  .about-us-page .doctor-hero-accent-square {
+    top: -10px;
+    right: -10px;
+    width: 68px;
+    height: 68px;
+    border-radius: 16px;
+  }
 }
 
-.about-us-page .btn-appointment:hover {
-  background-color: #e0a000;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 181, 0, 0.4);
+/* Doctor Hero Image Wrap */
+.about-us-page .doctor-hero-image-wrap {
+  position: relative;
+  z-index: 2;
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(0, 71, 91, 0.09);
+  background-color: #eef7fa;
 }
 
-.about-us-page .button-gradient-secondary {
-  background: linear-gradient(135deg, #ffb500, #ffa000);
-  color: #005570;
-  padding: 14px 28px;
-  font-weight: 700;
-  font-size: 14px;
-  border-radius: 99px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  transition: all 0.25s ease;
-  box-shadow: 0 4px 14px rgba(255, 181, 0, 0.3);
+@media (max-width: 849px) {
+  .about-us-page .doctor-hero-image-wrap {
+    border-radius: 20px;
+  }
 }
 
-.about-us-page .button-gradient-secondary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 181, 0, 0.4);
+.about-us-page .doctor-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 1020 / 782;
 }
 
 /* ================================================================
    SECTION 2: ACHIEVEMENT (Giấy phép Sở Y Tế)
    ================================================================ */
 .about-us-page .section-achivement {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 35px;
+  padding-bottom: 45px;
+  background-color: #fcfbf7;
 }
 
-.about-us-page .section-achivement h2 {
-  font-size: 1.65rem;
+@media (min-width: 850px) {
+  .about-us-page .section-achivement {
+    padding-top: 45px;
+    padding-bottom: 55px;
+  }
+}
+
+@media (max-width: 849px) {
+  .about-us-page .row-license-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .about-us-page .col-license-text {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .about-us-page .col-license-img {
+    width: 100%;
+  }
+}
+
+.about-us-page .license-image-card {
+  width: 100%;
+  max-width: 530px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 71, 91, 0.08);
+  border: 1px solid rgba(0, 71, 91, 0.06);
+}
+
+@media (max-width: 849px) {
+  .about-us-page .license-image-card {
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+}
+
+.about-us-page .license-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.about-us-page .license-heading {
+  font-size: 28px;
   font-weight: 800;
   color: #005570;
   line-height: 1.35;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+  letter-spacing: -0.2px;
 }
 
-.about-us-page .section-achivement p {
-  font-size: 15px;
-  line-height: 1.75;
-  color: #4d5565;
+@media (max-width: 849px) {
+  .about-us-page .license-heading {
+    font-size: 24px;
+    line-height: 1.35;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-page .license-heading {
+    font-size: 21px;
+  }
+}
+
+.about-us-page .license-desc {
+  font-size: 16.5px;
+  line-height: 1.68;
+  color: #2a2f38;
   margin: 0;
+  font-weight: 400;
 }
 
-.about-us-page .section-achivement .col-inner {
-  padding-top: 10px;
-  padding-bottom: 10px;
+@media (max-width: 849px) {
+  .about-us-page .license-desc {
+    font-size: 15.5px;
+    line-height: 1.6;
+    text-align: left;
+    padding: 0 4px;
+  }
 }
 
 /* ================================================================
    SECTION 3: VISION & MISSION
    ================================================================ */
 .about-us-page .section-vision {
-  padding-top: 0;
+  padding-top: 45px;
   padding-bottom: 0;
   background-color: #eef7fa;
   position: relative;
-}
-
-/* Shape Divider */
-.about-us-page .ux-shape-divider {
-  position: absolute;
-  left: 0;
-  width: 100%;
   overflow: hidden;
-  line-height: 0;
-  z-index: 2;
 }
 
-.about-us-page .ux-shape-divider--bottom {
-  bottom: 0;
-}
-
-.about-us-page .ux-shape-divider--bottom svg {
-  display: block;
-  width: 100%;
-  height: 45px;
-}
-
-.about-us-page .ux-shape-fill {
-  fill: #ffffff;
-}
-
-@media (min-width: 550px) {
-  .about-us-page .ux-shape-divider--bottom svg {
-    height: 122px;
+@media (min-width: 850px) {
+  .about-us-page .section-vision {
+    padding-top: 60px;
   }
 }
 
-/* Vision/Mission Row */
 .about-us-page .row-vision {
-  padding-top: 50px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  row-gap: 20px;
 }
 
-/* Icon Box */
-.about-us-page .icon-box {
+@media (min-width: 850px) {
+  .about-us-page .row-vision {
+    margin-bottom: 45px;
+    row-gap: 0;
+  }
+}
+
+.about-us-page .col-vision-item {
+  display: flex;
+}
+
+.about-us-page .col-vision-item > .col-inner {
+  width: 100%;
+  display: flex;
+}
+
+/* Vision & Mission Warm Yellow Cards (Compact height & Larger text) */
+.about-us-page .vision-mission-card {
+  width: 100%;
+  background-color: #fef5d9;
+  border-radius: 18px;
+  padding: 22px 26px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 4px 16px rgba(0, 71, 91, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.about-us-page .icon-box-top {
-  align-items: flex-start;
+@media (min-width: 850px) {
+  .about-us-page .vision-mission-card {
+    padding: 24px 30px;
+    border-radius: 20px;
+  }
 }
 
-.about-us-page .icon-box-center {
-  align-items: center;
+.about-us-page .vision-mission-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 71, 91, 0.08);
 }
 
-.about-us-page .icon-box-img {
+.about-us-page .vm-card-icon {
+  width: 44px;
+  height: 44px;
   margin-bottom: 12px;
-  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.about-us-page .icon-box-img img {
+.about-us-page .vm-card-icon img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
-.about-us-page .row-vision h2 {
-  font-size: 1.5rem;
+.about-us-page .vm-card-title {
+  font-size: 26px;
   font-weight: 800;
   color: #005570;
   margin-bottom: 8px;
+  line-height: 1.25;
 }
 
-.about-us-page .row-vision p {
-  font-size: 14.5px;
-  line-height: 1.65;
-  color: #4d5565;
+@media (max-width: 849px) {
+  .about-us-page .vm-card-title {
+    font-size: 23px;
+  }
+}
+
+.about-us-page .vm-card-desc {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #2a2f38;
   margin: 0;
+  font-weight: 400;
 }
 
-.about-us-page .row-vision .col-inner {
-  padding: 10px 20px;
+@media (max-width: 849px) {
+  .about-us-page .vm-card-desc {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/* Doctor Team Panorama Image */
+.about-us-page .row-team-image {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.about-us-page .team-image-wrap {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  line-height: 0;
+}
+
+.about-us-page .team-doctor-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* Yellow Decorative Chevron Ribbon Bottom Divider (Matching doctor image bottom) */
+.about-us-page .section-vision::after {
+  content: '';
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  height: 180px;
+  bottom: -45px;
+  left: 0;
+  z-index: 90;
+  background-color: #FDD985;
+  clip-path: polygon(0% 42%, 0% 71%, 50% 89%, 100% 71%, 100% 42%, 50% 75%);
+  pointer-events: none;
+}
+
+@media (max-width: 849px) {
+  .about-us-page .section-vision::after {
+    height: 100px;
+    bottom: -22px;
+  }
 }
 
 /* ================================================================
-   SECTION 4: COMMITMENTS (5 cam kết)
+   SECTION 4: COMMITMENTS (5 Cam Kết)
    ================================================================ */
 .about-us-page .section-commit {
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 60px;
+  padding-top: 45px;
+  padding-bottom: 75px;
+  background-color: #f0f8fa;
+}
+
+@media (min-width: 850px) {
+  .about-us-page .section-commit {
+    padding-top: 55px;
+    padding-bottom: 85px;
+  }
 }
 
 .about-us-page .section-commit .section-bg img {
   object-position: top center;
 }
 
-.about-us-page .tag-heading {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+.about-us-page .commit-top-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
 }
 
-.about-us-page .section-commit .heading h2 {
-  font-size: 1.7rem;
+.about-us-page .commit-logo-img {
+  width: 68px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 849px) {
+  .about-us-page .commit-logo-img {
+    width: 58px;
+  }
+}
+
+.about-us-page .commit-heading-wrap {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 849px) {
+  .about-us-page .commit-heading-wrap {
+    margin-bottom: 42px;
+  }
+}
+
+.about-us-page .commit-main-heading {
+  font-size: 28px;
   font-weight: 800;
   color: #005570;
-  text-align: center;
-  margin-bottom: 10px;
+  line-height: 1.35;
+  margin: 0;
+  letter-spacing: -0.2px;
 }
 
-/* Commitment Cards Grid */
-.about-us-page .row-commit {
+@media (max-width: 849px) {
+  .about-us-page .commit-main-heading {
+    font-size: 23px;
+  }
+}
+
+/* Cards Layout Grid */
+.about-us-page .commit-cards-grid {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -12px;
-  margin-right: -12px;
-  gap: 0;
+  gap: 24px;
 }
 
-.about-us-page .row-commit > .col {
-  padding: 12px;
+.about-us-page .commit-cards-grid.row-1 {
+  margin-bottom: 48px;
 }
 
-.about-us-page .row-commit .icon-box {
+@media (max-width: 849px) {
+  .about-us-page .commit-cards-grid.row-1 {
+    margin-bottom: 0;
+  }
+}
+
+.about-us-page .commit-cards-grid.row-2 {
+  justify-content: center;
+}
+
+.about-us-page .commit-card-col {
+  flex: 1 1 calc(33.333% - 16px);
+  max-width: calc(33.333% - 16px);
+  min-width: 280px;
+  display: flex;
+}
+
+@media (max-width: 849px) {
+  .about-us-page .commit-cards-grid {
+    flex-direction: column;
+    gap: 46px;
+  }
+
+  .about-us-page .commit-card-col {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .about-us-page .commit-cards-grid.row-2 {
+    margin-top: 46px;
+  }
+}
+
+/* Commit Card Container */
+.about-us-page .commit-card {
+  position: relative;
   background: #ffffff;
-  padding: 28px 22px;
-  border-radius: 16px;
-  border: 1px solid #eef7fa;
-  box-shadow: 0 8px 28px rgba(0, 71, 91, 0.06);
-  height: 100%;
+  border-radius: 22px;
+  padding: 44px 24px 28px;
+  box-shadow: 0 10px 30px rgba(0, 71, 91, 0.08);
+  border: 1px solid rgba(238, 247, 250, 0.9);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.about-us-page .row-commit .icon-box:hover {
+@media (min-width: 850px) {
+  .about-us-page .commit-card {
+    padding: 48px 28px 32px;
+    border-radius: 24px;
+  }
+}
+
+.about-us-page .commit-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 16px 40px rgba(0, 71, 91, 0.12);
 }
 
-.about-us-page .row-commit h3 {
-  font-size: 16px;
+/* Floating Yellow Badge Icon at top edge */
+.about-us-page .commit-badge-icon {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #ffb500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(255, 181, 0, 0.35);
+  z-index: 5;
+}
+
+.about-us-page .commit-badge-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Card Title */
+.about-us-page .commit-card-title {
+  font-size: 18px;
   font-weight: 800;
   color: #005570;
-  margin-top: 14px;
-  margin-bottom: 10px;
-  line-height: 1.4;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 16px;
+  line-height: 1.35;
 }
 
-.about-us-page .row-commit p {
-  font-size: 13.5px;
+@media (max-width: 849px) {
+  .about-us-page .commit-card-title {
+    font-size: 17.5px;
+    margin-bottom: 14px;
+  }
+}
+
+/* Card Description */
+.about-us-page .commit-card-desc {
+  font-size: 16px;
   line-height: 1.65;
-  color: #556270;
+  color: #2a2f38;
   margin: 0;
+  text-align: left;
+  font-weight: 400;
 }
 
-.about-us-page .row-commit .icon-box-img {
-  margin: 0 auto 4px;
+@media (max-width: 849px) {
+  .about-us-page .commit-card-desc {
+    font-size: 15.5px;
+    line-height: 1.6;
+  }
 }
 
 /* ================================================================

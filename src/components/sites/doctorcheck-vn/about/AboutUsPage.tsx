@@ -132,234 +132,192 @@ export function AboutUsPage() {
       <section className="section section-banner-about" id="section_2050065749">
         <div className="section-bg fill"></div>
         <div className="section-content relative">
-          <div id="gap-723823570" className="gap-element clearfix" style={{ display: 'block', height: 'auto' }}>
-            <style>{`#gap-723823570 { padding-top: 30px; }`}</style>
-          </div>
-
-          <div className="row align-middle" id="row-62336422">
-            <div id="col-1531572175" className="col circle-blur medium-6 small-12 large-6">
+          <div className="row align-middle row-banner-about" id="row-62336422">
+            {/* Title & CTA Column */}
+            <div id="col-1531572175" className="col col-banner-title medium-6 small-12 large-6">
               <div className="col-inner">
-                <h1 className="about-main-title">Doctor Check – Trung Tâm Tầm Soát Bệnh Chuyên Sâu</h1>
+                <h1 className="about-main-title">
+                  Doctor Check – Trung Tâm
+                  <br />
+                  Tầm Soát Bệnh Chuyên Sâu
+                </h1>
                 <button
                   type="button"
                   onClick={() => setIsBookingModalOpen(true)}
-                  className="button secondary btn-appointment hide-for-small"
-                  style={{ borderRadius: '99px' }}
+                  className="btn-consult-now hide-for-small"
                 >
-                  <span>Tư vấn ngay</span>
-                  <i className="icon-angle-right" aria-hidden="true">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                      <polyline points="9 18 15 12 9 6" />
-                    </svg>
-                  </i>
+                  <span>TƯ VẤN NGAY</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                  </svg>
                 </button>
               </div>
             </div>
 
-            <div id="col-2088518509" className="col medium-6 small-12 large-6">
-              <div className="col-inner text-right">
-                <div className="img has-hover x md-x lg-x y md-y lg-y" id="image_525124898">
-                  <div className="img-inner dark">
+            {/* Doctor Image Column */}
+            <div id="col-2088518509" className="col col-banner-image medium-6 small-12 large-6">
+              <div className="col-inner">
+                <div className="doctor-hero-card-container">
+                  {/* Decorative Yellow Square Accent */}
+                  <div className="doctor-hero-accent-square" aria-hidden="true"></div>
+
+                  {/* Doctor Image */}
+                  <div className="doctor-hero-image-wrap">
                     <img
                       decoding="async"
                       width="1020"
                       height="782"
                       src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/01ebd28e-a8b4-4b4a-5d02-2013559f3000/w=1020,h=782"
-                      className="attachment-large size-large"
+                      className="doctor-hero-img"
                       alt="Doctor Check – Trung Tâm Tầm Soát Bệnh Chuyên Sâu"
                     />
                   </div>
-                  <style>{`#image_525124898 { width: 90%; }`}</style>
-                </div>
 
-                <button
-                  type="button"
-                  onClick={() => setIsBookingModalOpen(true)}
-                  className="button secondary btn-appointment show-for-small"
-                  style={{ borderRadius: '99px' }}
-                >
-                  <span>Tư vấn ngay</span>
-                  <i className="icon-angle-right" aria-hidden="true">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                      <polyline points="9 18 15 12 9 6" />
+                  {/* Mobile Overlapping Button */}
+                  <button
+                    type="button"
+                    onClick={() => setIsBookingModalOpen(true)}
+                    className="btn-consult-now btn-consult-now-mobile show-for-small"
+                  >
+                    <span>TƯ VẤN NGAY</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                      <polyline points="12 5 19 12 12 19" />
                     </svg>
-                  </i>
-                </button>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <style>{`
-          #section_2050065749 {
-            padding-top: 0px;
-            padding-bottom: 0px;
-          }
-        `}</style>
       </section>
 
       {/* SECTION 2: Achievement (#section_922965840) */}
       <section className="section section-achivement" id="section_922965840">
         <div className="section-bg fill"></div>
         <div className="section-content relative">
-          <div className="row align-middle" id="row-1174397728">
-            <div id="col-1590481363" className="col medium-6 small-12 large-6">
+          <div className="row align-middle row-license-section" id="row-1174397728">
+            {/* Certificate Image */}
+            <div id="col-1590481363" className="col col-license-img medium-6 small-12 large-6">
               <div className="col-inner">
-                <div className="img has-hover x md-x lg-x y md-y lg-y" id="image_169293345">
-                  <div className="img-inner dark">
-                    <img
-                      decoding="async"
-                      width="1200"
-                      height="834"
-                      src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/d3484c22-3e95-4571-eeb0-b54941a00700/w=1200,h=834"
-                      className="attachment-original size-original"
-                      alt="Giấy phép hoạt động của Sở Y Tế cấp cho Doctor Check"
-                    />
-                  </div>
-                  <style>{`#image_169293345 { width: 100%; }`}</style>
+                <div className="license-image-card">
+                  <img
+                    decoding="async"
+                    width="1200"
+                    height="834"
+                    src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/d3484c22-3e95-4571-eeb0-b54941a00700/w=1200,h=834"
+                    className="license-img"
+                    alt="Giấy phép hoạt động của Sở Y Tế cấp cho Doctor Check"
+                  />
                 </div>
               </div>
             </div>
 
-            <div id="col-76874271" className="col medium-6 small-12 large-6">
+            {/* License Description Text */}
+            <div id="col-76874271" className="col col-license-text medium-6 small-12 large-6">
               <div className="col-inner">
-                <h2>Phòng Khám Doctor Check Được Cấp Phép Hoạt Động Bởi Sở Y Tế TP.HCM</h2>
-                <p>
+                <h2 className="license-heading">
+                  Phòng Khám Doctor Check Được Cấp
+                  <br />
+                  Phép Hoạt Động Bởi Sở Y Tế TP.HCM
+                </h2>
+                <p className="license-desc">
                   Thấu hiểu SỨC KHỎE LÀ VÀNG – nền tảng của cuộc sống trọn vẹn và hạnh phúc, Doctor Check được thành lập giúp bạn bắt đầu hành trình bảo vệ sức khỏe toàn diện với lộ trình tầm soát bệnh định kỳ và xây dựng giải pháp SỐNG KHỎE – SỐNG THỌ.
                 </p>
               </div>
             </div>
           </div>
         </div>
-
-        <style>{`
-          #section_922965840 {
-            padding-top: 30px;
-            padding-bottom: 30px;
-          }
-        `}</style>
       </section>
 
       {/* Gap separator */}
       <div id="gap-493322467" className="gap-element clearfix" style={{ display: 'block', height: 'auto' }}>
-        <style>{`#gap-493322467 { padding-top: 175px; }`}</style>
+        <style>{`
+          #gap-493322467 { padding-top: 100px; }
+          @media (min-width: 850px) {
+            #gap-493322467 { padding-top: 140px; }
+          }
+        `}</style>
       </div>
 
       {/* SECTION 3: Vision & Mission (#section_1650923643) */}
       <section className="section section-vision" id="section_1650923643">
-        <div className="section-bg fill"></div>
-
-        {/* Decorative Inverted Triangle Shape Divider */}
-        <div className="ux-shape-divider ux-shape-divider--bottom ux-shape-divider--style-triangle-invert ux-shape-divider--to-front">
-          <svg viewBox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path className="ux-shape-fill" d="M500 95.6L0 0V100H1000V0L500 95.6Z"></path>
-          </svg>
-        </div>
-
         <div className="section-content relative">
+          {/* Vision & Mission Cards Row */}
           <div className="row row-vision" id="row-763967989">
-            <div id="col-1529369699" className="col medium-6 small-12 large-6">
+            {/* Card 1: Tầm nhìn */}
+            <div id="col-1529369699" className="col medium-6 small-12 large-6 col-vision-item">
               <div className="col-inner">
-                <div className="icon-box featured-box icon-box-top text-left">
-                  <div className="icon-box-img" style={{ width: '60px' }}>
-                    <div className="icon">
-                      <div className="icon-inner">
-                        <img
-                          decoding="async"
-                          width="60"
-                          height="60"
-                          src="/sites/doctorcheck-vn/root/images/vision.svg"
-                          className="attachment-medium size-medium"
-                          alt="Tầm nhìn Doctor Check"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="icon-box-text last-reset">
-                    <h2>Tầm nhìn</h2>
-                    <p>Trở thành chuỗi phòng khám hàng đầu thế giới trong việc nâng cao sức khỏe và tuổi thọ con người.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="col-1577784972" className="col medium-6 small-12 large-6">
-              <div className="col-inner">
-                <div className="icon-box featured-box icon-box-top text-left">
-                  <div className="icon-box-img" style={{ width: '60px' }}>
-                    <div className="icon">
-                      <div className="icon-inner">
-                        <img
-                          decoding="async"
-                          width="60"
-                          height="60"
-                          src="/sites/doctorcheck-vn/root/images/mission.svg"
-                          className="attachment-medium size-medium"
-                          alt="Sứ mệnh Doctor Check"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="icon-box-text last-reset">
-                    <h2>Sứ mệnh</h2>
-                    <p>Giúp bạn sống thọ hơn thông qua tầm soát bệnh định kỳ hàng năm và tư vấn lối sống khoa học.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="row row-collapse" id="row-893675001">
-            <div id="col-464698195" className="col small-12 large-12">
-              <div className="col-inner">
-                <div className="img has-hover x md-x lg-x y md-y lg-y" id="image_887520188">
-                  <div className="img-inner dark">
+                <div className="vision-mission-card">
+                  <div className="vm-card-icon">
                     <img
                       decoding="async"
-                      width="1782"
-                      height="563"
-                      src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/038abea1-71ec-4078-e008-5e573da8ef00/w=1782,h=563"
-                      className="attachment-original size-original"
-                      alt="Đội ngũ nhân sự y bác sĩ Doctor Check"
+                      width="48"
+                      height="48"
+                      src="/sites/doctorcheck-vn/root/images/vision.svg"
+                      alt="Tầm nhìn Doctor Check"
                     />
                   </div>
-                  <style>{`#image_887520188 { width: 100%; }`}</style>
+                  <h2 className="vm-card-title">Tầm nhìn</h2>
+                  <p className="vm-card-desc">
+                    Trở thành chuỗi phòng khám hàng đầu thế giới trong việc nâng cao sức khỏe và tuổi thọ con người.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 2: Sứ mệnh */}
+            <div id="col-1577784972" className="col medium-6 small-12 large-6 col-vision-item">
+              <div className="col-inner">
+                <div className="vision-mission-card">
+                  <div className="vm-card-icon">
+                    <img
+                      decoding="async"
+                      width="48"
+                      height="48"
+                      src="/sites/doctorcheck-vn/root/images/mission.svg"
+                      alt="Sứ mệnh Doctor Check"
+                    />
+                  </div>
+                  <h2 className="vm-card-title">Sứ mệnh</h2>
+                  <p className="vm-card-desc">
+                    Giúp bạn sống thọ hơn thông qua tầm soát bệnh định kỳ hàng năm và tư vấn lối sống khoa học.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Doctor Team Panorama Image */}
+          <div className="row row-collapse row-team-image" id="row-893675001">
+            <div id="col-464698195" className="col small-12 large-12">
+              <div className="col-inner">
+                <div className="team-image-wrap">
+                  <img
+                    decoding="async"
+                    width="1782"
+                    height="563"
+                    src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/038abea1-71ec-4078-e008-5e573da8ef00/w=1782,h=563"
+                    className="team-doctor-img"
+                    alt="Đội ngũ nhân sự y bác sĩ Doctor Check"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <style>{`
-          #section_1650923643 {
-            padding-top: 0px;
-            padding-bottom: 0px;
-            background-color: rgb(238, 247, 250);
-          }
-          #section_1650923643 .ux-shape-divider--bottom svg {
-            height: 45px;
-            --divider-width: 100%;
-          }
-          #section_1650923643 .ux-shape-divider--bottom .ux-shape-fill {
-            fill: rgb(255, 255, 255);
-          }
-          @media (min-width: 550px) {
-            #section_1650923643 .ux-shape-divider--bottom svg {
-              height: 122px;
-            }
-          }
-        `}</style>
       </section>
 
       {/* Gap separator */}
       <div id="gap-46743503" className="gap-element clearfix" style={{ display: 'block', height: 'auto' }}>
         <style>{`
           #gap-46743503 {
-            padding-top: 110px;
+            padding-top: 50px;
           }
           @media (min-width: 550px) {
             #gap-46743503 {
-              padding-top: 150px;
+              padding-top: 70px;
             }
           }
         `}</style>
@@ -379,208 +337,132 @@ export function AboutUsPage() {
         </div>
 
         <div className="section-content relative">
-          <div className="img has-hover tag-heading x md-x lg-x y md-y lg-y" id="image_481707472">
-            <div className="img-inner dark">
-              <img
-                decoding="async"
-                width="86"
-                height="87"
-                src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/a67915b2-e409-4b83-2b31-fd951c9ca300/w=86,h=87"
-                className="attachment-original size-original"
-                alt="Logo biểu tượng Doctor Check"
-              />
-            </div>
-            <style>{`#image_481707472 { width: 6%; min-width: 48px; margin: 0 auto; display: block; }`}</style>
+          {/* Top Logo Badge */}
+          <div className="commit-top-logo">
+            <img
+              decoding="async"
+              width="86"
+              height="87"
+              src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/a67915b2-e409-4b83-2b31-fd951c9ca300/w=86,h=87"
+              className="commit-logo-img"
+              alt="Logo biểu tượng Doctor Check"
+            />
           </div>
 
-          <div className="row row-collapse" id="row-545300085">
-            <div id="col-1948447277" className="col heading small-12 large-12">
-              <div className="col-inner">
-                <div id="text-2480890306" className="text heading">
-                  <h2>Cam Kết Từ Doctor Check Giúp Bạn An Tâm Tầm Soát Bệnh</h2>
-                  <style>{`#text-2480890306 { text-align: center; }`}</style>
-                </div>
-              </div>
-              <style>{`
-                #col-1948447277 > .col-inner {
-                  margin: 20px 0px 0px 0px;
-                }
-                @media (min-width: 550px) {
-                  #col-1948447277 > .col-inner {
-                    margin: 75px 0px 0px 0px;
-                  }
-                }
-              `}</style>
-            </div>
+          {/* Section Heading */}
+          <div className="commit-heading-wrap">
+            <h2 className="commit-main-heading">
+              Cam Kết Từ Doctor Check
+              <br className="inline md:hidden" />
+              <span className="inline md:hidden"> </span>
+              Giúp Bạn An Tâm Tầm Soát
+              <br className="hidden md:inline" />
+              <span className="inline"> </span>
+              Bệnh
+            </h2>
           </div>
 
-          <div className="row row-commit" id="row-1105690158">
+          {/* Cards Row 1: 3 cards */}
+          <div className="commit-cards-grid row-1">
             {/* Card 1 */}
-            <div id="col-500839997" className="col medium-4 small-12 large-4">
-              <div className="col-inner">
-                <div className="icon-box featured-box icon-box-center text-center">
-                  <div className="icon-box-img" style={{ width: '80px' }}>
-                    <div className="icon">
-                      <div className="icon-inner">
-                        <img
-                          decoding="async"
-                          width="80"
-                          height="80"
-                          src="/sites/doctorcheck-vn/root/images/center-dc.svg"
-                          className="attachment-medium size-medium"
-                          alt="Trung tâm đầu tiên chuyên sâu"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="icon-box-text last-reset">
-                    <div id="text-1839629188" className="text">
-                      <h3 className="center">Trung Tâm Đầu Tiên Chuyên Sâu Tầm Soát Bệnh</h3>
-                      <p>
-                        Tập trung chuyên sâu vào 01 chuyên khoa Nội tổng quát, Doctor Check quy tụ các bác sĩ giàu kinh nghiệm đến từ nhiều bệnh viện lớn ở TP.HCM. Qua đó mang đến các giải pháp tầm soát chuyên sâu, giúp khách hàng sớm phát hiện các vấn đề tiềm ẩn để chăm sóc sức khỏe đúng cách.
-                      </p>
-                      <style>{`#text-1839629188 { text-align: left; }`}</style>
-                    </div>
-                  </div>
+            <div className="commit-card-col">
+              <div className="commit-card">
+                <div className="commit-badge-icon" aria-hidden="true">
+                  <img
+                    decoding="async"
+                    width="60"
+                    height="60"
+                    src="/sites/doctorcheck-vn/root/images/center-dc.svg"
+                    alt=""
+                  />
                 </div>
+                <h3 className="commit-card-title">Trung Tâm Đầu Tiên Chuyên Sâu Tầm Soát Bệnh</h3>
+                <p className="commit-card-desc">
+                  Tập trung chuyên sâu vào 01 chuyên khoa Nội tổng quát, Doctor Check quy tụ các bác sĩ giàu kinh nghiệm đến từ nhiều bệnh viện lớn ở TP.HCM. Qua đó mang đến các giải pháp tầm soát chuyên sâu, giúp khách hàng sớm phát hiện các vấn đề tiềm ẩn để chăm sóc sức khỏe đúng cách.
+                </p>
               </div>
             </div>
 
             {/* Card 2 */}
-            <div id="col-766002316" className="col medium-4 small-12 large-4">
-              <div className="col-inner">
-                <div className="icon-box featured-box icon-box-center text-center">
-                  <div className="icon-box-img" style={{ width: '80px' }}>
-                    <div className="icon">
-                      <div className="icon-inner">
-                        <img
-                          decoding="async"
-                          width="80"
-                          height="80"
-                          src="/sites/doctorcheck-vn/root/images/center-dc.svg"
-                          className="attachment-medium size-medium"
-                          alt="Tư vấn trung thực"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="icon-box-text last-reset">
-                    <div id="text-3577912054" className="text">
-                      <h3 className="center">Tư Vấn Trung Thực, Dựa Vào Y Học Chứng Cứ 100%</h3>
-                      <p>
-                        Doctor Check đảm bảo mọi chẩn đoán cho khách hàng đều dựa trên 100% chỉ số xét nghiệm và Y học chứng cứ. Bác sĩ khoanh vùng chỉ số bất thường để giải thích cặn kẽ và tư vấn trung thực, chỉ định ĐÚNG – ĐỦ các hạng mục thật sự cần thiết với tình trạng sức khỏe của bạn.
-                      </p>
-                      <style>{`#text-3577912054 { text-align: left; }`}</style>
-                    </div>
-                  </div>
+            <div className="commit-card-col">
+              <div className="commit-card">
+                <div className="commit-badge-icon" aria-hidden="true">
+                  <img
+                    decoding="async"
+                    width="60"
+                    height="60"
+                    src="/sites/doctorcheck-vn/root/images/center-dc.svg"
+                    alt=""
+                  />
                 </div>
+                <h3 className="commit-card-title">Tư Vấn Trung Thực, Dựa Vào Y Học Chứng Cứ 100%</h3>
+                <p className="commit-card-desc">
+                  Doctor Check đảm bảo mọi chẩn đoán cho khách hàng đều dựa trên 100% chỉ số xét nghiệm và Y học chứng cứ. Bác sĩ khoanh vùng chỉ số bất thường để giải thích cặn kẽ và tư vấn trung thực, chỉ định ĐÚNG – ĐỦ các hạng mục thật sự cần thiết với tình trạng sức khỏe của bạn.
+                </p>
               </div>
             </div>
 
             {/* Card 3 */}
-            <div id="col-528857879" className="col medium-4 small-12 large-4">
-              <div className="col-inner">
-                <div className="icon-box featured-box icon-box-center text-center">
-                  <div className="icon-box-img" style={{ width: '80px' }}>
-                    <div className="icon">
-                      <div className="icon-inner">
-                        <img
-                          decoding="async"
-                          width="80"
-                          height="80"
-                          src="/sites/doctorcheck-vn/root/images/center-dc.svg"
-                          className="attachment-medium size-medium"
-                          alt="Quy trình tầm soát nhanh chóng"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="icon-box-text last-reset">
-                    <div id="text-3253495481" className="text">
-                      <h3 className="center">Quy Trình Tầm Soát Nhanh Chóng, Trong 60-90 Phút</h3>
-                      <p>
-                        Nhờ trang bị hệ thống máy móc xét nghiệm, nội soi hiện đại giúp quy trình tầm soát rút ngắn đáng kể, CHỈ 60 – 90 PHÚT bạn có thể hoàn tất các hạng mục. Chưa kể bạn có thể đặt hẹn ngay tại nhà trên ứng dụng Doctor Check Member, không phải chờ đợi bốc số mất thời gian.
-                      </p>
-                      <style>{`#text-3253495481 { text-align: left; }`}</style>
-                    </div>
-                  </div>
+            <div className="commit-card-col">
+              <div className="commit-card">
+                <div className="commit-badge-icon" aria-hidden="true">
+                  <img
+                    decoding="async"
+                    width="60"
+                    height="60"
+                    src="/sites/doctorcheck-vn/root/images/center-dc.svg"
+                    alt=""
+                  />
                 </div>
+                <h3 className="commit-card-title">Quy Trình Tầm Soát Nhanh Chóng, Trong 60-90 Phút</h3>
+                <p className="commit-card-desc">
+                  Nhờ trang bị hệ thống máy móc xét nghiệm, nội soi hiện đại giúp quy trình tầm soát rút ngắn đáng kể, CHỈ 60 – 90 PHÚT bạn có thể hoàn tất các hạng mục. Chưa kể bạn có thể đặt hẹn ngay tại nhà trên ứng dụng Doctor Check Member, không phải chờ đợi bốc số mất thời gian.
+                </p>
               </div>
             </div>
+          </div>
 
+          {/* Cards Row 2: 2 cards centered */}
+          <div className="commit-cards-grid row-2">
             {/* Card 4 */}
-            <div id="col-1752375708" className="col medium-4 small-12 large-4">
-              <div className="col-inner">
-                <div className="icon-box featured-box icon-box-center text-center">
-                  <div className="icon-box-img" style={{ width: '80px' }}>
-                    <div className="icon">
-                      <div className="icon-inner">
-                        <img
-                          decoding="async"
-                          width="80"
-                          height="80"
-                          src="/sites/doctorcheck-vn/root/images/center-dc.svg"
-                          className="attachment-medium size-medium"
-                          alt="Kết nối với chuyên gia bác sĩ"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="icon-box-text last-reset">
-                    <div id="text-2307299083" className="text">
-                      <h3 className="center">Kết Nối Bạn Với Chuyên Gia Bác Sĩ Hàng Đầu</h3>
-                      <p>
-                        Doctor Check hiện đang liên kết với nhiều bệnh viện lớn tại Việt Nam. Trường hợp kết quả khám phát hiện bất thường, trung tâm sẽ hỗ trợ bạn kết nối với đội ngũ chuyên gia bác sĩ hàng đầu, giúp quá trình điều trị bệnh đạt hiệu quả cao và nhanh chóng hồi phục sức khỏe.
-                      </p>
-                      <style>{`#text-2307299083 { text-align: left; }`}</style>
-                    </div>
-                  </div>
+            <div className="commit-card-col">
+              <div className="commit-card">
+                <div className="commit-badge-icon" aria-hidden="true">
+                  <img
+                    decoding="async"
+                    width="60"
+                    height="60"
+                    src="/sites/doctorcheck-vn/root/images/center-dc.svg"
+                    alt=""
+                  />
                 </div>
+                <h3 className="commit-card-title">Kết Nối Bạn Với Chuyên Gia Bác Sĩ Hàng Đầu</h3>
+                <p className="commit-card-desc">
+                  Doctor Check hiện đang liên kết với nhiều bệnh viện lớn tại Việt Nam. Trường hợp kết quả khám phát hiện bất thường, trung tâm sẽ hỗ trợ bạn kết nối với đội ngũ chuyên gia bác sĩ hàng đầu, giúp quá trình điều trị bệnh đạt hiệu quả cao và nhanh chóng hồi phục sức khỏe.
+                </p>
               </div>
             </div>
 
             {/* Card 5 */}
-            <div id="col-874552664" className="col medium-4 small-12 large-4">
-              <div className="col-inner">
-                <div className="icon-box featured-box icon-box-center text-center">
-                  <div className="icon-box-img" style={{ width: '80px' }}>
-                    <div className="icon">
-                      <div className="icon-inner">
-                        <img
-                          decoding="async"
-                          width="80"
-                          height="80"
-                          src="/sites/doctorcheck-vn/root/images/center-dc.svg"
-                          className="attachment-medium size-medium"
-                          alt="Tư vấn sống khỏe sống thọ"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="icon-box-text last-reset">
-                    <div id="text-2050244767" className="text">
-                      <h3 className="center">Tư Vấn Cách Để Bạn Sống Khỏe, Sống Thọ</h3>
-                      <p>
-                        Ngoài thăm khám, bác sĩ còn tư vấn và đưa lời khuyên về ăn uống, nghỉ ngơi, tập luyện,… cho bạn trở thành Bác sĩ của chính mình. Đặc biệt bạn dễ dàng trao đổi &amp; nhận tư vấn miễn phí từ bác sĩ ngay trên ứng dụng Doctor Check Member, từ đó chủ động chăm sóc sức khỏe mỗi ngày!
-                      </p>
-                      <style>{`#text-2050244767 { text-align: left; }`}</style>
-                    </div>
-                  </div>
+            <div className="commit-card-col">
+              <div className="commit-card">
+                <div className="commit-badge-icon" aria-hidden="true">
+                  <img
+                    decoding="async"
+                    width="60"
+                    height="60"
+                    src="/sites/doctorcheck-vn/root/images/center-dc.svg"
+                    alt=""
+                  />
                 </div>
+                <h3 className="commit-card-title">Tư Vấn Cách Để Bạn Sống Khỏe, Sống Thọ</h3>
+                <p className="commit-card-desc">
+                  Ngoài thăm khám, bác sĩ còn tư vấn và đưa lời khuyên về ăn uống, nghỉ ngơi, tập luyện,… cho bạn trở thành Bác sĩ của chính mình. Đặc biệt bạn dễ dàng trao đổi &amp; nhận tư vấn miễn phí từ bác sĩ ngay trên ứng dụng Doctor Check Member, từ đó chủ động chăm sóc sức khỏe mỗi ngày!
+                </p>
               </div>
             </div>
           </div>
         </div>
-
-        <style>{`
-          #section_345862875 {
-            padding-top: 30px;
-            padding-bottom: 30px;
-          }
-          #section_345862875 .section-bg img {
-            object-position: top;
-          }
-        `}</style>
       </section>
 
       {/* SECTION 5: Gallery (#section_1753705268) */}
@@ -1066,9 +948,13 @@ export function AboutUsPage() {
                             <button
                               type="button"
                               onClick={() => setIsBookingModalOpen(true)}
-                              className="button secondary lowercase btn-appointment px-6 py-2.5 rounded-full bg-[#FFB500] text-[#00475B] font-bold text-xs uppercase tracking-wider hover:bg-[#e0a000] shadow-md transition-all"
+                              className="button secondary lowercase btn-appointment inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full bg-[#FFB500] text-[#005570] font-bold text-sm tracking-wider hover:bg-[#ffa000] shadow-md transition-all"
+                              style={{ borderRadius: '99px' }}
                             >
                               <span>Đặt hẹn ngay</span>
+                              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                              </svg>
                             </button>
                           </div>
                         </div>
@@ -1096,7 +982,7 @@ export function AboutUsPage() {
                         <div className="text-box-content text">
                           <div className="text-inner text-center">
                             <div id="text-2672332172" className="text dc-title yellow mb-3">
-                              <h2 className="text-xl font-bold text-[#00475B]">
+                              <h2 className="text-xl font-bold text-[#005570]">
                                 <span className="text-[#FFB500]">Doctor Check</span><br />
                                 Tầm Soát Bệnh Để Sống Thọ Hơn
                               </h2>
@@ -1104,7 +990,7 @@ export function AboutUsPage() {
 
                             <div id="text-3339408212" className="text mb-4 text-xs font-semibold text-gray-700">
                               <div className="footer-cta-content space-y-0.5">
-                                <p className="font-bold text-[#00475B]">Thời gian làm việc</p>
+                                <p className="font-bold text-[#005570]">Thời gian làm việc</p>
                                 <p>Thứ 2 - Thứ 7: 6h - 15h</p>
                                 <p>Chủ nhật: 7h - 12h</p>
                               </div>
@@ -1113,9 +999,13 @@ export function AboutUsPage() {
                             <button
                               type="button"
                               onClick={() => setIsBookingModalOpen(true)}
-                              className="button secondary lowercase btn-appointment w-full py-3 rounded-full bg-[#FFB500] text-[#00475B] font-bold text-xs uppercase shadow-md"
+                              className="button secondary lowercase btn-appointment inline-flex items-center justify-center gap-2 w-full py-3 rounded-full bg-[#FFB500] text-[#005570] font-bold text-sm shadow-md"
+                              style={{ borderRadius: '99px' }}
                             >
                               <span>Đặt hẹn ngay</span>
+                              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                              </svg>
                             </button>
                           </div>
                         </div>

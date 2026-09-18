@@ -13,7 +13,7 @@ export function Header() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [openSubMenu, setOpenSubMenu] = useState<string | null>(null);
-  const [openMobileAccordion, setOpenMobileAccordion] = useState<string | null>(null);
+  const [openMobileAccordion, setOpenMobileAccordion] = useState<string | null>('about'); // 'about' open by default to match screenshot Image 3
   const searchInputRef = useRef<HTMLInputElement>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -77,8 +77,7 @@ export function Header() {
               className="header-inner flex-row container logo-left medium-logo-left"
               role="navigation"
             >
-              {/* Logo (width: 60px, margin-right: 30px) */}
-              {/* Logo exact dimensions (48x48px) */}
+              {/* Logo */}
               <div id="logo" className="flex-col logo">
                 <Link
                   href="/"
@@ -87,22 +86,22 @@ export function Header() {
                   className="logo-link"
                 >
                   <img
-                    width="48"
-                    height="48"
+                    width="51"
+                    height="51"
                     src="/sites/doctorcheck-vn/root/images/logo-sticky.webp"
                     className="header-logo-sticky"
                     alt="Doctor Check"
                   />
                   <img
-                    width="48"
-                    height="48"
+                    width="51"
+                    height="51"
                     src="/sites/doctorcheck-vn/root/images/logo-header.webp"
                     className="header_logo header-logo"
                     alt="Doctor Check"
                   />
                   <img
-                    width="48"
-                    height="48"
+                    width="51"
+                    height="51"
                     src="/sites/doctorcheck-vn/root/images/logo-sticky.webp"
                     className="header-logo-dark"
                     alt="Doctor Check"
@@ -110,14 +109,10 @@ export function Header() {
                 </Link>
               </div>
 
-              {/* Mobile Left Elements */}
-              <div className="flex-col show-for-medium flex-left">
-                <ul className="mobile-nav nav nav-left"></ul>
-              </div>
-
-              {/* Left Elements (Desktop Navigation) */}
+              {/* Desktop Navigation (Centered cluster) */}
               <div className="flex-col hide-for-medium flex-left flex-grow">
-                <ul className="header-nav header-nav-main nav nav-left nav-size-medium nav-spacing-small">
+                <ul className="header-nav header-nav-main nav nav-left nav-size-medium">
+                  
                   {/* Item 1: Về Doctor Check */}
                   <li
                     id="menu-item-1501"
@@ -134,12 +129,14 @@ export function Header() {
                       aria-haspopup="menu"
                     >
                       <div className="nav-label-wrap">
-                        <span className="nav-title-text">Về<br /> Doctor Check</span>
-                        <i className="icon-angle-down">
-                          <svg width="7" height="4" viewBox="0 0 10 6" fill="none" aria-hidden="true">
-                            <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                          </svg>
-                        </i>
+                        <span className="nav-title-text">
+                          Về<br />Doctor Check
+                          <i className="icon-angle-down">
+                            <svg width="8" height="5" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                              <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                          </i>
+                        </span>
                       </div>
                     </Link>
                     <ul className="sub-menu nav-dropdown nav-dropdown-default">
@@ -171,12 +168,14 @@ export function Header() {
                       aria-haspopup="menu"
                     >
                       <div className="nav-label-wrap">
-                        <span className="nav-title-text">Tầm Soát Bệnh <br /> Nữ</span>
-                        <i className="icon-angle-down">
-                          <svg width="7" height="4" viewBox="0 0 10 6" fill="none" aria-hidden="true">
-                            <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                          </svg>
-                        </i>
+                        <span className="nav-title-text">
+                          Tầm Soát Bệnh<br />Nữ
+                          <i className="icon-angle-down">
+                            <svg width="8" height="5" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                              <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                          </i>
+                        </span>
                       </div>
                     </Link>
                     <ul className="sub-menu nav-dropdown nav-dropdown-default">
@@ -214,12 +213,14 @@ export function Header() {
                       aria-haspopup="menu"
                     >
                       <div className="nav-label-wrap">
-                        <span className="nav-title-text">Tầm Soát Bệnh <br /> Nam</span>
-                        <i className="icon-angle-down">
-                          <svg width="7" height="4" viewBox="0 0 10 6" fill="none" aria-hidden="true">
-                            <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                          </svg>
-                        </i>
+                        <span className="nav-title-text">
+                          Tầm Soát Bệnh<br />Nam
+                          <i className="icon-angle-down">
+                            <svg width="8" height="5" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                              <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                          </i>
+                        </span>
                       </div>
                     </Link>
                     <ul className="sub-menu nav-dropdown nav-dropdown-default">
@@ -252,12 +253,14 @@ export function Header() {
                   >
                     <span className="nav-top-link cursor-pointer" aria-expanded={openSubMenu === 'habits'} aria-haspopup="menu">
                       <div className="nav-label-wrap">
-                        <span className="nav-title-text">5 Thói Quen<br /> Sống Thọ</span>
-                        <i className="icon-angle-down">
-                          <svg width="7" height="4" viewBox="0 0 10 6" fill="none" aria-hidden="true">
-                            <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                          </svg>
-                        </i>
+                        <span className="nav-title-text">
+                          6 Thói Quen<br />Sống Thọ
+                          <i className="icon-angle-down">
+                            <svg width="8" height="5" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                              <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                          </i>
+                        </span>
                       </div>
                     </span>
                     <ul className="sub-menu nav-dropdown nav-dropdown-default">
@@ -282,7 +285,7 @@ export function Header() {
                     </ul>
                   </li>
 
-                  {/* Item 5: Trung Tâm Nội Soi Tiêu Hóa (Mega Menu + VIP Badge) */}
+                  {/* Item 5: Trung Tâm Nội Soi Tiêu Hóa (with VIP badge) */}
                   <li
                     id="menu-item-1651"
                     className={`label-vip premium menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1651 menu-item-design-default has-dropdown ${
@@ -297,208 +300,70 @@ export function Header() {
                       aria-expanded={openSubMenu === 'endoscopy'}
                       aria-haspopup="menu"
                     >
-                      <div className="nav-label-wrap">
-                        <span className="nav-title-text">Trung Tâm <br />Nội Soi Tiêu Hóa</span>
-                        <i className="icon-angle-down">
-                          <svg width="7" height="4" viewBox="0 0 10 6" fill="none" aria-hidden="true">
-                            <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                          </svg>
-                        </i>
+                      <div className="nav-label-wrap relative">
+                        <span className="nav-title-text">
+                          Trung Tâm<br />Nội Soi Tiêu Hóa
+                          <i className="icon-angle-down">
+                            <svg width="8" height="5" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                              <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                          </i>
+                        </span>
+                        <span className="badge-vip-desktop">VIP</span>
                       </div>
-                      <span className="badge-vip">VIP</span>
                     </Link>
 
-                    {/* Mega Dropdown Multi-Column */}
-                    <div className="sub-menu nav-dropdown nav-dropdown-mega">
-                      <div className="mega-grid">
-                        {/* Col 1: Chuyên khoa dạ dày */}
-                        <div className="mega-col">
-                          <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/chuyen-khoa-da-day/" className="mega-col-title">
-                            Chuyên Khoa Dạ Dày
-                          </Link>
-
-                          <div className="mega-subgroup">
-                            <div className="mega-subgroup-title">Bệnh lý dạ dày:</div>
-                            <ul>
-                              <li><Link href="/viem-loet-da-day-ta-trang/">Viêm loét dạ dày – tá tràng</Link></li>
-                              <li><Link href="/viem-thuc-quan/">Viêm thực quản</Link></li>
-                              <li><Link href="/benh-ung-thu-da-day/">Ung thư dạ dày</Link></li>
-                              <li><Link href="/ung-thu-thuc-quan/">Ung thư thực quản</Link></li>
-                              <li><Link href="/nhiem-khuan-h-pylori/">Nhiễm khuẩn H. pylori</Link></li>
-                              <li><Link href="/trao-nguoc-da-day-thuc-quan/">Trào ngược dạ dày – thực quản</Link></li>
-                              <li><Link href="/kho-tieu-chuc-nang/">Khó tiêu chức năng</Link></li>
-                            </ul>
-                          </div>
-
-                          <div className="mega-subgroup">
-                            <div className="mega-subgroup-title">Triệu chứng dạ dày:</div>
-                            <ul>
-                              <li><Link href="/dau-thuong-vi/">Đau thượng vị</Link></li>
-                              <li><Link href="/kho-tieu/">Khó tiêu</Link></li>
-                              <li><Link href="/an-nhanh-no/">Ăn nhanh no</Link></li>
-                              <li><Link href="/chuong-bung-day-hoi/">Chướng bụng, đầy hơi</Link></li>
-                              <li><Link href="/buon-non-non/">Buồn nôn, nôn</Link></li>
-                            </ul>
-                          </div>
-
-                          <div className="mt-2">
-                            <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/chuyen-khoa-da-day/noi-soi-da-day-chan-doan-benh-ly/" className="mega-highlight-link">
-                              → Nội soi dạ dày chẩn đoán bệnh lý
-                            </Link>
-                          </div>
-                        </div>
-
-                        {/* Col 2: Chuyên khoa đại tràng */}
-                        <div className="mega-col">
-                          <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/chuyen-khoa-dai-trang/" className="mega-col-title">
-                            Chuyên Khoa Đại Tràng
-                          </Link>
-
-                          <div className="mega-subgroup">
-                            <div className="mega-subgroup-title">Bệnh lý đại tràng:</div>
-                            <ul>
-                              <li><Link href="/tao-bon/">Táo bón</Link></li>
-                              <li><Link href="/viem-dai-trang/">Viêm đại tràng</Link></li>
-                              <li><Link href="/hoi-chung-ruot-kich-thich/">Hội chứng ruột kích thích</Link></li>
-                              <li><Link href="/benh-crohn/">Bệnh Crohn</Link></li>
-                              <li><Link href="/tieu-chay-2/">Tiêu chảy</Link></li>
-                              <li><Link href="/roi-loan-tieu-hoa/">Rối loạn tiêu hoá</Link></li>
-                              <li><Link href="/polyp-dai-trang/">Polyp đại tràng</Link></li>
-                            </ul>
-                          </div>
-
-                          <div className="mega-subgroup">
-                            <div className="mega-subgroup-title">Triệu chứng đại tràng:</div>
-                            <ul>
-                              <li><Link href="/dau-bung-am-i/">Đau bụng âm ỉ</Link></li>
-                              <li><Link href="/tieu-phan-nhay-nhot/">Tiêu phân nhầy nhớt</Link></li>
-                              <li><Link href="/tieu-chay/">Tiêu chảy</Link></li>
-                              <li><Link href="/di-ngoai-ra-mau/">Đi ngoài ra máu</Link></li>
-                              <li><Link href="/tao-bon-keo-dai/">Táo bón kéo dài</Link></li>
-                            </ul>
-                          </div>
-
-                          <div className="mt-2">
-                            <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/chuyen-khoa-dai-trang/noi-soi-dai-trang-chan-doan-benh-ly/" className="mega-highlight-link">
-                              → Nội soi đại tràng chẩn đoán bệnh lý
-                            </Link>
-                          </div>
-                        </div>
-
-                        {/* Col 3: Tầm soát ung thư tiêu hóa */}
-                        <div className="mega-col">
-                          <div className="mega-col-title">Tầm Soát Ung Thư</div>
-
-                          <div className="mega-subgroup">
-                            <div className="mega-subgroup-title">Tầm soát ung thư dạ dày:</div>
-                            <ul>
-                              <li><Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/tam-soat-ung-thu-da-day-tai-doctor-check/quy-trinh-noi-soi-da-day/">Quy trình nội soi dạ dày</Link></li>
-                              <li><Link href="/ung-thu-thuc-quan-2/">Ung thư thực quản</Link></li>
-                              <li><Link href="/ung-thu-da-day/">Ung thư dạ dày</Link></li>
-                              <li><Link href="/ung-thu-ta-trang/">Ung thư tá tràng</Link></li>
-                            </ul>
-                          </div>
-
-                          <div className="mega-subgroup">
-                            <div className="mega-subgroup-title">Tầm soát ung thư đại tràng:</div>
-                            <ul>
-                              <li><Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/tam-soat-ung-thu-dai-trang-tai-doctor-check/quy-trinh-noi-soi-dai-trang/">Quy trình nội soi đại tràng</Link></li>
-                              <li><Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/tam-soat-ung-thu-dai-trang-tai-doctor-check/kien-thuc-ung-thu-dai-trang/">Kiến thức ung thư đại tràng</Link></li>
-                            </ul>
-                          </div>
-                        </div>
-
-                        {/* Col 4: Dịch vụ & Chính sách */}
-                        <div className="mega-col flex flex-col justify-between">
-                          <div>
-                            <div className="mega-col-title">Tiêu Chuẩn &amp; Bảng Giá</div>
-                            <ul className="space-y-2">
-                              <li>
-                                <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/10-tieu-chuan-vang/" className="font-bold text-[#005570] hover:text-[#FFB500] flex items-center gap-1.5 py-1">
-                                  <span>10 Tiêu Chuẩn Vàng</span>
-                                </Link>
-                              </li>
-                              <li className="label-new">
-                                <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/bang-gia-2026/" className="font-bold text-[#005570] hover:text-[#FFB500] flex items-center justify-between py-1">
-                                  <span>Bảng Giá 2026</span>
-                                  <span className="badge-new">MỚI</span>
-                                </Link>
-                              </li>
-                              <li>
-                                <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/quyen-loi-bhyt-bhtn/" className="font-semibold text-gray-700 hover:text-[#005570] block py-1">
-                                  Quyền Lợi Bảo Hiểm Y Tế &amp; Bảo Hiểm Tư Nhân
-                                </Link>
-                              </li>
-                              <li>
-                                <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/bao-chi-dua-tin/" className="font-semibold text-gray-700 hover:text-[#005570] block py-1">
-                                  Báo chí đưa tin
-                                </Link>
-                              </li>
-                            </ul>
-                          </div>
-
-                          <div className="mt-4 p-3.5 bg-[#EEF7FA] rounded-xl border border-[#D0EBF1]">
-                            <div className="text-xs font-bold text-[#005570] mb-1">NỘI SOI TIÊU HÓA KHÔNG ĐAU</div>
-                            <div className="text-[11px] text-gray-600 leading-relaxed mb-2.5">
-                              Hệ thống nội soi phóng đại AI Olympus EVIS X1 &amp; Fujifilm 7000 Nhật Bản.
-                            </div>
-                            <a
-                              href="#booking"
-                              className="inline-block w-full text-center py-2 px-3 rounded-lg bg-[#FFB500] text-[#005570] text-xs font-bold hover:bg-[#e0a000] transition-colors shadow-sm"
-                            >
-                              ĐẶT LỊCH NỘI SOI NGAY
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
-                  {/* Item 6: Khám Sức Khỏe Doanh Nghiệp (dc-hide) */}
-                  <li
-                    id="menu-item-5685"
-                    className={`label-minh-bach dc-hide menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5685 menu-item-design-default has-dropdown ${
-                      openSubMenu === 'b2b' ? 'is-open' : ''
-                    }`}
-                    onMouseEnter={() => handleMouseEnter('b2b')}
-                    onMouseLeave={handleMouseLeave}
-                  >
-                    <a
-                      href="https://khamdoanhnghiep.doctorcheck.vn/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="nav-top-link"
-                      aria-expanded={openSubMenu === 'b2b'}
-                      aria-haspopup="menu"
-                    >
-                      <span>Khám Sức Khỏe <br />Doanh Nghiệp</span>
-                      <i className="icon-angle-down">
-                        <svg width="9" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
-                          <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                      </i>
-                    </a>
+                    {/* Standard Dropdown Menu (Matching Image 2) */}
                     <ul className="sub-menu nav-dropdown nav-dropdown-default">
-                      <li id="menu-item-5707" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5707">
-                        <a href="https://khamdoanhnghiep.doctorcheck.vn/#solution" target="_blank" rel="noopener noreferrer">Về Doctor Check</a>
+                      <li className="menu-item menu-item-type-post_type menu-item-object-page">
+                        <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/10-tieu-chuan-vang/">
+                          10 Tiêu Chuẩn Vàng
+                        </Link>
                       </li>
-                      <li id="menu-item-5708" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5708">
-                        <a href="https://khamdoanhnghiep.doctorcheck.vn/#process" target="_blank" rel="noopener noreferrer">Quy Trình Khám</a>
+                      <li className="menu-item menu-item-type-post_type menu-item-object-page">
+                        <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/chuyen-khoa-da-day/">
+                          Chuyên khoa dạ dày
+                        </Link>
                       </li>
-                      <li id="menu-item-5709" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5709">
-                        <a href="https://khamdoanhnghiep.doctorcheck.vn/#packages" target="_blank" rel="noopener noreferrer">Các Gói Khám</a>
+                      <li className="menu-item menu-item-type-post_type menu-item-object-page">
+                        <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/chuyen-khoa-dai-trang/">
+                          Chuyên khoa đại tràng
+                        </Link>
                       </li>
-                      <li id="menu-item-5710" className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5710">
-                        <a href="https://khamdoanhnghiep.doctorcheck.vn/#form-section" target="_blank" rel="noopener noreferrer">Liên Hệ</a>
+                      <li className="menu-item menu-item-type-post_type menu-item-object-page">
+                        <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/tam-soat-ung-thu-da-day-tai-doctor-check/">
+                          Tầm soát ung thư dạ dày
+                        </Link>
+                      </li>
+                      <li className="menu-item menu-item-type-post_type menu-item-object-page">
+                        <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/tam-soat-ung-thu-dai-trang-tai-doctor-check/">
+                          Tầm soát ung thư đại tràng
+                        </Link>
+                      </li>
+                      <li className="menu-item menu-item-type-post_type menu-item-object-page label-new">
+                        <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/bang-gia-2026/">
+                          <span>Bảng Giá 2026</span>
+                          <span className="badge-new">Mới</span>
+                        </Link>
+                      </li>
+                      <li className="menu-item menu-item-type-post_type menu-item-object-page">
+                        <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/quyen-loi-bhyt-bhtn/">
+                          Quyền Lợi Bảo Hiểm Y Tế &amp; Bảo Hiểm Tư Nhân
+                        </Link>
+                      </li>
+                      <li className="menu-item menu-item-type-post_type menu-item-object-page">
+                        <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/bao-chi-dua-tin/">
+                          Báo chí đưa tin
+                        </Link>
                       </li>
                     </ul>
                   </li>
                 </ul>
               </div>
 
-              {/* Right Elements: Search Form & Icon */}
+              {/* Right Elements: Search Toggle */}
               <div className="flex-col hide-for-medium flex-right">
-                <ul className="header-nav header-nav-main nav nav-right nav-size-medium nav-spacing-small">
+                <ul className="header-nav header-nav-main nav nav-right nav-size-medium">
                   <li className={`header-search header-search-dropdown has-icon has-dropdown menu-item-has-children ${searchOpen ? 'is-open' : ''}`}>
                     <a
                       href="#search"
@@ -507,10 +372,10 @@ export function Header() {
                         setSearchOpen(!searchOpen);
                       }}
                       aria-label="Tìm kiếm"
-                      className="search-toggle-btn is-small"
+                      className="search-toggle-btn"
                     >
                       <i className="icon-search">
-                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#2A2F38" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                           <circle cx="11" cy="11" r="8" />
                           <line x1="21" y1="21" x2="16.65" y2="16.65" />
                         </svg>
@@ -563,23 +428,23 @@ export function Header() {
                 </ul>
               </div>
 
-              {/* Mobile Right Elements: Hamburger */}
+              {/* Mobile Right Elements: Hamburger (Matching Image 2) */}
               <div className="flex-col show-for-medium flex-right">
                 <ul className="mobile-nav nav nav-right">
                   <li className="nav-icon has-icon">
                     <button
                       type="button"
                       onClick={() => setMobileMenuOpen(true)}
-                      className="mobile-menu-trigger p-2 text-[#2a2f38] hover:text-[#005570] transition-colors"
+                      className="mobile-menu-trigger p-1 text-[#2a2f38] hover:text-[#005570] transition-colors"
                       aria-label="Menu"
                       aria-controls="main-menu"
                       aria-expanded={mobileMenuOpen}
                     >
                       <i className="icon-menu">
-                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                          <line x1="3" y1="6" x2="21" y2="6" />
-                          <line x1="3" y1="12" x2="21" y2="12" />
-                          <line x1="3" y1="18" x2="21" y2="18" />
+                        <svg width="24" height="18" viewBox="0 0 24 18" fill="none" stroke="#2A2F38" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <line x1="0" y1="2" x2="24" y2="2" />
+                          <line x1="0" y1="9" x2="24" y2="9" />
+                          <line x1="0" y1="16" x2="24" y2="16" />
                         </svg>
                       </i>
                     </button>
@@ -596,7 +461,7 @@ export function Header() {
         </div>
       </header>
 
-      {/* Mobile Menu Drawer (#main-menu) */}
+      {/* Mobile Menu Drawer (#main-menu) — Full Screen Expand with Bold Clear Typography */}
       {mobileMenuOpen && (
         <>
           <div
@@ -610,230 +475,423 @@ export function Header() {
             role="dialog"
             aria-modal="true"
             aria-label="Menu điều hướng chính"
+            style={{
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              width: '100vw',
+              maxWidth: '100vw',
+              height: '100dvh',
+              backgroundColor: '#FDFDF6',
+              zIndex: 1100,
+              display: 'flex',
+              flexDirection: 'column',
+              fontFamily: "'SVN-Sofia Pro', 'Sofia Pro', sans-serif",
+              overflowY: 'auto',
+              padding: '28px 24px 44px 24px',
+            }}
           >
-            {/* Header of Drawer */}
-            <div className="p-4 border-b border-gray-100 flex items-center justify-between">
-              <Link href="/" onClick={() => setMobileMenuOpen(false)}>
-                <img
-                  src="/sites/doctorcheck-vn/root/images/logo-header.webp"
-                  alt="Doctor Check"
-                  className="h-10 w-auto"
-                />
-              </Link>
+            {/* Top Close Button (Clean X at top-right) */}
+            <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '28px' }}>
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-1.5 text-gray-500 hover:text-[#005570]"
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  cursor: 'pointer',
+                  padding: '6px',
+                  color: '#2A2F38',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
                 aria-label="Đóng menu"
               >
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2A2F38" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="18" y1="6" x2="6" y2="18" />
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
               </button>
             </div>
 
-            {/* Mobile Search */}
-            <div className="p-4 pb-2 border-b border-gray-100">
-              <form onSubmit={handleSearchSubmit} className="flex gap-2">
-                <input
-                  type="search"
-                  placeholder="Tìm kiếm"
-                  className="w-full px-3 py-2 text-xs border border-gray-200 rounded-lg focus:outline-none focus:border-[#005570]"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                />
-                <button
-                  type="submit"
-                  className="px-3 py-2 bg-[#005570] text-white text-xs font-bold rounded-lg hover:bg-[#ffb500] hover:text-[#005570] transition-colors"
+            {/* Navigation List Full Width */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '26px' }}>
+              
+              {/* Item 1: Về Doctor Check */}
+              <div>
+                <div
+                  onClick={() => toggleMobileAccordion('about')}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    cursor: 'pointer',
+                    userSelect: 'none',
+                  }}
                 >
-                  Tìm
-                </button>
-              </form>
-            </div>
-
-            {/* Navigation List */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-1 text-sm font-semibold text-[#005570]">
-              {/* Section 1: Về Doctor Check */}
-              <div className="border-b border-gray-100 pb-2">
-                <div className="flex items-center justify-between py-2">
-                  <Link href="/ve-chung-toi/" onClick={() => setMobileMenuOpen(false)}>
+                  <span style={{ fontSize: '18px', fontWeight: 700, color: '#2A2F38' }}>
                     Về Doctor Check
-                  </Link>
-                  <button
-                    type="button"
-                    onClick={() => toggleMobileAccordion('about')}
-                    className="p-1 text-gray-400 hover:text-[#005570]"
-                    aria-label="Chuyển đổi menu Về Doctor Check"
-                  >
-                    <svg className={`w-4 h-4 transition-transform ${openMobileAccordion === 'about' ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  </span>
+                  <span style={{ color: '#2A2F38', display: 'flex', alignItems: 'center' }}>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      style={{
+                        transform: openMobileAccordion === 'about' ? 'rotate(180deg)' : 'rotate(0deg)',
+                        transition: 'transform 0.25s ease',
+                      }}
+                    >
                       <polyline points="6 9 12 15 18 9" />
                     </svg>
-                  </button>
+                  </span>
                 </div>
+
+                {/* Sub-items for Về Doctor Check */}
                 {openMobileAccordion === 'about' && (
-                  <div className="pl-3 pb-2 space-y-1.5 text-xs text-gray-600 font-normal">
-                    <Link href="/cac-yeu-to-cua-mot-dia-chi-tam-soat-benh-trong-mo/" onClick={() => setMobileMenuOpen(false)} className="block py-1">6 Tiêu Chí Của Một Trung Tâm Tầm Soát</Link>
-                    <Link href="/loi-ich-khi-kham-tong-quat-tai-doctor-check/" onClick={() => setMobileMenuOpen(false)} className="block py-1">Lợi Ích Trước &amp; Sau Khi Tầm Soát Bệnh</Link>
-                    <Link href="/bang-gia-dich-vu-tam-soat-benh-tai-doctor-check/" onClick={() => setMobileMenuOpen(false)} className="block py-1 font-bold text-[#005570]">Bảng Giá Mới Nhất 2026</Link>
-                  </div>
-                )}
-              </div>
-
-              {/* Section 2: Tầm Soát Bệnh Nữ */}
-              <div className="border-b border-gray-100 pb-2">
-                <div className="flex items-center justify-between py-2">
-                  <Link href="/goi-tam-soat-nu" onClick={() => setMobileMenuOpen(false)}>
-                    Tầm Soát Bệnh Nữ
-                  </Link>
-                  <button
-                    type="button"
-                    onClick={() => toggleMobileAccordion('women')}
-                    className="p-1 text-gray-400 hover:text-[#005570]"
-                    aria-label="Chuyển đổi menu Tầm Soát Bệnh Nữ"
+                  <div
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '16px',
+                      paddingTop: '18px',
+                      paddingLeft: '16px',
+                    }}
                   >
-                    <svg className={`w-4 h-4 transition-transform ${openMobileAccordion === 'women' ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <polyline points="6 9 12 15 18 9" />
-                    </svg>
-                  </button>
-                </div>
-                {openMobileAccordion === 'women' && (
-                  <div className="pl-3 pb-2 space-y-1.5 text-xs text-gray-600 font-normal">
-                    <Link href="/goi-khuyen-cao-danh-cho-nu/" onClick={() => setMobileMenuOpen(false)} className="block py-1">Gói Khuyến Cáo</Link>
-                    <Link href="/goi-tam-soat-chuyen-sau-danh-cho-nu/" onClick={() => setMobileMenuOpen(false)} className="block py-1">Gói Chuyên Sâu</Link>
-                    <Link href="/goi-kham-song-tho-danh-cho-nu/" onClick={() => setMobileMenuOpen(false)} className="block py-1 font-bold text-[#005570] flex items-center justify-between">
-                      <span>Gói Sống Thọ</span>
-                      <span className="badge-vip">VIP</span>
+                    <Link
+                      href="/cac-yeu-to-cua-mot-dia-chi-tam-soat-benh-trong-mo/"
+                      onClick={() => setMobileMenuOpen(false)}
+                      style={{
+                        fontSize: '15.5px',
+                        fontWeight: 600,
+                        color: '#2A2F38',
+                        textDecoration: 'none',
+                        lineHeight: '1.4',
+                      }}
+                    >
+                      6 Tiêu Chí Của Một Trung Tâm Tầm Soát
                     </Link>
-                    <Link href="/so-sanh-3-goi-kham-nu/" onClick={() => setMobileMenuOpen(false)} className="block py-1">So Sánh 3 Gói</Link>
-                  </div>
-                )}
-              </div>
-
-              {/* Section 3: Tầm Soát Bệnh Nam */}
-              <div className="border-b border-gray-100 pb-2">
-                <div className="flex items-center justify-between py-2">
-                  <Link href="/goi-tam-soat-nam" onClick={() => setMobileMenuOpen(false)}>
-                    Tầm Soát Bệnh Nam
-                  </Link>
-                  <button
-                    type="button"
-                    onClick={() => toggleMobileAccordion('men')}
-                    className="p-1 text-gray-400 hover:text-[#005570]"
-                    aria-label="Chuyển đổi menu Tầm Soát Bệnh Nam"
-                  >
-                    <svg className={`w-4 h-4 transition-transform ${openMobileAccordion === 'men' ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <polyline points="6 9 12 15 18 9" />
-                    </svg>
-                  </button>
-                </div>
-                {openMobileAccordion === 'men' && (
-                  <div className="pl-3 pb-2 space-y-1.5 text-xs text-gray-600 font-normal">
-                    <Link href="/goi-khuyen-cao-danh-cho-nam/" onClick={() => setMobileMenuOpen(false)} className="block py-1">Gói Khuyến Cáo</Link>
-                    <Link href="/goi-chuyen-sau-danh-cho-nam/" onClick={() => setMobileMenuOpen(false)} className="block py-1">Gói Chuyên Sâu</Link>
-                    <Link href="/goi-song-tho-danh-cho-nam/" onClick={() => setMobileMenuOpen(false)} className="block py-1 font-bold text-[#005570] flex items-center justify-between">
-                      <span>Gói Sống Thọ</span>
-                      <span className="badge-vip">VIP</span>
+                    <Link
+                      href="/loi-ich-khi-kham-tong-quat-tai-doctor-check/"
+                      onClick={() => setMobileMenuOpen(false)}
+                      style={{
+                        fontSize: '15.5px',
+                        fontWeight: 600,
+                        color: '#2A2F38',
+                        textDecoration: 'none',
+                        lineHeight: '1.4',
+                      }}
+                    >
+                      Lợi Ích Trước &amp; Sau Khi Tầm Soát Bệnh
                     </Link>
-                    <Link href="/so-sanh-3-goi-kham-nam/" onClick={() => setMobileMenuOpen(false)} className="block py-1">So Sánh 3 Gói</Link>
-                  </div>
-                )}
-              </div>
-
-              {/* Section 4: 6 Thói Quen Sống Thọ */}
-              <div className="border-b border-gray-100 pb-2">
-                <div className="flex items-center justify-between py-2">
-                  <span>6 Thói Quen Sống Thọ</span>
-                  <button
-                    type="button"
-                    onClick={() => toggleMobileAccordion('habits')}
-                    className="p-1 text-gray-400 hover:text-[#005570]"
-                    aria-label="Chuyển đổi menu 6 Thói Quen Sống Thọ"
-                  >
-                    <svg className={`w-4 h-4 transition-transform ${openMobileAccordion === 'habits' ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <polyline points="6 9 12 15 18 9" />
-                    </svg>
-                  </button>
-                </div>
-                {openMobileAccordion === 'habits' && (
-                  <div className="pl-3 pb-2 space-y-1.5 text-xs text-gray-600 font-normal">
-                    <Link href="/kiem-soat-can-nang-va-bmi/" onClick={() => setMobileMenuOpen(false)} className="block py-1">Kiểm Soát Cân Nặng Và BMI</Link>
-                    <Link href="/dinh-duong-song-tho/" onClick={() => setMobileMenuOpen(false)} className="block py-1">Dinh Dưỡng Sống Thọ</Link>
-                    <Link href="/giac-ngu-song-tho/" onClick={() => setMobileMenuOpen(false)} className="block py-1">Giấc Ngủ Sống Thọ</Link>
-                    <Link href="/van-dong-song-tho/" onClick={() => setMobileMenuOpen(false)} className="block py-1">Vận Động Sống Thọ</Link>
-                    <Link href="/kiem-soat-stress-nong-gian/" onClick={() => setMobileMenuOpen(false)} className="block py-1">Kiểm Soát Stress, Nóng Giận</Link>
-                    <Link href="/kiem-soat-hoi-tho-de-song-tho/" onClick={() => setMobileMenuOpen(false)} className="block py-1">Kiểm Soát Hơi Thở Để Sống Thọ</Link>
-                  </div>
-                )}
-              </div>
-
-              {/* Section 5: Trung Tâm Nội Soi Tiêu Hóa */}
-              <div className="border-b border-gray-100 pb-2">
-                <div className="flex items-center justify-between py-2">
-                  <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/" onClick={() => setMobileMenuOpen(false)} className="font-bold text-[#005570] flex items-center gap-1.5">
-                    <span>Trung Tâm Nội Soi Tiêu Hóa</span>
-                    <span className="badge-vip">VIP</span>
-                  </Link>
-                  <button
-                    type="button"
-                    onClick={() => toggleMobileAccordion('endoscopy')}
-                    className="p-1 text-gray-400 hover:text-[#005570]"
-                    aria-label="Chuyển đổi menu Trung Tâm Nội Soi Tiêu Hóa"
-                  >
-                    <svg className={`w-4 h-4 transition-transform ${openMobileAccordion === 'endoscopy' ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <polyline points="6 9 12 15 18 9" />
-                    </svg>
-                  </button>
-                </div>
-                {openMobileAccordion === 'endoscopy' && (
-                  <div className="pl-3 pb-2 space-y-1.5 text-xs text-gray-600 font-normal">
-                    <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/10-tieu-chuan-vang/" onClick={() => setMobileMenuOpen(false)} className="block py-1 font-bold text-[#005570]">10 Tiêu Chuẩn Vàng</Link>
-                    <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/bang-gia-2026/" onClick={() => setMobileMenuOpen(false)} className="block py-1 font-bold text-[#005570] flex items-center justify-between">
-                      <span>Bảng Giá 2026</span>
-                      <span className="badge-new">MỚI</span>
+                    <Link
+                      href="/bang-gia-dich-vu-tam-soat-benh-tai-doctor-check/"
+                      onClick={() => setMobileMenuOpen(false)}
+                      style={{
+                        fontSize: '15.5px',
+                        fontWeight: 600,
+                        color: '#2A2F38',
+                        textDecoration: 'none',
+                        lineHeight: '1.4',
+                      }}
+                    >
+                      Bảng Giá Mới Nhất 2026
                     </Link>
-                    <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/chuyen-khoa-da-day/" onClick={() => setMobileMenuOpen(false)} className="block py-1">Chuyên khoa dạ dày</Link>
-                    <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/chuyen-khoa-dai-trang/" onClick={() => setMobileMenuOpen(false)} className="block py-1">Chuyên khoa đại tràng</Link>
-                    <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/tam-soat-ung-thu-da-day-tai-doctor-check/" onClick={() => setMobileMenuOpen(false)} className="block py-1">Tầm soát ung thư dạ dày</Link>
-                    <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/tam-soat-ung-thu-dai-trang-tai-doctor-check/" onClick={() => setMobileMenuOpen(false)} className="block py-1">Tầm soát ung thư đại tràng</Link>
-                    <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/quyen-loi-bhyt-bhtn/" onClick={() => setMobileMenuOpen(false)} className="block py-1">Quyền Lợi BHYT &amp; BHTN</Link>
                   </div>
                 )}
               </div>
 
-              {/* Section 6: Khám Sức Khỏe Doanh Nghiệp (dc-hide) */}
-              <div className="dc-hide border-b border-gray-100 pb-2">
-                <a
-                  href="https://khamdoanhnghiep.doctorcheck.vn/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block py-2 text-[#005570]"
+              {/* Item 2: Tầm Soát Bệnh Nữ */}
+              <div>
+                <div
+                  onClick={() => toggleMobileAccordion('women')}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    cursor: 'pointer',
+                    userSelect: 'none',
+                  }}
                 >
-                  Khám Sức Khỏe Doanh Nghiệp ↗
-                </a>
-              </div>
-            </div>
+                  <span style={{ fontSize: '18px', fontWeight: 700, color: '#2A2F38' }}>
+                    Tầm Soát Bệnh Nữ
+                  </span>
+                  <span style={{ color: '#2A2F38', display: 'flex', alignItems: 'center' }}>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      style={{
+                        transform: openMobileAccordion === 'women' ? 'rotate(180deg)' : 'rotate(0deg)',
+                        transition: 'transform 0.25s ease',
+                      }}
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </span>
+                </div>
 
-            {/* Bottom Actions */}
-            <div className="p-4 border-t border-gray-100 space-y-2">
-              <a
-                href="#booking"
-                onClick={() => setMobileMenuOpen(false)}
-                className="block w-full py-3 text-center bg-[#FFB500] text-[#005570] font-bold text-sm rounded-xl shadow-md hover:bg-[#e0a000] transition-colors"
-              >
-                ĐẶT HẸN TẦM SOÁT NGAY
-              </a>
-              <a
-                href="tel:02856789999"
-                className="block w-full py-2.5 text-center border border-[#005570] text-[#005570] font-bold text-xs rounded-xl hover:bg-[#EEF7FA] transition-colors"
-              >
-                Hotline: 028 5678 9999
-              </a>
+                {openMobileAccordion === 'women' && (
+                  <div
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '16px',
+                      paddingTop: '18px',
+                      paddingLeft: '16px',
+                    }}
+                  >
+                    <Link href="/goi-khuyen-cao-danh-cho-nu/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none' }}>
+                      Gói Khuyến Cáo
+                    </Link>
+                    <Link href="/goi-tam-soat-chuyen-sau-danh-cho-nu/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none' }}>
+                      Gói Chuyên Sâu
+                    </Link>
+                    <Link href="/goi-kham-song-tho-danh-cho-nu/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                      <span>Gói Sống Thọ</span>
+                      <span className="badge-vip" style={{ position: 'static', marginLeft: '8px' }}>VIP</span>
+                    </Link>
+                    <Link href="/so-sanh-3-goi-kham-nu/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none' }}>
+                      So Sánh 3 Gói
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Item 3: Tầm Soát Bệnh Nam */}
+              <div>
+                <div
+                  onClick={() => toggleMobileAccordion('men')}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    cursor: 'pointer',
+                    userSelect: 'none',
+                  }}
+                >
+                  <span style={{ fontSize: '18px', fontWeight: 700, color: '#2A2F38' }}>
+                    Tầm Soát Bệnh Nam
+                  </span>
+                  <span style={{ color: '#2A2F38', display: 'flex', alignItems: 'center' }}>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      style={{
+                        transform: openMobileAccordion === 'men' ? 'rotate(180deg)' : 'rotate(0deg)',
+                        transition: 'transform 0.25s ease',
+                      }}
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </span>
+                </div>
+
+                {openMobileAccordion === 'men' && (
+                  <div
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '16px',
+                      paddingTop: '18px',
+                      paddingLeft: '16px',
+                    }}
+                  >
+                    <Link href="/goi-khuyen-cao-danh-cho-nam/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none' }}>
+                      Gói Khuyến Cáo
+                    </Link>
+                    <Link href="/goi-chuyen-sau-danh-cho-nam/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none' }}>
+                      Gói Chuyên Sâu
+                    </Link>
+                    <Link href="/goi-song-tho-danh-cho-nam/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                      <span>Gói Sống Thọ</span>
+                      <span className="badge-vip" style={{ position: 'static', marginLeft: '8px' }}>VIP</span>
+                    </Link>
+                    <Link href="/so-sanh-3-goi-kham-nam/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none' }}>
+                      So Sánh 3 Gói
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Item 4: 6 Thói Quen Sống Thọ */}
+              <div>
+                <div
+                  onClick={() => toggleMobileAccordion('habits')}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    cursor: 'pointer',
+                    userSelect: 'none',
+                  }}
+                >
+                  <span style={{ fontSize: '18px', fontWeight: 700, color: '#2A2F38' }}>
+                    6 Thói Quen Sống Thọ
+                  </span>
+                  <span style={{ color: '#2A2F38', display: 'flex', alignItems: 'center' }}>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      style={{
+                        transform: openMobileAccordion === 'habits' ? 'rotate(180deg)' : 'rotate(0deg)',
+                        transition: 'transform 0.25s ease',
+                      }}
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </span>
+                </div>
+
+                {openMobileAccordion === 'habits' && (
+                  <div
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '16px',
+                      paddingTop: '18px',
+                      paddingLeft: '16px',
+                    }}
+                  >
+                    <Link href="/kiem-soat-can-nang-va-bmi/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none' }}>
+                      Kiểm Soát Cân Nặng Và BMI
+                    </Link>
+                    <Link href="/dinh-duong-song-tho/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none' }}>
+                      Dinh Dưỡng Sống Thọ
+                    </Link>
+                    <Link href="/giac-ngu-song-tho/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none' }}>
+                      Giấc Ngủ Sống Thọ
+                    </Link>
+                    <Link href="/van-dong-song-tho/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none' }}>
+                      Vận Động Sống Thọ
+                    </Link>
+                    <Link href="/kiem-soat-stress-nong-gian/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none' }}>
+                      Kiểm Soát Stress, Nóng Giận
+                    </Link>
+                    <Link href="/kiem-soat-hoi-tho-de-song-tho/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none' }}>
+                      Kiểm Soát Hơi Thở Để Sống Thọ
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Item 5: Trung Tâm Nội Soi Tiêu Hóa (with red VIP badge) */}
+              <div>
+                <div
+                  onClick={() => toggleMobileAccordion('endoscopy')}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    cursor: 'pointer',
+                    userSelect: 'none',
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <span style={{ fontSize: '18px', fontWeight: 700, color: '#2A2F38' }}>
+                      Trung Tâm Nội Soi Tiêu Hóa
+                    </span>
+                    <span
+                      style={{
+                        backgroundColor: '#CD0000',
+                        color: '#ffffff',
+                        fontSize: '10px',
+                        fontWeight: 800,
+                        padding: '2.5px 6px',
+                        borderRadius: '0 8px 0 8px',
+                        lineHeight: 1,
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.5px',
+                      }}
+                    >
+                      VIP
+                    </span>
+                  </div>
+                  <span style={{ color: '#2A2F38', display: 'flex', alignItems: 'center' }}>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      style={{
+                        transform: openMobileAccordion === 'endoscopy' ? 'rotate(180deg)' : 'rotate(0deg)',
+                        transition: 'transform 0.25s ease',
+                      }}
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </span>
+                </div>
+
+                {openMobileAccordion === 'endoscopy' && (
+                  <div
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '16px',
+                      paddingTop: '18px',
+                      paddingLeft: '16px',
+                    }}
+                  >
+                    <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/10-tieu-chuan-vang/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none' }}>
+                      10 Tiêu Chuẩn Vàng
+                    </Link>
+                    <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/bang-gia-2026/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                      <span>Bảng Giá 2026</span>
+                      <span className="badge-new" style={{ position: 'static', marginLeft: '8px' }}>MỚI</span>
+                    </Link>
+                    <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/chuyen-khoa-da-day/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none' }}>
+                      Chuyên khoa dạ dày
+                    </Link>
+                    <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/chuyen-khoa-dai-trang/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none' }}>
+                      Chuyên khoa đại tràng
+                    </Link>
+                    <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/tam-soat-ung-thu-da-day-tai-doctor-check/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none' }}>
+                      Tầm soát ung thư dạ dày
+                    </Link>
+                    <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/tam-soat-ung-thu-dai-trang-tai-doctor-check/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none' }}>
+                      Tầm soát ung thư đại tràng
+                    </Link>
+                    <Link href="/trung-tam-noi-soi-tieu-hoa-doctor-check/quyen-loi-bhyt-bhtn/" onClick={() => setMobileMenuOpen(false)} style={{ fontSize: '15.5px', fontWeight: 600, color: '#2A2F38', textDecoration: 'none' }}>
+                      Quyền Lợi BHYT &amp; BHTN
+                    </Link>
+                  </div>
+                )}
+              </div>
+
             </div>
           </div>
         </>
       )}
-
-      </>
+    </>
   );
 }

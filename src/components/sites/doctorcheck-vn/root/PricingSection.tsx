@@ -3,209 +3,180 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import type { PricingBlockConfig, SectionsMetaConfig, HomepagePackageCard } from '@/lib/data/homepage';
 
-interface PackageCard {
-  id: string;
-  slug: string;
-  name: string;
-  price: string;
-  sub: string;
-  image: string;
+const defaultMalePackages: HomepagePackageCard[] = [
+  {
+    id: 'khuyen-cao-nam',
+    slug: '/goi-khuyen-cao-danh-cho-nam/',
+    name: 'Gói Khuyến Cáo',
+    price: '3,000,000đ',
+    sub: '21 Nhóm bệnh & 2 loại ung thư',
+    image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/e4515038-e50c-45f6-f35d-8255929a6f00/w=625,h=400',
+  },
+  {
+    id: 'chuyen-sau-nam',
+    slug: '/goi-chuyen-sau-danh-cho-nam/',
+    name: 'Gói Chuyên Sâu',
+    price: '5,000,000đ',
+    sub: '24 Nhóm bệnh & 5 loại ung thư',
+    image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/9e90b45a-e67c-4570-0afe-de7f4b40a700/w=625,h=400',
+  },
+  {
+    id: 'song-tho-nam',
+    slug: '/goi-song-tho-danh-cho-nam/',
+    name: 'Gói Sống Thọ',
+    price: '11,500,000đ',
+    sub: '29 Nhóm bệnh & 9 loại ung thư',
+    image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/887ac26c-5b5c-4732-f2fe-37f2b4a4e200/w=625,h=400',
+  },
+];
+
+const defaultFemalePackages: HomepagePackageCard[] = [
+  {
+    id: 'khuyen-cao-nu',
+    slug: '/goi-khuyen-cao-danh-cho-nu/',
+    name: 'Gói Khuyến Cáo',
+    price: '3,000,000đ',
+    sub: '21 Nhóm bệnh & 2 loại ung thư',
+    image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/f95b8991-eaad-4b0d-0e10-363256915b00/w=625,h=400',
+  },
+  {
+    id: 'chuyen-sau-nu',
+    slug: '/goi-tam-soat-chuyen-sau-danh-cho-nu/',
+    name: 'Gói Chuyên Sâu',
+    price: '6,000,000đ',
+    sub: '26 Nhóm bệnh & 4 loại ung thư',
+    image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/ca8d1686-7b25-4e2b-b648-376b7cc69800/w=625,h=400',
+  },
+  {
+    id: 'song-tho-nu',
+    slug: '/goi-kham-song-tho-danh-cho-nu/',
+    name: 'Gói Sống Thọ',
+    price: '14,500,000đ',
+    sub: '31 Nhóm bệnh & 10 loại ung thư',
+    image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/f298c0dc-622c-4fc2-8f74-e4d83e1d5300/w=625,h=400',
+  },
+];
+
+interface PricingSectionProps {
+  pricingConfig?: PricingBlockConfig;
+  header?: SectionsMetaConfig['pricingHeader'];
 }
 
-export function PricingSection() {
+export function PricingSection({ pricingConfig, header }: PricingSectionProps = {}) {
   const [activeTab, setActiveTab] = useState<'male' | 'female'>('male');
 
-  const malePackages: PackageCard[] = [
-    {
-      id: 'khuyen-cao-nam',
-      slug: '/goi-khuyen-cao-danh-cho-nam/',
-      name: 'Gói Khuyến Cáo',
-      price: '3,000,000đ',
-      sub: '21 Nhóm bệnh & 2 loại ung thư',
-      image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/e4515038-e50c-45f6-f35d-8255929a6f00/w=625,h=400',
-    },
-    {
-      id: 'chuyen-sau-nam',
-      slug: '/goi-chuyen-sau-danh-cho-nam/',
-      name: 'Gói Chuyên Sâu',
-      price: '5,000,000đ',
-      sub: '24 Nhóm bệnh & 5 loại ung thư',
-      image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/9e90b45a-e67c-4570-0afe-de7f4b40a700/w=625,h=400',
-    },
-    {
-      id: 'song-tho-nam',
-      slug: '/goi-song-tho-danh-cho-nam/',
-      name: 'Gói Sống Thọ',
-      price: '11,500,000đ',
-      sub: '29 Nhóm bệnh & 9 loại ung thư',
-      image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/887ac26c-5b5c-4732-f2fe-37f2b4a4e200/w=625,h=400',
-    },
-  ];
-
-  const femalePackages: PackageCard[] = [
-    {
-      id: 'khuyen-cao-nu',
-      slug: '/goi-khuyen-cao-danh-cho-nu/',
-      name: 'Gói Khuyến cáo',
-      price: '3,000,000đ',
-      sub: '21 Nhóm bệnh & 2 loại ung thư',
-      image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/f95b8991-eaad-4b0d-0e10-363256915b00/w=625,h=400',
-    },
-    {
-      id: 'chuyen-sau-nu',
-      slug: '/goi-tam-soat-chuyen-sau-danh-cho-nu/',
-      name: 'Gói Chuyên Sâu',
-      price: '6,000,000đ',
-      sub: '26 Nhóm bệnh & 4 loại ung thư',
-      image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/ca8d1686-7b25-4e2b-b648-376b7cc69800/w=625,h=400',
-    },
-    {
-      id: 'song-tho-nu',
-      slug: '/goi-kham-song-tho-danh-cho-nu/',
-      name: 'Gói Sống thọ',
-      price: '14,500,000đ',
-      sub: '31 Nhóm bệnh & 10 loại ung thư',
-      image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/f298c0dc-622c-4fc2-8f74-e4d83e1d5300/w=625,h=400',
-    },
-  ];
-
+  const malePackages = pricingConfig?.malePackages || defaultMalePackages;
+  const femalePackages = pricingConfig?.femalePackages || defaultFemalePackages;
   const currentPackages = activeTab === 'male' ? malePackages : femalePackages;
-  const moreUrl = activeTab === 'male' ? '/goi-tam-soat-nam/' : '/goi-tam-soat-nu/';
+  const title = header?.title || 'Bảng Giá Các Gói Khám Tổng\nQuát tại Doctor Check';
+  const maleMoreUrl = header?.maleMoreUrl || '/goi-kham-danh-cho-nam/';
+  const femaleMoreUrl = header?.femaleMoreUrl || '/goi-kham-danh-cho-nu/';
+  const moreUrl = activeTab === 'male' ? maleMoreUrl : femaleMoreUrl;
 
   return (
-    <section className="section section-service circle-blur py-8 md:py-12 bg-[#FDFDF6] relative overflow-hidden" id="section_1936328654">
-      <div className="section-bg fill" />
+    <section
+      className="section section-service circle-blur py-10 md:py-16 bg-[#FDFDF6] relative overflow-hidden"
+      id="section_1936328654"
+    >
+      <div className="container max-w-[1240px] mx-auto px-4 md:px-6">
+        {/* Section Heading matching 1:1 */}
+        <div className="text-center mb-8 md:mb-10">
+          <h2 className="text-[#005570] font-bold text-[24px] sm:text-[28px] md:text-[34px] leading-[1.3] text-center" style={{ whiteSpace: 'pre-line' }}>
+            {title}
+          </h2>
+        </div>
 
-      <div className="section-content relative container max-w-[1250px] mx-auto px-[15px]">
-        {/* Title */}
-        <div className="row row-collapse mb-6" id="row-1533827202">
-          <div id="col-1921520671" className="col small-12 large-12">
-            <div className="col-inner">
-              <div id="text-3123085160" className="text text-center">
-                <h2 className="text-[#005570] font-bold text-xl sm:text-2xl md:text-[1.3rem]" style={{ textAlign: 'center', margin: 0 }}>
-                  Bảng Giá Các Gói Khám Tổng Quát tại Doctor Check
-                </h2>
-              </div>
-            </div>
+        {/* Tab Switcher (Gender Switcher Pill) */}
+        <div className="flex justify-center mb-8 md:mb-12">
+          <div className="inline-flex p-1.5 rounded-full bg-[#E5F3F7] shadow-inner gap-1">
+            <button
+              type="button"
+              onClick={() => setActiveTab('male')}
+              className={`cursor-pointer px-6 sm:px-8 py-2.5 rounded-full font-bold text-[15.5px] sm:text-[17px] transition-all duration-300 ${
+                activeTab === 'male'
+                  ? 'bg-[#005570] text-white shadow-sm'
+                  : 'text-[#005570] hover:text-[#003848] bg-transparent'
+              }`}
+            >
+              Dành Cho Nam
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveTab('female')}
+              className={`cursor-pointer px-6 sm:px-8 py-2.5 rounded-full font-bold text-[15.5px] sm:text-[17px] transition-all duration-300 ${
+                activeTab === 'female'
+                  ? 'bg-[#005570] text-white shadow-sm'
+                  : 'text-[#005570] hover:text-[#003848] bg-transparent'
+              }`}
+            >
+              Dành Cho Nữ
+            </button>
           </div>
         </div>
 
-        {/* Tabbed Content */}
-        <div className="row row-collapse" id="row-361714631">
-          <div id="col-185119712" className="col small-12 large-12">
-            <div className="col-inner">
-              <div className="tabbed-content">
-                {/* Authentic Flatsome Tabs */}
-                <ul className="nav nav-simple nav-normal nav-size-normal nav-center flex justify-center gap-8 border-b border-gray-200 mb-8 list-none p-0" role="tablist">
-                  <li
-                    id="tab-dành-cho-nam"
-                    className={`tab cursor-pointer pb-2.5 transition-all ${
-                      activeTab === 'male'
-                        ? 'active border-b-2 border-[#005570]'
-                        : 'hover:text-[#005570]'
-                    }`}
-                    role="presentation"
-                    onClick={() => setActiveTab('male')}
-                  >
-                    <button type="button" className="bg-transparent border-none cursor-pointer p-0">
-                      <h3 className={`text-base sm:text-lg font-bold ${activeTab === 'male' ? 'text-[#005570]' : 'text-gray-500'}`}>
-                        Dành Cho Nam
-                      </h3>
-                    </button>
-                  </li>
-                  <li
-                    id="tab-dành-cho-nữ"
-                    className={`tab cursor-pointer pb-2.5 transition-all ${
-                      activeTab === 'female'
-                        ? 'active border-b-2 border-[#005570]'
-                        : 'hover:text-[#005570]'
-                    }`}
-                    role="presentation"
-                    onClick={() => setActiveTab('female')}
-                  >
-                    <button type="button" className="bg-transparent border-none cursor-pointer p-0">
-                      <h3 className={`text-base sm:text-lg font-bold ${activeTab === 'female' ? 'text-[#005570]' : 'text-gray-500'}`}>
-                        Dành Cho Nữ
-                      </h3>
-                    </button>
-                  </li>
-                </ul>
+        {/* 3 Package Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-[1140px] mx-auto">
+          {currentPackages.map((pkg) => (
+            <div
+              key={pkg.id}
+              className="bg-white rounded-[20px] p-5 sm:p-6 shadow-[0_8px_24px_rgba(0,0,0,0.08)] border border-gray-100/80 flex flex-col justify-between hover:shadow-[0_16px_36px_rgba(0,0,0,0.14)] hover:-translate-y-1 transition-all duration-300"
+            >
+              {/* Card Image Container with Corner Button Badge */}
+              <div className="relative aspect-[625/400] w-full rounded-[14px] overflow-hidden mb-4 bg-gray-100">
+                <Image
+                  src={pkg.image}
+                  alt={pkg.name}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 360px"
+                  className="object-cover object-center hover:scale-103 transition-transform duration-300"
+                />
 
-                {/* 3 Package Cards */}
-                <div className="tab-panels">
-                  <div className="panel active entry-content">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                      {currentPackages.map((pkg) => (
-                        <div key={pkg.id} className="col-inner">
-                          <div className="box has-hover box-text-bottom bg-white rounded-lg overflow-hidden border border-[#E0F2F7] shadow-sm hover:shadow-md transition-shadow">
-                            {/* Card Image */}
-                            <div className="box-image relative aspect-[625/400] w-full overflow-hidden">
-                              <Link href={pkg.slug}>
-                                <Image
-                                  src={pkg.image}
-                                  alt={pkg.name}
-                                  fill
-                                  sizes="(max-width: 768px) 100vw, 380px"
-                                  className="object-cover object-center hover:scale-103 transition-transform duration-300"
-                                />
-                              </Link>
-                            </div>
+                {/* Corner "Xem chi tiết →" Button Badge */}
+                <Link
+                  href={pkg.slug}
+                  className="absolute bottom-3 right-3 bg-[#E5F3F7]/95 hover:bg-white text-[#005570] text-[13.5px] font-bold px-3.5 py-1.5 rounded-full shadow-sm flex items-center gap-1 backdrop-blur-xs transition-all duration-200"
+                >
+                  <span>Xem chi tiết</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
 
-                            {/* Card Text */}
-                            <div className="box-text text-center p-5">
-                              <div className="box-text-inner">
-                                <Link
-                                  className="button primary is-link lowercase inline-flex items-center gap-1 text-sm font-bold text-[#005570] hover:text-[#FFB500] mb-3 transition-colors"
-                                  href={pkg.slug}
-                                >
-                                  <span>Xem chi tiết</span>
-                                  <ChevronRight className="w-4 h-4" />
-                                </Link>
-
-                                <div className="box-service">
-                                  <div className="box-content">
-                                    <h3 className="text-lg font-bold text-[#005570] mb-1">
-                                      {pkg.name}
-                                    </h3>
-                                    <p className="mb-2">
-                                      <span className="woocommerce-Price-amount amount text-xl sm:text-2xl font-black text-[#005570]">
-                                        <bdi>{pkg.price}</bdi>
-                                      </span>
-                                    </p>
-                                  </div>
-                                  <div className="box-sub text-xs sm:text-sm text-[#4D5565] border-t border-gray-100 pt-2">
-                                    <p><strong>{pkg.sub}</strong></p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* Find Out More Button */}
-                    <div className="row row-collapse align-middle align-center mt-8">
-                      <div className="col small-12 large-12 text-center">
-                        <div className="col-inner text-center">
-                          <Link
-                            href={moreUrl}
-                            className="inline-flex items-center gap-2 px-8 py-3 bg-[#005570] hover:bg-[#00475B] text-white font-bold text-sm shadow-md transition-all"
-                            style={{ borderRadius: '99px' }}
-                          >
-                            <span>Tìm hiểu thêm</span>
-                            <ChevronRight className="w-4 h-4" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              {/* Card Info Body */}
+              <div className="flex flex-col flex-1 justify-between">
+                {/* Package Name & Price Row */}
+                <div className="flex items-center justify-between gap-2 mb-3">
+                  <h3 className="text-[#005570] font-bold text-[18px] sm:text-[19px]">
+                    {pkg.name}
+                  </h3>
+                  <span className="text-[#1F2937] font-bold text-[18px] sm:text-[19px] whitespace-nowrap">
+                    {pkg.price}
+                  </span>
                 </div>
+
+                {/* Subtle Divider */}
+                <div className="w-full h-px bg-[#E5E7EB] mb-3.5" />
+
+                {/* Subtext Highlight */}
+                <p className="text-[#1F2937] font-bold text-[18px] sm:text-[19px] leading-snug">
+                  {pkg.sub}
+                </p>
               </div>
             </div>
-          </div>
+          ))}
+        </div>
+
+        {/* Bottom CTA Button: TÌM HIỂU THÊM → */}
+        <div className="text-center mt-10 md:mt-12">
+          <Link
+            href={moreUrl}
+            className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-[#005570] hover:bg-[#003848] text-white font-bold text-[15px] uppercase tracking-wide rounded-full shadow-md hover:shadow-lg transition-all duration-200"
+          >
+            <span>TÌM HIỂU THÊM</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </div>
     </section>

@@ -5,8 +5,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronRight, Play } from 'lucide-react';
 import { VideoModal } from './VideoModal';
+import type { SectionsMetaConfig } from '@/lib/data/homepage';
 
-interface CustomerStory {
+export interface CustomerStoryItem {
   id: string;
   slug: string;
   title: string;
@@ -15,34 +16,43 @@ interface CustomerStory {
   videoId?: string;
 }
 
-export function CustomerStoriesSection() {
-  const [modalVideoId, setModalVideoId] = useState<string | null>(null);
+const defaultStories: CustomerStoryItem[] = [
+  {
+    id: 'co-lien',
+    slug: '/co-nguoi-nha-bi-ung-thu-dai-trang-co-lien-quyet-dinh-den-doctor-check-de-tam-soat-ung-thu/',
+    title: 'Có Người Nhà Bị Ung Thư Đại Tràng, Cô Liên Quyết Định Đến Doctor Check Để Tầm Soát Ung Thư',
+    excerpt: 'Có Người Nhà Bị Ung Thư Đại Tràng, Cô Liên Quyết Định Đến Doctor Check Để Tầm Soát Ung Thư! Cô Ngọc Liên, hiện đang sinh sống tại thành phố…',
+    image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c8f18d38-0720-41fa-89f9-8b088f3dbe00/w=1020,h=536',
+    videoId: 'zRRzaw3rpis',
+  },
+  {
+    id: 'chu-hong-anh',
+    slug: '/bi-tieu-duong-26-nam-nen-chu-hong-anh-muon-kiem-tra-suc-khoe-dinh-ky/',
+    title: 'Bị Tiểu Đường 26 Năm Nên Chú Hồng Anh Muốn Kiểm Tra Sức Khỏe Định Kỳ',
+    excerpt: 'Chú Hồng Anh, 72 Tuổi, Tại TPHCM có mắc bệnh nền bị tiểu đường. Thế nên, hôm nay chú quyết định đến phòng khám Doctor Check để kiểm tra sức…',
+    image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/a1c13271-35cc-4174-e705-b03beb227e00/w=1020,h=536',
+    videoId: 'EpCHV3c2Ppw',
+  },
+  {
+    id: 'an-khong-ngon',
+    slug: '/gan-mot-thang-toi-an-khong-ngon-ngu-cung-khong-yen/',
+    title: 'Gần một tháng, tôi ăn không ngon, ngủ cũng không yên.',
+    excerpt: 'Thời gian đó, tôi ăn uống rất khó chịu. Ăn vào là buồn nôn, có lúc ói ra ngay. Ngay cả khi không ăn, cảm giác này vẫn còn.…',
+    image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c2435d61-05c2-492e-be58-c88a81822e00/w=800,h=800,fit=crop',
+  },
+];
 
-  const stories: CustomerStory[] = [
-    {
-      id: 'co-lien',
-      slug: '/co-nguoi-nha-bi-ung-thu-dai-trang-co-lien-quyet-dinh-den-doctor-check-de-tam-soat-ung-thu/',
-      title: 'Có Người Nhà Bị Ung Thư Đại Tràng, Cô Liên Quyết Định Đến Doctor Check Để Tầm Soát Ung Thư',
-      excerpt: 'Có Người Nhà Bị Ung Thư Đại Tràng, Cô Liên Quyết Định Đến Doctor Check Để Tầm Soát Ung Thư! Cô Ngọc Liên, hiện đang sinh sống tại thành phố…',
-      image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c8f18d38-0720-41fa-89f9-8b088f3dbe00/w=1020,h=536',
-      videoId: 'zRRzaw3rpis',
-    },
-    {
-      id: 'chu-hong-anh',
-      slug: '/bi-tieu-duong-26-nam-nen-chu-hong-anh-muon-kiem-tra-suc-khoe-dinh-ky/',
-      title: 'Bị Tiểu Đường 26 Năm Nên Chú Hồng Anh Muốn Kiểm Tra Sức Khỏe Định Kỳ',
-      excerpt: 'Chú Hồng Anh, 72 Tuổi, Tại TPHCM có mắc bệnh nền bị tiểu đường. Thế nên, hôm nay chú quyết định đến phòng khám Doctor Check để kiểm tra sức…',
-      image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/a1c13271-35cc-4174-e705-b03beb227e00/w=1020,h=536',
-      videoId: 'EpCHV3c2Ppw',
-    },
-    {
-      id: 'an-khong-ngon',
-      slug: '/gan-mot-thang-toi-an-khong-ngon-ngu-cung-khong-yen/',
-      title: 'Gần một tháng, tôi ăn không ngon, ngủ cũng không yên.',
-      excerpt: 'Thời gian đó, tôi ăn uống rất khó chịu. Ăn vào là buồn nôn, có lúc ói ra ngay. Ngay cả khi không ăn, cảm giác này vẫn còn.…',
-      image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/c2435d61-05c2-492e-be58-c88a81822e00/w=800,h=800,fit=crop',
-    },
-  ];
+interface CustomerStoriesSectionProps {
+  storiesList?: CustomerStoryItem[];
+  header?: SectionsMetaConfig['customerStoriesHeader'];
+}
+
+export function CustomerStoriesSection({ storiesList, header }: CustomerStoriesSectionProps = {}) {
+  const [modalVideoId, setModalVideoId] = useState<string | null>(null);
+  const stories = storiesList || defaultStories;
+  const title = header?.title || 'Hơn 10.000+ Khách hàng đã trải nghiệm hài lòng';
+  const subtitle = header?.subtitle || 'Dịch vụ tầm soát bệnh tại Doctor Check Nhanh chóng – Minh bạch – Hiệu quả – Thoải mái tối đa.';
+  const viewAllUrl = header?.viewAllUrl || '/cau-chuyen-khach-hang/';
 
   return (
     <section className="section section-customer py-8 md:py-12 bg-[#FDFDF6] relative overflow-hidden" id="section_1899109699">
@@ -55,13 +65,13 @@ export function CustomerStoriesSection() {
             <div className="col-inner">
               <div id="text-2190861841" className="text mb-2">
                 <h2 className="capitalize font-bold text-[#005570] text-xl sm:text-2xl md:text-[1.4rem]">
-                  Hơn 10.000+ Khách hàng đã trải nghiệm hài lòng
+                  {title}
                 </h2>
               </div>
 
               <div id="text-96104712" className="text text-sm sm:text-base text-[#4D5565]">
                 <p>
-                  Dịch vụ tầm soát bệnh tại Doctor Check Nhanh chóng – Minh bạch – Hiệu quả – Thoải mái tối đa.
+                  {subtitle}
                 </p>
               </div>
             </div>
@@ -128,7 +138,7 @@ export function CustomerStoriesSection() {
           <div id="col-126886311" className="col small-12 large-12 text-center">
             <div className="col-inner text-center">
               <Link
-                href="/cau-chuyen-khach-hang/"
+                href={viewAllUrl}
                 className="inline-flex items-center gap-2 px-8 py-3 bg-[#005570] hover:bg-[#00475B] text-white font-bold text-sm shadow-md transition-all"
                 style={{ borderRadius: '99px' }}
               >

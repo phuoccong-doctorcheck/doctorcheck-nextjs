@@ -3,15 +3,16 @@
 import React, { useState, useCallback, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { VideoModal } from './VideoModal';
+import type { PainPointsBlockConfig } from '@/lib/data/homepage';
 
-const painPoints = [
+const defaultPainPoints = [
   { num: 1, title: 'Kết quả khám tổng quát không chính xác' },
   { num: 2, title: 'Bác sĩ không dành nhiều thời gian tư vấn cho bạn' },
   { num: 3, title: 'Mệt mỏi vì phải bốc số, chờ đợi quá lâu' },
   { num: 4, title: 'Phát sinh các chi phí không cần thiết' },
 ];
 
-const videos = [
+const defaultVideos = [
   { id: 'A4BCCgKqwVI', title: 'Trải Nghiệm Tầm Soát Bệnh Tại Doctor Check' },
   { id: '80iE-7mnZGM', title: 'Tiền Bạc Là Gì Khi Sức Khỏe Chẳng Còn - Câu Chuyện Của Anh Ken Võ' },
   { id: 'BpDdHblLz98', title: '10.000 Khách Hàng Đã Chọn Doctor Check Làm Nơi Đồng Hành' },
@@ -23,11 +24,31 @@ const videos = [
   { id: 'M5iujCgtPfg', title: 'Sống Khỏe Để Sống Thọ – Vợ Chồng Chú Hà Nói Gì Sau Lần Đầu Khám Tổng Quát' },
 ];
 
+interface ConfuseSectionProps {
+  painPointsConfig?: PainPointsBlockConfig;
+  videoHeadings?: {
+    titleDesktop?: string;
+    titleMobile?: string;
+  };
+  videoList?: Array<{ id: string; title: string }>;
+}
+
 /**
  * ConfuseSection — Exact forensic visual reconstruction of original section_294013533 (.section-confuse)
  * Matches original WordPress/Flatsome layout, 1080px row grid, typography, and spacing.
  */
-export function ConfuseSection() {
+export function ConfuseSection({
+  painPointsConfig,
+  videoHeadings,
+  videoList,
+}: ConfuseSectionProps = {}) {
+  const painPoints = painPointsConfig?.items || defaultPainPoints;
+  const painPointsTitle = painPointsConfig?.title || 'Tầm Soát Bệnh – Một Khởi Đầu Thông Thái Cho Năm Mới';
+  const painPointsSubtitle = painPointsConfig?.subtitle || 'Gỡ Bỏ 4 “Nỗi Lo” Khiến Bạn Chần Chừ Trước Khi Quyết Định Đi Tầm Soát Bệnh';
+  const videos = videoList || defaultVideos;
+  const videoTitleDesktop = videoHeadings?.titleDesktop || 'Kiểm Chứng Ngay Qua\nNhững Chia Sẻ Từ Khách Hàng';
+  const videoTitleMobile = videoHeadings?.titleMobile || 'Mời bạn lắng nghe những chia sẻ từ những khách hàng đã trải nghiệm';
+
   // Start with index 6 ([Chỉ 60 Phút] Trải Nghiệm Tầm Soát) matching reference web mockup
   const [activeSlide, setActiveSlide] = useState(6);
   const [modalVideoId, setModalVideoId] = useState<string | null>(null);
@@ -42,7 +63,7 @@ export function ConfuseSection() {
         setActiveSlide((prev) => (prev + 1) % videos.length);
       }
     }, 6000);
-  }, []);
+  }, [videos.length]);
 
   useEffect(() => {
     startAutoPlay();
@@ -69,37 +90,35 @@ export function ConfuseSection() {
         {/* ===== Part 1: Concerns (original rows within section-confuse) ===== */}
 
         {/* Main Title with dc-title bluesky decoration */}
-        <div id="text-3883347502" className="text dc-title bluesky" style={{ textAlign: 'center', marginBottom: 0 }}>
-          <h1 style={{ color: '#005570', fontWeight: 700 }}>
-            Tầm Soát Bệnh – Một Khởi Đầu Thông Thái Cho Năm Mới
+        <div id="text-3883347502" className="text dc-title bluesky">
+          <h1>
+            {painPointsTitle}
           </h1>
+          <div className="dc-title-decoration" aria-hidden="true">
+            <span className="dc-pill" />
+            <span className="dc-dot" />
+          </div>
         </div>
 
         {/* Row: Subtitle + 4 Number Boxes in original 1080px row */}
-        <div className="row" id="row-64855036" style={{ maxWidth: 1080, margin: '0 auto', paddingLeft: 15, paddingRight: 15 }}>
-          <div id="col-1356688087" className="col small-12 large-12" style={{ padding: '0 15px 30px' }}>
+        <div className="row row-confuse-cards" id="row-64855036">
+          <div id="col-1356688087" className="col small-12 large-12">
             <div className="col-inner">
-              {/* Gap 40px below H1 decoration */}
-              <div id="gap-891457538" className="gap-element clearfix" style={{ display: 'block', height: 'auto', paddingTop: 40 }} />
-
               {/* Subtitle */}
               <div id="text-62814145" className="text confuse-subtitle">
                 <h2 className="capitalize">
-                  Gỡ Bỏ 4 &ldquo;Nỗi Lo&rdquo; Khiến Bạn Chần Chừ Trước Khi Quyết Định Đi Tầm Soát Bệnh
+                  {painPointsSubtitle}
                 </h2>
               </div>
-
-              {/* Gap 30px above cards */}
-              <div id="gap-1802328419" className="gap-element clearfix" style={{ display: 'block', height: 'auto', paddingTop: 30 }} />
             </div>
           </div>
 
           {/* 4 Concern Cards: 4 columns on desktop (large-3), 2 columns on mobile (small-6) */}
           {painPoints.map((item) => (
-            <div key={item.num} className="col medium-6 small-6 large-3" style={{ padding: '0 15px 30px' }}>
+            <div key={item.num} className="col medium-6 small-6 large-3 col-number-card">
               <div className="col-inner">
-                <div className="icon-box featured-box icon-box-top text-center box-number-custom">
-                  <p style={{ margin: 0 }}>
+                <div className="text-center number-box">
+                  <p className="number-wrap">
                     <span className="number">{item.num}</span>
                   </p>
                   <p className="title">{item.title}</p>
@@ -122,14 +141,13 @@ export function ConfuseSection() {
               {/* Mobile heading */}
               <div className="text show-for-small" style={{ textAlign: 'center' }}>
                 <h2 className="capitalize">
-                  Mời bạn lắng nghe những chia sẻ từ những khách hàng đã trải nghiệm
+                  {videoTitleMobile}
                 </h2>
               </div>
               {/* Desktop heading */}
               <div className="text hide-for-small" style={{ textAlign: 'center' }}>
-                <h2>
-                  Kiểm Chứng Ngay Qua<br />
-                  Những Chia Sẻ Từ Khách Hàng
+                <h2 style={{ whiteSpace: 'pre-line' }}>
+                  {videoTitleDesktop}
                 </h2>
               </div>
             </div>

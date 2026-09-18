@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { TopBar } from '@/components/sites/doctorcheck-vn/root/TopBar';
 import { Header } from '@/components/sites/doctorcheck-vn/root/Header';
 import { Footer } from '@/components/sites/doctorcheck-vn/root/Footer';
 import { FloatingWidgets } from '@/components/sites/doctorcheck-vn/root/FloatingWidgets';
@@ -27,7 +26,6 @@ interface PackageTemplateProps {
 export function PackageTemplate({ pkg }: PackageTemplateProps) {
   return (
     <div className="min-h-screen flex flex-col bg-white selection:bg-[#FFB500] selection:text-[#00475B]">
-      <TopBar />
       <Header />
 
       <main className="flex-1">

@@ -1,6 +1,7 @@
 import { notFound, redirect } from 'next/navigation';
 import type { Metadata } from 'next';
 import { resolveContent, getAllRootSlugs } from '@/lib/routing/resolve-content';
+import { redirectService } from '@/services/redirect.service';
 import { ArticleTemplate } from '@/components/templates/ArticleTemplate';
 import { PackageTemplate } from '@/components/templates/PackageTemplate';
 import { CategoryTemplate } from '@/components/templates/CategoryTemplate';
@@ -28,64 +29,81 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const content = resolveContent(slug);
 
-  if (content.type === 'notFound' || content.type === 'redirect') {
+  if (content.type !== 'notFound' && content.type !== 'redirect') {
+    const article = content.type === 'article' ? (content.data?.article as MedicalArticle) : undefined;
+    const pkg = content.type === 'package' ? content.data?.package : undefined;
+
+    const isAboutPage = slug === 've-chung-toi' || slug === 've-doctor-check';
+    const title = isAboutPage
+      ? (slug === 've-doctor-check' ? 'Về Doctor Check' : 'Về chúng tôi - Doctor Check')
+      : `${content.title} | Doctor Check Tầm Soát Bệnh`;
+    const description = isAboutPage
+      ? 'Thấu hiểu SỨC KHỎE LÀ VÀNG - nền tảng của cuộc sống trọn vẹn và hạnh phúc, Doctor Check được thành lập giúp bạn bắt đầu hành trình bảo vệ sức khỏe toàn diện'
+      : article?.excerpt ||
+        (content.type === 'article'
+          ? `Bài viết y khoa: ${content.title}. Hướng dẫn tầm soát bệnh lý tiêu hóa, nội soi không đau và phát hiện sớm ung thư tại Doctor Check.`
+          : content.type === 'package'
+          ? `Gói khám tầm soát: ${content.title}. Chi phí niêm yết minh bạch, Bác sĩ Chuyên khoa II trực tiếp tư vấn.`
+          : content.type === 'category'
+          ? `Tổng hợp kiến thức y khoa chuyên mục ${content.title}. Tư vấn chuyên môn bởi Bác sĩ Chuyên khoa II Doctor Check.`
+          : `${content.title} - Trung tâm Tầm Soát Bệnh & Nội Soi Tiêu Hóa Doctor Check TP.HCM.`);
+
+    const ogImage = isAboutPage
+      ? 'https://www.doctorcheck.vn/wp-content/uploads/2024/12/bai3.webp'
+      : article?.featuredImageUrl ||
+        pkg?.image ||
+        'https://www.doctorcheck.vn/wp-content/uploads/2024/11/banner-doctor-check.webp';
+
     return {
-      title: 'Không Tìm Thấy Trang - Doctor Check',
+      title,
+      description,
+      alternates: {
+        canonical: content.canonicalUrl,
+      },
+      openGraph: {
+        title,
+        description,
+        url: content.canonicalUrl,
+        siteName: 'Doctor Check',
+        locale: 'vi_VN',
+        type: content.type === 'article' ? 'article' : 'website',
+        images: ogImage ? [{ url: ogImage, alt: content.title }] : undefined,
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title,
+        description,
+        images: ogImage ? [ogImage] : undefined,
+      },
+    };
+  }
+
+  // Check dynamic DB redirects if static content was not found
+  const dynamicRedirect = await redirectService.resolveDynamicRedirect(`/${slug}/`);
+  if (dynamicRedirect && dynamicRedirect.isActive) {
+    return {
+      title: 'Đang chuyển hướng - Doctor Check',
       robots: { index: false, follow: false },
     };
   }
 
-  const article = content.type === 'article' ? (content.data?.article as MedicalArticle) : undefined;
-  const pkg = content.type === 'package' ? content.data?.package : undefined;
-
-  const isAboutPage = slug === 've-chung-toi' || slug === 've-doctor-check';
-  const title = isAboutPage
-    ? (slug === 've-doctor-check' ? 'Về Doctor Check' : 'Về chúng tôi - Doctor Check')
-    : `${content.title} | Doctor Check Tầm Soát Bệnh`;
-  const description = isAboutPage
-    ? 'Thấu hiểu SỨC KHỎE LÀ VÀNG - nền tảng của cuộc sống trọn vẹn và hạnh phúc, Doctor Check được thành lập giúp bạn bắt đầu hành trình bảo vệ sức khỏe toàn diện'
-    : article?.excerpt ||
-      (content.type === 'article'
-        ? `Bài viết y khoa: ${content.title}. Hướng dẫn tầm soát bệnh lý tiêu hóa, nội soi không đau và phát hiện sớm ung thư tại Doctor Check.`
-        : content.type === 'package'
-        ? `Gói khám tầm soát: ${content.title}. Chi phí niêm yết minh bạch, Bác sĩ Chuyên khoa II trực tiếp tư vấn.`
-        : content.type === 'category'
-        ? `Tổng hợp kiến thức y khoa chuyên mục ${content.title}. Tư vấn chuyên môn bởi Bác sĩ Chuyên khoa II Doctor Check.`
-        : `${content.title} - Trung tâm Tầm Soát Bệnh & Nội Soi Tiêu Hóa Doctor Check TP.HCM.`);
-
-  const ogImage = isAboutPage
-    ? 'https://www.doctorcheck.vn/wp-content/uploads/2024/12/bai3.webp'
-    : article?.featuredImageUrl ||
-      pkg?.image ||
-      'https://www.doctorcheck.vn/wp-content/uploads/2024/11/banner-doctor-check.webp';
-
   return {
-    title,
-    description,
-    alternates: {
-      canonical: content.canonicalUrl,
-    },
-    openGraph: {
-      title,
-      description,
-      url: content.canonicalUrl,
-      siteName: 'Doctor Check',
-      locale: 'vi_VN',
-      type: content.type === 'article' ? 'article' : 'website',
-      images: ogImage ? [{ url: ogImage, alt: content.title }] : undefined,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title,
-      description,
-      images: ogImage ? [ogImage] : undefined,
-    },
+    title: 'Không Tìm Thấy Trang - Doctor Check',
+    robots: { index: false, follow: false },
   };
 }
 
 export default async function DynamicRootRoute({ params }: PageProps) {
   const { slug } = await params;
   const content = resolveContent(slug);
+
+  // 0. Check Dynamic Database 301 Redirects if not a known static page
+  if (content.type === 'notFound' || content.type === 'redirect') {
+    const dynamicRedirect = await redirectService.resolveDynamicRedirect(`/${slug}/`);
+    if (dynamicRedirect && dynamicRedirect.isActive) {
+      redirect(dynamicRedirect.targetPath);
+    }
+  }
 
   // 1. Handle Legacy 301 Redirects
   if (content.type === 'redirect' && content.redirectTarget) {

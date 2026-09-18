@@ -3,7 +3,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { TopBar } from '@/components/sites/doctorcheck-vn/root/TopBar';
 import { Header } from '@/components/sites/doctorcheck-vn/root/Header';
 import { Footer } from '@/components/sites/doctorcheck-vn/root/Footer';
 import { FloatingWidgets } from '@/components/sites/doctorcheck-vn/root/FloatingWidgets';
@@ -28,7 +27,6 @@ interface DoctorTemplateProps {
 export function DoctorTemplate({ doctor }: DoctorTemplateProps) {
   return (
     <div className="min-h-screen flex flex-col bg-white selection:bg-[#FFB500] selection:text-[#00475B]">
-      <TopBar />
       <Header />
 
       <main className="flex-1">

@@ -1,0 +1,282 @@
+/**
+ * Family 5: Cancer Screening Knowledge Hub Styles
+ * Scoped strictly to .knowledge-hub-page
+ */
+
+.knowledge-hub-page {
+  font-family: var(--font-sans, system-ui, sans-serif);
+  color: #1e293b;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Breadcrumbs */
+.knowledge-hub-page .page-header {
+  background: linear-gradient(135deg, #f0fdf4 0%, #f8fafc 100%);
+  border-bottom: 1px solid #e2e8f0;
+  padding: 24px 0 20px 0;
+}
+
+.knowledge-hub-page .breadcrumb-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.knowledge-hub-page .breadcrumb-nav a {
+  color: #00847f;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.knowledge-hub-page .breadcrumb-nav a:hover {
+  text-decoration: underline;
+  color: #005f5b;
+}
+
+.knowledge-hub-page .page-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+  .knowledge-hub-page .page-title {
+    font-size: 34px;
+  }
+}
+
+/* Scoped Content Container */
+.knowledge-hub-page .knowledge-content-wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px 64px 16px;
+}
+
+@media (min-width: 1024px) {
+  .knowledge-hub-page .knowledge-content-wrap {
+    padding: 40px 24px 80px 24px;
+  }
+}
+
+/* Flatsome Rows & Columns System */
+.knowledge-hub-page .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.knowledge-hub-page .row-small {
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.knowledge-hub-page .row-collapse {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.knowledge-hub-page .col {
+  box-sizing: border-box;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+}
+
+.knowledge-hub-page .row-small > .col {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.knowledge-hub-page .row-collapse > .col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.knowledge-hub-page .small-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .knowledge-hub-page .medium-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .knowledge-hub-page .medium-columns-1 > .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .knowledge-hub-page .large-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .knowledge-hub-page .large-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .knowledge-hub-page .large-columns-2 > .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Visibility classes */
+@media (max-width: 767px) {
+  .knowledge-hub-page .hide-for-small {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .knowledge-hub-page .show-for-small {
+    display: none !important;
+  }
+}
+
+/* Section Dear (Intro Banner) */
+.knowledge-hub-page .section-dear {
+  background: #ffffff;
+  padding: 16px 0 32px 0;
+  margin-bottom: 24px;
+}
+
+.knowledge-hub-page .section-dear .img-inner img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.knowledge-hub-page .section-dear p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #334155;
+  margin-bottom: 16px;
+}
+
+/* Section Post (Knowledge Post Grid) */
+.knowledge-hub-page .section-post {
+  padding: 16px 0 40px 0;
+}
+
+.knowledge-hub-page .post-item {
+  margin-bottom: 24px;
+}
+
+.knowledge-hub-page .box-vertical,
+.knowledge-hub-page .box-blog-post {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.knowledge-hub-page .box-vertical:hover,
+.knowledge-hub-page .box-blog-post:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 132, 127, 0.08);
+}
+
+.knowledge-hub-page .box-image {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background: #f1f5f9;
+}
+
+.knowledge-hub-page .box-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.knowledge-hub-page .box-vertical:hover .box-image img {
+  transform: scale(1.03);
+}
+
+.knowledge-hub-page .box-text {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.knowledge-hub-page .post-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.knowledge-hub-page .post-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.knowledge-hub-page .post-title a:hover {
+  color: #00847f;
+}
+
+.knowledge-hub-page .from_the_blog_excerpt {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+/* Section BG AACI */
+.knowledge-hub-page .bg-aaci {
+  background: linear-gradient(135deg, #f8fafc 0%, #f0fdf4 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 32px 24px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.knowledge-hub-page .bg-aaci p {
+  font-size: 15px;
+  color: #334155;
+  line-height: 1.7;
+}
+
+/* Clean generic Typography & Media inside page */
+.knowledge-hub-page img {
+  max-width: 100%;
+  height: auto;
+}
+
+.knowledge-hub-page a {
+  color: #00847f;
+  text-decoration: none;
+}
+
+.knowledge-hub-page a:hover {
+  text-decoration: underline;
+}
+
+.knowledge-hub-page .is-divider {
+  height: 2px;
+  background-color: #00847f;
+  margin: 16px 0 24px 0;
+  width: 60px;
+}
