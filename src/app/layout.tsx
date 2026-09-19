@@ -4,6 +4,7 @@ import { CLINIC_INFO } from '@/lib/data/clinic';
 import { doctorsData } from '@/lib/data/doctors';
 import { packagesData } from '@/lib/data/packages';
 import { MobileBottomBar } from '@/components/sites/doctorcheck-vn/root/MobileBottomBar';
+import { MicrosoftClarity } from '@/components/analytics/MicrosoftClarity';
 
 export const metadata: Metadata = {
   title: 'Trang chủ - Doctor Check Tầm Soát Bệnh Để Sống Thọ Hơn',
@@ -141,6 +142,7 @@ export default function RootLayout({
       <body className="min-h-screen bg-[#FDFDF6] text-[#2A2F38] font-sans antialiased">
         {children}
         <MobileBottomBar />
+        <MicrosoftClarity />
       </body>
     </html>
   );
