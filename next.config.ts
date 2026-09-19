@@ -27,18 +27,18 @@ const nextConfig: NextConfig = {
     const isProd = process.env.NODE_ENV === 'production';
 
     const scriptSrc = isProd
-      ? "script-src 'self' 'unsafe-inline'"
-      : "script-src 'self' 'unsafe-inline' 'unsafe-eval'";
+      ? "script-src 'self' 'unsafe-inline' https://www.clarity.ms https://scripts.clarity.ms"
+      : "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.clarity.ms https://scripts.clarity.ms";
 
     const cspDirectives = [
       "default-src 'self'",
       scriptSrc,
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "font-src 'self' https://fonts.gstatic.com data:",
-      "img-src 'self' data: blob: https://imagedelivery.net https://doctorcheck.vn https://www.doctorcheck.vn https://img.youtube.com https://*.r2.cloudflarestorage.com https://*.amazonaws.com",
+      "img-src 'self' data: blob: https://imagedelivery.net https://doctorcheck.vn https://www.doctorcheck.vn https://img.youtube.com https://*.r2.cloudflarestorage.com https://*.amazonaws.com https://*.clarity.ms https://c.bing.com",
       "media-src 'self' data: blob: https://imagedelivery.net https://doctorcheck.vn",
       "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com",
-      "connect-src 'self' https://imagedelivery.net https://*.r2.cloudflarestorage.com https://*.amazonaws.com",
+      "connect-src 'self' https://imagedelivery.net https://*.r2.cloudflarestorage.com https://*.amazonaws.com https://www.clarity.ms https://*.clarity.ms https://c.bing.com",
       "base-uri 'self'",
       "form-action 'self'",
       "frame-ancestors 'self'",
