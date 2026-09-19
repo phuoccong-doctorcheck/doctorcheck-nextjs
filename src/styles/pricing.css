@@ -1,19 +1,186 @@
 /* ================================================================
    DOCTORCHECK PRICING UI SYSTEM
    Authentic forensic reconstruction for Pricing pages:
-   - bang-gia-2026 (Endoscopy Pricing & Procedure Timeline)
    - bang-gia-dich-vu-tam-soat-benh-tai-doctor-check (Full Comparison Matrix)
+   - bang-gia-2026 (Endoscopy Pricing & Procedure Timeline)
    - so-sanh-3-goi-kham-nam / so-sanh-3-goi-kham-nu (Package Comparison Hub)
    - bang-gia-dich-vu (Official Regulated Medical Price Declaration)
    ================================================================ */
 
 /* ================================================================
-   1. TABBED CONTENT SYSTEM
+   1. PAGE-PRICING ROOT CONTAINER & BLOG BANNER (AUTHENTIC 1:1)
+   ================================================================ */
+
+.page-pricing {
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+}
+
+.page-pricing .section-blog-banner,
+.section-blog-banner {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background: linear-gradient(180deg, #E9F9FF 0%, rgba(255, 255, 255, 0.2) 100%);
+  position: relative;
+  overflow: visible;
+}
+
+.page-pricing .section-blog-banner .row,
+.section-blog-banner .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-pricing .section-blog-banner h1,
+.section-blog-banner h1 {
+  font-family: 'SVN-Sofia Pro', 'Sofia Pro', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #005570;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.page-pricing .section-blog-banner p,
+.section-blog-banner p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 0;
+}
+
+.page-pricing .section-blog-banner .col:last-child .col-inner,
+.section-blog-banner .col:last-child .col-inner {
+  position: relative;
+  width: 100%;
+}
+
+.page-pricing .section-blog-banner img,
+.section-blog-banner img {
+  position: relative;
+  z-index: 1;
+  border-radius: 179.5px 24px 24px 24px !important;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.page-pricing .section-blog-banner .col:last-child .col-inner::after,
+.section-blog-banner .col:last-child .col-inner::after {
+  content: '';
+  background-color: #FDD985;
+  width: 100%;
+  height: 100%;
+  left: 60px;
+  top: 35px;
+  border-radius: 179.5px 24px 24px 24px;
+  position: absolute;
+  z-index: 0;
+}
+
+.section-blog-banner.circle-blur::after {
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(144, 220, 242, 0.28) 4.35%, rgba(194, 240, 254, 0.04) 100%);
+  bottom: 0px;
+  left: 45%;
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ================================================================
+   2. PRICING TITLE ACCENT BAR
+   ================================================================ */
+
+.pricing-title {
+  margin-top: 40px;
+  margin-bottom: 0;
+  background-color: #FDD985;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 18px;
+  color: #005570;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pricing-title .title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #005570;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.pricing-title .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-title .icon img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* ================================================================
+   3. SECTION PRICING & SERVICE SECTION
+   ================================================================ */
+
+.page-pricing .section-pricing,
+.page-pricing .section-service {
+  padding-top: 24px !important;
+  padding-bottom: 40px !important;
+  border-radius: 0 0 8px 8px !important;
+  background-color: #FFFFFF !important;
+  border: 1px solid #E2E8F0;
+  border-top: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  margin-bottom: 30px;
+}
+
+.page-pricing .section-pricing .heading {
+  margin-bottom: 24px;
+}
+
+.page-pricing .section-pricing .heading h2 {
+  font-family: 'SVN-Sofia Pro', 'Sofia Pro', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #005570;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.page-pricing .section-pricing .heading p {
+  font-size: 15px;
+  color: #4D5565;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ================================================================
+   4. TABBED CONTENT & PILL NAVIGATION
    ================================================================ */
 
 .tabbed-content {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .tabbed-content .nav {
@@ -39,7 +206,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.75rem 1.75rem;
+  padding: 0.75rem 2rem;
   border-radius: 9999px;
   background-color: #E5F3F7;
   color: #005570;
@@ -77,29 +244,6 @@
   color: #ffffff;
 }
 
-/* Package Sub-Tabs (dc-tab-pricing) */
-.dc-tab-pricing .nav {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin-bottom: 2.5rem;
-}
-
-.dc-tab-pricing .nav li.tab a {
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  background-color: #F8FBFC;
-  border: 1.5px solid #DDE4EA;
-  color: #2A2F38;
-}
-
-.dc-tab-pricing .nav li.tab.active a {
-  background-color: #005570;
-  color: #ffffff;
-  border-color: #005570;
-  box-shadow: 0 6px 16px rgba(0, 85, 112, 0.25);
-}
-
 /* Tab Panels Visibility */
 .tab-panels {
   position: relative;
@@ -109,7 +253,7 @@
 .tab-panels > .panel {
   display: none;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
 }
 
 .tab-panels > .panel.active {
@@ -118,180 +262,669 @@
 }
 
 /* ================================================================
-   2. PRICING COMPARISON TABLE SYSTEM
+   5. COMPARISON & PRICING TABLE MATRIX (AUTHENTIC 1:1)
    ================================================================ */
 
 .comparison-table {
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  margin: 1.5rem 0 3rem 0;
-  border-radius: 16px;
+  margin: 1.5rem 0 2.5rem 0;
+  border-radius: 12px;
   background: #ffffff;
-  border: 1px solid #E2E8F0;
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #6495A7;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
 
 .pricing-table {
   width: 100%;
-  min-width: 760px;
+  min-width: 900px;
   display: flex;
   flex-direction: column;
 }
 
-.pricing-table .header-table {
-  display: flex;
-  background-color: #F0F7F9;
-  border-bottom: 2px solid #005570;
+.header-table {
+  background-color: #CDDAE1;
+  font-weight: bold;
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
-.pricing-table .header-packages {
-  font-weight: 700;
-  color: #005570;
+.header-table .pricing-row {
+  display: flex;
+  border-bottom: 1px solid #6495A7;
+  flex-wrap: wrap;
+  background-color: #fff;
 }
 
-.pricing-table .pricing-row {
+.pricing-row:first-child .pricing-cell {
+  color: #FFF;
+}
+
+.pricing-row:first-child .pricing-cell:not(.header-packages):first-child {
+  background-color: #FDB714;
+}
+
+.pricing-row:first-child .pricing-cell:not(:first-child) {
+  background-color: #005570;
+}
+
+.pricing-row {
   display: flex;
   width: 100%;
   align-items: stretch;
-  border-bottom: 1px solid #EDF2F7;
+  border-bottom: 1px solid #6495A7;
   transition: background-color 0.15s ease;
+  background-color: #ffffff;
 }
 
-.pricing-table .pricing-row:nth-child(even) {
+.pricing-row:nth-child(even) {
   background-color: #FAFCFD;
 }
 
-.pricing-table .pricing-row:hover {
+.pricing-row:hover {
   background-color: #F0F9FB;
 }
 
-.pricing-table .pricing-cell {
-  flex: 1;
-  padding: 14px 16px;
-  font-size: 0.875rem;
-  color: #334155;
+.pricing-cell {
+  position: relative;
+  padding: 10px 14px;
+  border-right: 1px solid #6495A7;
+  text-align: left;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 1.45;
+  color: #2A2F38;
+}
+
+.pricing-cell:last-child {
+  border-right: none;
+}
+
+.pricing-row > .pricing-cell:first-child {
+  flex: 20%;
+  flex-basis: 20%;
+  max-width: 20%;
+  justify-content: flex-start;
+  font-weight: 600;
+  color: #005570;
+}
+
+.pricing-cell.header-packages {
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  flex: 65%;
+  flex-basis: 65%;
+  max-width: 65% !important;
+}
+
+.pricing-row.header-table > .pricing-cell:nth-child(2) {
+  flex: 65%;
+  flex-basis: 65%;
+  max-width: 65%;
+  padding: 0 !important;
+}
+
+.pricing-row:not(.header-table) > .pricing-cell:not(:first-child):not(:last-child) {
+  flex: calc(65% / 3);
+  flex-basis: calc(65% / 3);
+  max-width: calc(65% / 3);
+  justify-content: center;
+  text-align: center;
+}
+
+.pricing-row > .pricing-cell:last-child {
+  flex: 15%;
+  flex-basis: 15%;
+  max-width: 15%;
+  font-weight: 600;
+  justify-content: flex-end;
+  text-align: right;
+  padding-right: 24px;
+}
+
+.header-packages .package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 100%;
+}
+
+.header-packages .package-grid .pricing-cell {
+  background-color: transparent !important;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  flex-direction: column;
+  border-right: 1px solid #6495A7;
+}
+
+.header-packages .package-grid .pricing-cell:last-child {
+  border-right: none;
+}
+
+.header-packages .package-grid .pricing-cell > * {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.package-title {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  margin: auto;
+  margin-bottom: 5px;
+  line-height: 1.2;
+  background: linear-gradient(180deg, #005570 0%, #00A2D6 100%);
+  border-radius: 0px 0px 10px 10px;
+  max-width: 85%;
+  padding: 10px 8px;
+}
+
+.package-price {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 1.15em;
+  padding: 8px 0;
+  background-color: #ffe4e4;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.package-details {
+  background-color: #f5f5f5;
+  padding: 8px 4px;
+  color: #333;
+  font-weight: 600;
+  font-size: 13px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  line-height: 1.45;
-  border-right: 1px solid #F1F5F9;
+  line-height: 1.35;
 }
 
-.pricing-table .pricing-cell:last-child {
-  border-right: none;
+.newest-tag {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 2px 6px;
+  border-radius: 0 0 0 6px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #E60128;
+  z-index: 2;
 }
 
-.pricing-table .pricing-cell:first-child {
-  flex: 1.4;
-  justify-content: flex-start;
-  text-align: left;
+.label-free {
+  background: #ffefef;
+  color: #E60128;
+  font-size: 11px;
   font-weight: 600;
-  color: #005570;
-  background-color: rgba(240, 247, 249, 0.5);
-}
-
-.pricing-table .header-table .pricing-cell {
-  padding: 18px 16px;
-  font-weight: 700;
-  font-size: 1rem;
-  color: #005570;
-  background-color: #EEF7FA;
-}
-
-.pricing-table .header-table .pricing-cell:first-child {
-  background-color: #E2EFF3;
+  padding: 2px 6px;
+  border-radius: 12px;
+  margin-left: 6px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* Checkmarks inside cells */
-.pricing-cell img[src*="check-dark"],
-.pricing-cell img[src*="check"] {
-  width: 22px;
-  height: 22px;
+.pricing-cell img {
+  width: 20px;
+  height: 20px;
   display: inline-block;
   vertical-align: middle;
-  filter: drop-shadow(0 1px 2px rgba(0, 85, 112, 0.2));
-}
-
-/* Category header row (merged section separator in table) */
-.pricing-row.category-header,
-.pricing-row:has(.special-title),
-.pricing-row:has(.special-name) {
-  background-color: #E6F4F8 !important;
-  font-weight: 800;
-  color: #00475B;
-  border-top: 1.5px solid #005570;
-  border-bottom: 1.5px solid #005570;
+  margin: 0 auto;
 }
 
 /* ================================================================
-   3. PACKAGE GRID & CARDS SYSTEM
+   6. SPECIAL SERVICE BANNERS & ACCENT ROWS (EXACT FLATSOME)
    ================================================================ */
 
-.package-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  margin: 2rem 0;
+.special-service {
+  background-color: hsla(333, 0%, 100%, 1);
+  background-image:
+    radial-gradient(circle at 0% 0%, hsla(64, 82%, 77%, 0.35) 3.1210986267166043%, transparent 40%),
+    radial-gradient(circle at 20% 0%, hsla(5, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%),
+    radial-gradient(circle at 40% 0%, hsla(315, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%),
+    radial-gradient(circle at 60% 0%, hsla(256, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%),
+    radial-gradient(circle at 80% 0%, hsla(191, 77%, 74%, 0.35) 3.1210986267166043%, transparent 40%),
+    radial-gradient(circle at 100% 0%, hsla(152, 77%, 74%, 0.35) 3%, transparent 40%);
+  background-blend-mode: normal, normal, normal, normal, normal, normal;
 }
 
-@media (max-width: 768px) {
-  .package-grid {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
+.special-service .pricing-cell:first-child {
+  background-color: hsla(359, 100%, 50%, 1);
+  background-image:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 1746 1746' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),
+    radial-gradient(circle at 0% 99%, hsla(11, 100%, 50%, 1) 0%, transparent 67%),
+    radial-gradient(circle at 46% 94%, hsla(177, 100%, 50%, 1) 0%, transparent 81%),
+    radial-gradient(circle at 89% 8%, hsla(304, 100%, 9%, 1) 0%, transparent 150%),
+    radial-gradient(circle at 89% 8%, hsla(206, 100%, 9%, 1) 0%, transparent 150%),
+    radial-gradient(circle at 93% 95%, hsla(236, 100%, 23%, 1) 0%, transparent 66%),
+    radial-gradient(circle at 89% 8%, hsla(0, 100%, 99%, 1) 0%, transparent 150%),
+    radial-gradient(circle at 89% 8%, hsla(55, 94%, 54%, 1) 0%, transparent 150%);
+  background-blend-mode: overlay, normal, normal, normal, normal, normal, normal, normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+}
+
+.special-title {
+  background: linear-gradient(90deg, #FF2F01 0%, #FFAE03 47%, #D30013 100%);
+  color: white !important;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 20px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+.special-name {
+  color: #FFF !important;
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.special-description {
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.special-description li {
+  color: #fff !important;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .special-description {
+    padding-left: 0;
+  }
+  .special-description li {
+    font-size: 11px;
+  }
+  .special-name {
+    color: #FFF !important;
+    font-size: 12px;
   }
 }
 
-.package-grid .col,
-.package-grid .package-card {
-  background: #ffffff;
-  border: 1px solid #E2E8F0;
-  border-radius: 16px;
-  padding: 1.75rem 1.5rem;
+/* ================================================================
+   7. PAYMENT METHODS SECTION (section-method - AUTHENTIC 1:1)
+   ================================================================ */
+
+.section-method {
+  margin-bottom: 50px;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.section-method .section-content > .row:first-child {
+  background-color: transparent;
+  padding: 0 0 16px 0;
+}
+
+.section-method h2 {
+  font-family: 'SVN-Sofia Pro', 'Sofia Pro', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #005570;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.section-method .row-method {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: stretch;
+  justify-content: center;
+  padding-top: 0 !important;
+  border-radius: 0 0 20px 20px;
+}
+
+.section-method .row-method > .col {
+  flex: 1 1 calc(50% - 15px);
+  max-width: calc(50% - 15px);
+  min-width: 300px;
+  display: flex;
+}
+
+.section-method .row-method > .col > .col-inner {
+  background-color: #EEF7FA;
+  border-radius: 20px;
+  padding: 32px 28px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+  box-shadow: 0 2px 12px rgba(0, 85, 112, 0.04);
 }
 
-.package-grid .col:hover,
-.package-grid .package-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px -4px rgba(0, 85, 112, 0.15);
-  border-color: #87E3DB;
+.section-method .dc-title {
+  text-align: center;
+  margin-bottom: 24px;
 }
 
-.package-title {
-  font-size: 1.25rem;
-  font-weight: 800;
+.section-method .dc-title p {
+  margin-bottom: 0;
+}
+
+.section-method .dc-title strong {
+  position: relative;
+  display: inline-block;
+  font-family: 'SVN-Sofia Pro', 'Sofia Pro', sans-serif;
+  font-size: 24px;
   color: #005570;
-  margin-bottom: 0.5rem;
+  font-weight: 700;
   line-height: 1.3;
 }
 
-.package-price {
-  font-size: 1.75rem;
-  font-weight: 900;
-  color: #005570;
-  margin: 0.5rem 0 1rem 0;
-  display: flex;
-  align-items: baseline;
-  gap: 0.25rem;
+.section-method .dc-title.yellow strong::before {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 32px;
+  background: #FDB714;
+  border-radius: 99px;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.package-details {
-  font-size: 0.875rem;
+.section-method .dc-title.yellow strong::after {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  background: #FDB714;
+  border-radius: 99px;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(24px);
+}
+
+.section-method .col-inner > .text > p,
+.section-method .col-inner p {
+  color: #005570;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 1.6;
-  color: #4A5568;
-  flex-grow: 1;
+  text-align: center;
+}
+
+.section-method .row-method .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  gap: 12px 0;
+}
+
+.section-method .row-method .row > .col {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+  padding: 6px 6px;
+  box-sizing: border-box;
+}
+
+.section-method .icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+}
+
+.section-method .icon-box .icon-box-img {
+  width: 50px !important;
+  min-width: 50px;
+  height: 30px !important;
+  background: #FFFFFF;
+  border: 1px solid #D6DCE5;
+  border-radius: 4px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.section-method .icon-box .icon-box-img .icon,
+.section-method .icon-box .icon-box-img .icon-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-method .icon-box .icon-box-img img {
+  max-width: 90% !important;
+  max-height: 90% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  border-radius: 0 !important;
+  display: block;
+}
+
+.section-method .icon-box .icon-box-text {
+  flex: 1;
+}
+
+.section-method .icon-box .icon-box-text p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #005570;
+  text-align: left;
+  margin: 0;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+@media (max-width: 849px) {
+  .section-method .row-method {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section-method .row-method > .col {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .section-method .row-method > .col > .col-inner {
+    padding: 24px 20px;
+  }
+  .section-method .row-method .row > .col {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+
+@media (max-width: 549px) {
+  .section-method .row-method .row > .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .section-method .dc-title strong {
+    font-size: 20px;
+  }
 }
 
 /* ================================================================
-   4. TIMELINE SYSTEM (dc-timeline)
+   8. CONSULTATION CTA BANNER (section-cta.special.dark)
+   ================================================================ */
+
+.section-cta.special.dark {
+  background: linear-gradient(135deg, #00475B 0%, #005570 100%);
+  color: #ffffff;
+  padding: 48px 24px 54px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 40px auto;
+  box-shadow: 0 10px 30px rgba(0, 71, 91, 0.2);
+}
+
+.section-cta.special.dark h2 {
+  font-family: 'SVN-Sofia Pro', 'Sofia Pro', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+.section-cta.special.dark ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.section-cta.special.dark ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.section-cta.special.dark a.button.yellow,
+.section-cta.special.dark .button.primary,
+.page-pricing .btn-appointment {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #FFB500 0%, #E6A300 100%);
+  color: #00475B;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 12px 28px;
+  border-radius: 99px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(255, 181, 0, 0.4);
+  border: none;
+  cursor: pointer;
+}
+
+.section-cta.special.dark a.button.yellow:hover,
+.section-cta.special.dark .button.primary:hover,
+.page-pricing .btn-appointment:hover {
+  background: linear-gradient(135deg, #FFC024 0%, #F5AB00 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 181, 0, 0.5);
+  color: #00475B;
+}
+
+/* ================================================================
+   9. FORMS & GENERAL BUTTONS
+   ================================================================ */
+
+.dc_form,
+.form-v3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 700px;
+  margin: 1.5rem auto 0 auto;
+}
+
+.dc_input {
+  flex: 1 1 280px;
+}
+
+.dc_input input,
+.dc_input select {
+  width: 100%;
+  height: 48px;
+  padding: 0 1rem;
+  border: 1.5px solid #DDE4EA;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #2A2F38;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dc_input input:focus,
+.dc_input select:focus {
+  border-color: #005570;
+  box-shadow: 0 0 0 3px rgba(0, 85, 112, 0.15);
+}
+
+.dc_submit {
+  flex: 1 1 100%;
+}
+
+.dc_submit input[type="submit"],
+.button.btn-booking,
+.button.btn-appointment,
+button.btn-booking,
+button.btn-appointment,
+a.button.btn-appointment,
+.dc_booking .btn-appointment,
+.pricing-page .btn-appointment,
+.pricing-page .btn-booking {
+  width: 100%;
+  height: 48px;
+  background: linear-gradient(135deg, #FFB500 0%, #E6A300 100%);
+  color: #00475B;
+  font-weight: 800;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(255, 181, 0, 0.35);
+}
+
+.dc_submit input[type="submit"]:hover,
+.button.btn-booking:hover,
+.button.btn-appointment:hover,
+button.btn-booking:hover,
+button.btn-appointment:hover,
+a.button.btn-appointment:hover,
+.dc_booking .btn-appointment:hover,
+.pricing-page .btn-appointment:hover,
+.pricing-page .btn-booking:hover {
+  background: linear-gradient(135deg, #FFC024 0%, #F5AB00 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(255, 181, 0, 0.45);
+}
+
+/* ================================================================
+   10. TIMELINE SYSTEM (dc-timeline)
    ================================================================ */
 
 .dc-timeline {
@@ -374,95 +1007,7 @@
 }
 
 /* ================================================================
-   5. MEDPRO REASONS & BENEFIT BLOCKS (dc-medpro-reasons)
-   ================================================================ */
-
-.dc-medpro-reasons {
-  padding: 3.5rem 0;
-  background: #EEF7FA;
-}
-
-.dc-medpro-reasons .benefit-block {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.25rem;
-  margin-top: 2rem;
-}
-
-@media (max-width: 1024px) {
-  .dc-medpro-reasons .benefit-block {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .dc-medpro-reasons .benefit-block {
-    grid-template-columns: 1fr;
-  }
-}
-
-.benefit-item {
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 1.5rem 1.25rem;
-  border: 1px solid #DDE4EA;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.75rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
-  transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.benefit-item:hover {
-  transform: translateY(-3px);
-  border-color: #005570;
-}
-
-.benefit-number {
-  width: 38px;
-  height: 38px;
-  border-radius: 9999px;
-  background: #FFB500;
-  color: #00475B;
-  font-weight: 800;
-  font-size: 1.1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-/* Accordion in 8 Reasons */
-.accordion {
-  width: 100%;
-}
-
-.accordion-item {
-  border-bottom: 1px solid #E2E8F0;
-  padding: 0.75rem 0;
-}
-
-.accordion-title {
-  font-weight: 700;
-  font-size: 1rem;
-  color: #005570;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  user-select: none;
-}
-
-.accordion-inner {
-  padding: 0.75rem 0;
-  color: #4A5568;
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-/* ================================================================
-   6. OFFICIAL MEDICAL PRICE DECLARATION (dc-kkg)
+   11. OFFICIAL MEDICAL PRICE DECLARATION (dc-kkg)
    ================================================================ */
 
 .dc-kkg {
@@ -564,109 +1109,128 @@
 }
 
 /* ================================================================
-   7. FORM & CTA SYSTEM (dc_form, form-v3)
+   12. RESPONSIVE BREAKPOINTS (Desktop 1440px / Tablet 768px / Mobile 390px)
    ================================================================ */
 
-.dc_form,
-.form-v3 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  max-width: 700px;
-  margin: 1.5rem auto 0 auto;
+@media (max-width: 849px) {
+  .page-pricing .section-blog-banner,
+  .section-blog-banner {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .page-pricing .section-blog-banner .row,
+  .section-blog-banner .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .page-pricing .section-blog-banner .row .col:first-child,
+  .section-blog-banner .row .col:first-child {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+  .page-pricing .section-blog-banner .row .col:last-child,
+  .section-blog-banner .row .col:last-child {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .page-pricing .section-blog-banner h1,
+  .section-blog-banner h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .page-pricing .section-blog-banner p,
+  .section-blog-banner p {
+    text-align: center;
+  }
+  .section-blog-banner .col:last-child .col-inner::after {
+    width: 85%;
+    left: 40px;
+    top: 20px;
+  }
+  .section-blog-banner img {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .pricing-title {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+  .pricing-title .title {
+    font-size: 16px;
+  }
+  .page-pricing .section-pricing .heading h2 {
+    font-size: 24px;
+  }
+  .section-method .row-method {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section-method .row-method > .col {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
 }
 
-.dc_input {
-  flex: 1 1 280px;
-}
-
-.dc_input input,
-.dc_input select {
-  width: 100%;
-  height: 48px;
-  padding: 0 1rem;
-  border: 1.5px solid #DDE4EA;
-  border-radius: 8px;
-  font-size: 0.95rem;
-  color: #2A2F38;
-  background-color: #ffffff;
-  outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.dc_input input:focus,
-.dc_input select:focus {
-  border-color: #005570;
-  box-shadow: 0 0 0 3px rgba(0, 85, 112, 0.15);
-}
-
-.dc_submit {
-  flex: 1 1 100%;
-}
-
-.dc_submit input[type="submit"],
-.button.btn-booking,
-.button.btn-appointment,
-button.btn-booking,
-button.btn-appointment,
-a.button.btn-appointment,
-.dc_booking .btn-appointment,
-.pricing-page .btn-appointment,
-.pricing-page .btn-booking {
-  width: 100%;
-  height: 48px;
-  background: linear-gradient(135deg, #FFB500 0%, #E6A300 100%);
-  color: #00475B;
-  font-weight: 800;
-  font-size: 1.05rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 12px rgba(255, 181, 0, 0.35);
-}
-
-.dc_submit input[type="submit"]:hover,
-.button.btn-booking:hover,
-.button.btn-appointment:hover,
-button.btn-booking:hover,
-button.btn-appointment:hover,
-a.button.btn-appointment:hover,
-.dc_booking .btn-appointment:hover,
-.pricing-page .btn-appointment:hover,
-.pricing-page .btn-booking:hover {
-  background: linear-gradient(135deg, #FFC024 0%, #F5AB00 100%);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(255, 181, 0, 0.45);
-}
-
-/* ================================================================
-   8. HERO, ACCREDITATION & CUSTOMER SECTIONS
-   ================================================================ */
-
-.section-hero {
-  background-color: #FDFDF6;
-  padding-bottom: 2rem;
-}
-
-.section-customer-ns {
-  background-color: #00475B;
-  color: #ffffff;
-  padding: 3.5rem 0;
-}
-
-.section-customer-ns h2 {
-  color: #ffffff !important;
-}
-
-.bg-aaci {
-  background-color: #EEF7FA;
-  padding: 2.5rem 0;
-}
-
-.row-service .col {
-  padding: 10px;
+@media (max-width: 549px) {
+  .page-pricing .section-blog-banner,
+  .section-blog-banner {
+    padding-top: 20px;
+    padding-bottom: 24px;
+  }
+  .page-pricing .section-blog-banner h1,
+  .section-blog-banner h1 {
+    font-size: 22px;
+  }
+  .section-blog-banner .col:last-child .col-inner::after {
+    width: 85%;
+    left: 20px;
+    top: 15px;
+    border-radius: 100px 16px 16px 16px;
+  }
+  .section-blog-banner img {
+    border-radius: 100px 16px 16px 16px !important;
+    width: 90%;
+  }
+  .pricing-title {
+    font-size: 14px;
+    padding: 10px 14px;
+    margin-top: 24px;
+  }
+  .pricing-title .title {
+    font-size: 14px;
+  }
+  .page-pricing .section-pricing {
+    padding: 16px 8px !important;
+  }
+  .page-pricing .section-pricing .heading h2 {
+    font-size: 20px;
+  }
+  .tabbed-content .nav li.tab a {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.875rem;
+  }
+  .comparison-table {
+    margin: 1rem 0 2rem 0;
+  }
+  .pricing-table {
+    min-width: 700px;
+  }
+  .pricing-cell {
+    padding: 10px 8px;
+    font-size: 0.8rem;
+  }
+  .package-title {
+    font-size: 0.875rem;
+  }
+  .package-price {
+    font-size: 1rem;
+  }
+  .section-cta.special.dark {
+    padding: 32px 16px 36px;
+    border-radius: 14px;
+  }
+  .section-cta.special.dark h2 {
+    font-size: 22px;
+  }
 }

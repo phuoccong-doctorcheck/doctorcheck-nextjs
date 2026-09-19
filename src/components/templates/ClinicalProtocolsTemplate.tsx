@@ -74,52 +74,56 @@ export function ClinicalProtocolsTemplate({ page, pageContent }: ClinicalProtoco
           </div>
         )}
 
-        {/* 4. Accreditation & Quality Assurance Trust Banner */}
-        <section className="bg-[#EEF7FA] border-y border-[#DDE4EA] py-8 my-8">
-          <div className="max-w-[1250px] mx-auto px-4 sm:px-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
-                <div className="w-12 h-12 rounded-full bg-[#005570]/10 flex items-center justify-center flex-shrink-0">
-                  <Award className="w-6 h-6 text-[#005570]" />
+        {/* 4. Accreditation & Quality Assurance Trust Banner (Only if not already in contentHtml) */}
+        {page.slug !== 'quyen-loi-bhyt-bhtn' && (
+          <section className="bg-[#EEF7FA] border-y border-[#DDE4EA] py-8 my-8">
+            <div className="max-w-[1250px] mx-auto px-4 sm:px-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                  <div className="w-12 h-12 rounded-full bg-[#005570]/10 flex items-center justify-center flex-shrink-0">
+                    <Award className="w-6 h-6 text-[#005570]" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#005570] text-sm">Chuẩn Quốc Tế AACI Hoa Kỳ</h4>
+                    <p className="text-xs text-gray-600 mt-0.5">Tiêu chuẩn chất lượng lâm sàng xuất sắc</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-bold text-[#005570] text-sm">Chuẩn Quốc Tế AACI Hoa Kỳ</h4>
-                  <p className="text-xs text-gray-600 mt-0.5">Tiêu chuẩn chất lượng lâm sàng xuất sắc</p>
-                </div>
-              </div>
 
-              <div className="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
-                <div className="w-12 h-12 rounded-full bg-[#FFB500]/15 flex items-center justify-center flex-shrink-0">
-                  <ShieldCheck className="w-6 h-6 text-[#D97706]" />
+                <div className="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                  <div className="w-12 h-12 rounded-full bg-[#FFB500]/15 flex items-center justify-center flex-shrink-0">
+                    <ShieldCheck className="w-6 h-6 text-[#D97706]" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#005570] text-sm">Vô Trùng & An Toàn Tuyệt Đối</h4>
+                    <p className="text-xs text-gray-600 mt-0.5">Kiểm soát nhiễm khuẩn nghiêm ngặt 100%</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-bold text-[#005570] text-sm">Vô Trùng & An Toàn Tuyệt Đối</h4>
-                  <p className="text-xs text-gray-600 mt-0.5">Kiểm soát nhiễm khuẩn nghiêm ngặt 100%</p>
-                </div>
-              </div>
 
-              <div className="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
-                <div className="w-12 h-12 rounded-full bg-[#005570]/10 flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-6 h-6 text-[#005570]" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-[#005570] text-sm">Tư Vấn Chuyên Môn 24/7</h4>
-                  <a
-                    href={CLINIC_INFO.hotlineTel}
-                    className="text-xs font-bold text-[#005570] hover:text-[#FFB500] transition-colors block mt-0.5"
-                  >
-                    Hotline: {CLINIC_INFO.hotline}
-                  </a>
+                <div className="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-100 shadow-sm">
+                  <div className="w-12 h-12 rounded-full bg-[#005570]/10 flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-[#005570]" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#005570] text-sm">Tư Vấn Chuyên Môn 24/7</h4>
+                    <a
+                      href={CLINIC_INFO.hotlineTel}
+                      className="text-xs font-bold text-[#005570] hover:text-[#FFB500] transition-colors block mt-0.5"
+                    >
+                      Hotline: {CLINIC_INFO.hotline}
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
 
-        {/* 5. Consultation & Booking Form */}
-        <div id="dat-lich" className="w-full">
-          <BookingSection />
-        </div>
+        {/* 5. Consultation & Booking Form (Only if not already in contentHtml) */}
+        {page.slug !== 'quyen-loi-bhyt-bhtn' && (
+          <div id="dat-lich" className="w-full">
+            <BookingSection />
+          </div>
+        )}
       </main>
 
       {/* 6. Footer & Floating Actions */}

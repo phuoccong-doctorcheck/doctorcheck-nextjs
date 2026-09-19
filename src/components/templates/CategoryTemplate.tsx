@@ -64,9 +64,10 @@ export function CategoryTemplate({ category }: CategoryTemplateProps) {
                 {category.name}
               </h1>
               {category.description && (
-                <p className="text-sm sm:text-base text-[#4D5565] leading-relaxed">
-                  {category.description}
-                </p>
+                <div
+                  className="text-sm sm:text-base text-[#4D5565] leading-relaxed whitespace-pre-line"
+                  dangerouslySetInnerHTML={{ __html: category.description }}
+                />
               )}
             </div>
           </div>

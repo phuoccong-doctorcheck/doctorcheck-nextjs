@@ -16,37 +16,37 @@ const defaultEquipmentItems: EquipmentItem[] = [
     id: 'noi-soi',
     name: 'Hệ Thống Máy Nội Soi',
     desc: 'Máy nội soi Olympus EVIS-X1 CV-1500 & Máy nội soi Fujifilm EP-7000 tích hợp nhiều công nghệ tiên tiến, cho hình ảnh rõ nét, giúp Bác Sĩ đánh giá chính xác tổn thương.',
-    image: '/sites/doctorcheck-vn/root/images/equipment/equip-noi-soi-master.webp',
+    image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/78304e55-5a75-4c92-4e70-284df81aa800/w=874,h=582',
   },
   {
     id: 'xet-nghiem',
     name: 'Hệ Thống Máy Xét Nghiệm',
     desc: 'Các máy xét nghiệm đến từ hãng: Abbott, Roche, Olympus, Cobas,... phân tích các mẫu hoàn toàn tự động, giúp chẩn đoán bệnh lý tiêu hóa – gan mật và tầm soát ung thư hệ tiêu hóa.',
-    image: '/sites/doctorcheck-vn/root/images/equipment/equip-xet-nghiem-master.webp',
+    image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/703a1139-9dab-4e78-b6e3-2c43858c6400/w=874,h=582',
   },
   {
     id: 'sieu-am',
     name: 'Hệ Thống Máy Siêu Âm Màu',
     desc: 'ACUSON Juniper từ hãng Siemens (Mỹ) cao cấp có thiết kế nhỏ gọn, màn hình cảm ứng lớn, hệ thống đầu dò đa dạng, giúp thu được hình ảnh chất lượng cao trong siêu âm cận lâm sàng tiêu hóa.',
-    image: '/sites/doctorcheck-vn/root/images/equipment/equip-sieu-am-master.webp',
+    image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/4a217bbc-bd4a-4234-c715-bea676e88b00/w=874,h=582',
   },
   {
     id: 'x-quang',
     name: 'Máy Chụp X-Quang',
     desc: 'Hệ thống máy chụp X quang từ hãng Vikomed (Liên doanh Việt - Hàn) có thể thu nhận hình ảnh cả tư thế đứng & nằm, được sử dụng để khảo sát các bệnh lý bụng ngoại khoa, liệt ruột, tắc ruột,....',
-    image: '/sites/doctorcheck-vn/root/images/equipment/equip-x-quang-master.webp',
+    image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/d0946de2-a6a8-4c32-82c6-f2da3e64a300/w=874,h=582',
   },
   {
     id: 'dien-tim',
     name: 'Máy Đo Điện Tim 3 Kênh',
     desc: 'Máy FX 8100 từ hãng Fukuda (Nhật Bản) có màn hình màu LCD 7” giúp quan sát rõ dạng sóng ECG, sóng lâm sàng và nhịp tim. Kết quả in được ở nhiều định dạng, cho người dùng dễ đọc dữ liệu.',
-    image: '/sites/doctorcheck-vn/root/images/equipment/equip-dien-tim-master.webp',
+    image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/5635de35-86cf-437c-07a6-91b577176c00/w=874,h=582',
   },
   {
     id: 'hpylori',
     name: 'Máy Đo H. pylori',
     desc: 'Máy FanHp từ hãng Fisher (Đức) được sử dụng để phân tích urease nhanh thông qua hơi thở, giúp sớm phát hiện nguy cơ mắc vi khuẩn Helicobacter pylori (HP) gây các bệnh lý trong dạ dày.',
-    image: '/sites/doctorcheck-vn/root/images/equipment/equip-hpylori-master.webp',
+    image: 'https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/878ede28-24d7-4976-be0d-f183342b3600/w=874,h=582',
   },
 ];
 

@@ -34,11 +34,27 @@ export function RichText({ contentHtml, className = '' }: RichTextProps) {
       }
 
       if (tabbedContent) {
-        const targetId = href.slice(1);
+        const targetId = decodeURIComponent(href.slice(1));
+        const rawTargetId = href.slice(1);
         const panels = tabbedContent.querySelectorAll(':scope > .tab-panels > .panel, :scope .tab-panels > .panel');
         panels.forEach((p) => p.classList.remove('active'));
 
-        const targetPanel = tabbedContent.querySelector(`#${targetId}, [id="${targetId}"]`);
+        const targetPanel =
+          document.getElementById(targetId) ||
+          document.getElementById(rawTargetId) ||
+          document.getElementById(`tab_${targetId}`) ||
+          document.getElementById(`tab_${rawTargetId}`) ||
+          Array.from(panels).find(
+            (p) =>
+              p.id === targetId ||
+              p.id === rawTargetId ||
+              p.id === `tab_${targetId}` ||
+              p.id === `tab_${rawTargetId}` ||
+              p.getAttribute('id') === targetId ||
+              p.getAttribute('id') === rawTargetId ||
+              p.getAttribute('id') === `tab_${targetId}` ||
+              p.getAttribute('id') === `tab_${rawTargetId}`
+          );
         if (targetPanel) {
           targetPanel.classList.add('active');
         }
@@ -67,6 +83,34 @@ export function RichText({ contentHtml, className = '' }: RichTextProps) {
         accItem.classList.add('active');
       }
     };
+
+    // 3. Hydrate data-src images (perfmatters-lazy)
+    const lazyImages = container.querySelectorAll('img[data-src]');
+    lazyImages.forEach((img) => {
+      const dataSrc = img.getAttribute('data-src');
+      if (dataSrc) {
+        // Map downloaded pricing SVGs if present
+        if (dataSrc.includes('/2024/12/dollars-1.svg')) {
+          img.setAttribute('src', '/images/pricing/dollars-1.svg');
+        } else if (dataSrc.includes('/2024/12/napas.svg')) {
+          img.setAttribute('src', '/images/pricing/napas.svg');
+        } else if (dataSrc.includes('/2024/12/momo.svg')) {
+          img.setAttribute('src', '/images/pricing/momo.svg');
+        } else if (dataSrc.includes('/2024/12/visa.svg')) {
+          img.setAttribute('src', '/images/pricing/visa.svg');
+        } else if (dataSrc.includes('/2024/12/vnpay.svg')) {
+          img.setAttribute('src', '/images/pricing/vnpay.svg');
+        } else if (dataSrc.includes('/2024/12/zalopay.svg')) {
+          img.setAttribute('src', '/images/pricing/zalopay.svg');
+        } else if (dataSrc.includes('check-circle.svg')) {
+          img.setAttribute('src', '/images/protocols/check-circle.svg');
+        } else if (dataSrc.includes('Vector-1.svg')) {
+          img.setAttribute('src', '/images/protocols/Vector-1.svg');
+        } else if (!img.getAttribute('src') || img.getAttribute('src')?.startsWith('data:image')) {
+          img.setAttribute('src', dataSrc);
+        }
+      }
+    });
 
     container.addEventListener('click', handleTabClick);
     container.addEventListener('click', handleAccordionClick);

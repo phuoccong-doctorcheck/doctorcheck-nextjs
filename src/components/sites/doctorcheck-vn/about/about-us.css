@@ -896,105 +896,157 @@
    SECTION 6: FACILITIES (Equipment Cards)
    ================================================================ */
 .about-us-page .section-facilities {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
+.about-us-page .facilities-header-text h2,
 .about-us-page .section-facilities .heading h2 {
-  font-size: 1.5rem;
+  font-family: 'SVN-Sofia Pro', 'Sofia Pro', sans-serif;
+  font-size: 28px;
   font-weight: 800;
   color: #005570;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  line-height: 1.3;
 }
 
+.about-us-page .facilities-header-text p,
 .about-us-page .section-facilities .heading p {
-  font-size: 14.5px;
+  font-size: 15px;
   line-height: 1.65;
-  color: #4d5565;
+  color: #334155;
   text-align: center;
-  margin: 0 auto;
-  max-width: 800px;
+  margin: 0 auto 36px auto;
+  max-width: 860px;
 }
 
 /* Equipment Card Grid */
 .about-us-page .row-facilities {
-  margin-top: 30px;
-  row-gap: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 10px;
 }
 
 .about-us-page .row-facilities > .col {
+  width: 100%;
+  max-width: 100%;
+  flex: none;
   padding: 0;
 }
 
-.about-us-page .box-overlay {
-  position: relative;
-  overflow: hidden;
-  background: #003040;
+.about-us-page .row-facilities .col-inner {
+  height: 100%;
 }
 
-.about-us-page .box-image {
+.about-us-page .facility-card {
   position: relative;
-}
-
-.about-us-page .image-overlay-add {
-  position: relative;
-}
-
-.about-us-page .box-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  min-height: 290px;
   aspect-ratio: 874 / 582;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.5s ease;
-}
-
-.about-us-page .box:hover .box-image img {
-  transform: scale(1.06);
-}
-
-.about-us-page .image-overlay-add .overlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 48, 64, 0.15);
-  transition: background-color 0.3s ease;
-}
-
-.about-us-page .box:hover .image-overlay-add .overlay {
-  background-color: rgba(0, 48, 64, 0.05);
-}
-
-/* Text overlay at bottom */
-.about-us-page .box-text {
-  position: absolute;
-  inset: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 48, 62, 0.12);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 24px 20px;
+  background-color: #004D61;
+}
+
+.about-us-page .facility-card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+.about-us-page .facility-card:hover .facility-card-img {
+  transform: scale(1.06);
+}
+
+.about-us-page .facility-card-overlay {
+  position: absolute;
+  inset: 0;
   background: linear-gradient(
-    to top,
-    rgba(0, 40, 52, 0.92) 0%,
-    rgba(0, 40, 52, 0.5) 50%,
-    transparent 100%
+    180deg,
+    rgba(0, 71, 91, 0.3) 0%,
+    rgba(0, 56, 71, 0.68) 42%,
+    rgba(0, 46, 59, 0.94) 75%,
+    rgba(0, 36, 47, 0.98) 100%
   );
-  color: #ffffff;
+  transition: background 0.3s ease;
 }
 
-.about-us-page .box-text h3 {
-  font-size: 1.05rem;
+.about-us-page .facility-card:hover .facility-card-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 71, 91, 0.2) 0%,
+    rgba(0, 56, 71, 0.62) 42%,
+    rgba(0, 46, 59, 0.92) 75%,
+    rgba(0, 36, 47, 0.97) 100%
+  );
+}
+
+.about-us-page .facility-card-content {
+  position: relative;
+  z-index: 2;
+  padding: 22px 20px;
+  text-align: center;
+}
+
+.about-us-page .facility-card-content h3 {
+  font-family: 'SVN-Sofia Pro', 'Sofia Pro', sans-serif;
+  font-size: 18.5px;
   font-weight: 800;
-  color: #ffb500;
-  margin-bottom: 6px;
+  color: #FFFFFF !important;
+  margin-top: 0;
+  margin-bottom: 8px;
   line-height: 1.3;
+  letter-spacing: -0.1px;
 }
 
-.about-us-page .box-text p {
-  font-size: 12.5px;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.88);
+.about-us-page .facility-card-content p {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.92) !important;
   margin: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  .about-us-page .row-facilities {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .about-us-page .facilities-header-text h2,
+  .about-us-page .section-facilities .heading h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-us-page .row-facilities {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .about-us-page .facility-card {
+    border-radius: 16px;
+    aspect-ratio: 16 / 11;
+  }
+  .about-us-page .facility-card-content {
+    padding: 18px 16px;
+  }
+  .about-us-page .facility-card-content h3 {
+    font-size: 17px;
+  }
+  .about-us-page .facility-card-content p {
+    font-size: 13px;
+  }
 }
 
 /* Customer Reviews Row */

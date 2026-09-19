@@ -623,214 +623,153 @@ export function AboutUsPage() {
       <section className="section section-facilities about" id="section_1667685864">
         <div className="section-bg fill"></div>
         <div className="section-content relative">
-          <div className="row row-collapse" id="row-1810861643">
+          <div className="row" id="row-1810861643">
             <div id="col-603412031" className="col heading small-12 large-12">
               <div className="col-inner">
-                <div id="text-1993858298" className="text">
+                <div className="text facilities-header-text">
                   <h2>Trang Bị Hệ Thống Máy Móc Hiện Đại</h2>
-                  <style>{`
-                    #text-1993858298 {
-                      font-size: 1.3rem;
-                      text-align: center;
-                    }
-                  `}</style>
-                </div>
-                <div id="text-1576168549" className="text">
                   <p>
                     Nhằm mang đến trải nghiệm tầm soát sức khỏe thoải mái, đảm bảo kết quả chuẩn xác, Doctor Check chú trọng đầu tư hệ thống máy móc xét nghiệm, chẩn đoán hình ảnh, nội soi hiện đại chuẩn quốc tế. Các trang thiết bị đều đến từ những hãng nổi tiếng như Fujifilm, Olympus, Abbott, Roche,…
                   </p>
-                  <style>{`
-                    #text-1576168549 {
-                      text-align: center;
-                    }
-                  `}</style>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="row row-collapse align-equal row-facilities" id="row-302981111">
+          <div className="row row-facilities" id="row-302981111">
             {/* Box 1 */}
-            <div id="col-432620694" className="col medium-4 small-12 large-4">
+            <div className="col medium-4 small-12 large-4">
               <div className="col-inner">
-                <div className="box has-hover box-overlay dark box-text-bottom">
-                  <div className="box-image">
-                    <div className="image-overlay-add">
-                      <img
-                        decoding="async"
-                        width="874"
-                        height="582"
-                        src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/78304e55-5a75-4c92-4e70-284df81aa800/w=874,h=582"
-                        alt="Hệ thống máy nội soi Olympus & Fujifilm"
-                      />
-                      <div className="overlay" style={{ backgroundColor: 'rgba(0, 71, 91, 0.4)' }}></div>
-                    </div>
-                  </div>
-                  <div className="box-text text-center">
-                    <div className="box-text-inner">
-                      <div id="text-1165384415" className="text">
-                        <h3 className="capitalize">Hệ thống máy nội soi</h3>
-                        <p>
-                          Máy nội soi Olympus EVIS-X1 CV-1500 &amp; Máy nội soi Fujifilm EP-7000 tích hợp nhiều công nghệ tiên tiến, cho hình ảnh rõ nét, giúp Bác Sĩ đánh giá chính xác tổn thương.
-                        </p>
-                        <style>{`#text-1165384415 { font-size: 1.1rem; }`}</style>
-                      </div>
-                    </div>
+                <div className="facility-card">
+                  <img
+                    decoding="async"
+                    width="874"
+                    height="582"
+                    src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/78304e55-5a75-4c92-4e70-284df81aa800/w=874,h=582"
+                    alt="Hệ Thống Máy Nội Soi"
+                    className="facility-card-img"
+                  />
+                  <div className="facility-card-overlay"></div>
+                  <div className="facility-card-content">
+                    <h3>Hệ Thống Máy Nội Soi</h3>
+                    <p>
+                      Máy nội soi Olympus EVIS-X1 CV-1500 &amp; Máy nội soi Fujifilm EP-7000 tích hợp nhiều công nghệ tiên tiến, cho hình ảnh rõ nét, giúp Bác Sĩ đánh giá chính xác tổn thương.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Box 2 */}
-            <div id="col-9020959" className="col medium-4 small-12 large-4">
+            <div className="col medium-4 small-12 large-4">
               <div className="col-inner">
-                <div className="box has-hover box-overlay dark box-text-bottom">
-                  <div className="box-image">
-                    <div className="image-overlay-add">
-                      <img
-                        decoding="async"
-                        width="874"
-                        height="582"
-                        src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/703a1139-9dab-4e78-b6e3-2c43858c6400/w=874,h=582"
-                        alt="Hệ thống máy xét nghiệm tự động"
-                      />
-                      <div className="overlay" style={{ backgroundColor: 'rgba(0, 71, 91, 0.4)' }}></div>
-                    </div>
-                  </div>
-                  <div className="box-text text-center">
-                    <div className="box-text-inner">
-                      <div id="text-3843227644" className="text">
-                        <h3 className="capitalize">Hệ thống máy xét nghiệm</h3>
-                        <p>
-                          Các máy xét nghiệm đến từ hãng: Abbott, Roche, Olympus, Cobas,... phân tích các mẫu hoàn toàn tự động, giúp chẩn đoán bệnh lý tiêu hóa – gan mật và tầm soát ung thư hệ tiêu hóa.
-                        </p>
-                        <style>{`#text-3843227644 { font-size: 1.1rem; }`}</style>
-                      </div>
-                    </div>
+                <div className="facility-card">
+                  <img
+                    decoding="async"
+                    width="874"
+                    height="582"
+                    src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/703a1139-9dab-4e78-b6e3-2c43858c6400/w=874,h=582"
+                    alt="Hệ Thống Máy Xét Nghiệm"
+                    className="facility-card-img"
+                  />
+                  <div className="facility-card-overlay"></div>
+                  <div className="facility-card-content">
+                    <h3>Hệ Thống Máy Xét Nghiệm</h3>
+                    <p>
+                      Các máy xét nghiệm đến từ hãng: Abbott, Roche, Olympus, Cobas,... phân tích các mẫu hoàn toàn tự động, giúp chẩn đoán bệnh lý tiêu hóa – gan mật và tầm soát ung thư hệ tiêu hóa.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Box 3 */}
-            <div id="col-2072686716" className="col medium-4 small-12 large-4">
+            <div className="col medium-4 small-12 large-4">
               <div className="col-inner">
-                <div className="box has-hover box-overlay dark box-text-bottom">
-                  <div className="box-image">
-                    <div className="image-overlay-add">
-                      <img
-                        decoding="async"
-                        width="874"
-                        height="582"
-                        src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/4a217bbc-bd4a-4234-c715-bea676e88b00/w=874,h=582"
-                        alt="Hệ thống máy siêu âm màu ACUSON Juniper"
-                      />
-                      <div className="overlay" style={{ backgroundColor: 'rgba(0, 71, 91, 0.4)' }}></div>
-                    </div>
-                  </div>
-                  <div className="box-text text-center">
-                    <div className="box-text-inner">
-                      <div id="text-1117898589" className="text">
-                        <h3 className="capitalize">Hệ thống máy siêu âm màu</h3>
-                        <p>
-                          ACUSON Juniper từ hãng Siemens (Mỹ) cao cấp có thiết kế nhỏ gọn, màn hình cảm ứng lớn, hệ thống đầu đò đa dạng, giúp thu được hình ảnh chất lượng cao trong siêu âm cận lâm sàng tiêu hóa.
-                        </p>
-                        <style>{`#text-1117898589 { font-size: 1.1rem; }`}</style>
-                      </div>
-                    </div>
+                <div className="facility-card">
+                  <img
+                    decoding="async"
+                    width="874"
+                    height="582"
+                    src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/4a217bbc-bd4a-4234-c715-bea676e88b00/w=874,h=582"
+                    alt="Hệ Thống Máy Siêu Âm Màu"
+                    className="facility-card-img"
+                  />
+                  <div className="facility-card-overlay"></div>
+                  <div className="facility-card-content">
+                    <h3>Hệ Thống Máy Siêu Âm Màu</h3>
+                    <p>
+                      ACUSON Juniper từ hãng Siemens (Mỹ) cao cấp có thiết kế nhỏ gọn, màn hình cảm ứng lớn, hệ thống đầu đò đa dạng, giúp thu được hình ảnh chất lượng cao trong siêu âm cận lâm sàng tiêu hóa.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Box 4 */}
-            <div id="col-1573737573" className="col medium-4 small-12 large-4">
+            <div className="col medium-4 small-12 large-4">
               <div className="col-inner">
-                <div className="box has-hover box-overlay dark box-text-bottom">
-                  <div className="box-image">
-                    <div className="image-overlay-add">
-                      <img
-                        decoding="async"
-                        width="874"
-                        height="582"
-                        src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/d0946de2-a6a8-4c32-82c6-f2da3e64a300/w=874,h=582"
-                        alt="Máy chụp X-quang Vikomed"
-                      />
-                      <div className="overlay" style={{ backgroundColor: 'rgba(0, 71, 91, 0.4)' }}></div>
-                    </div>
-                  </div>
-                  <div className="box-text text-center">
-                    <div className="box-text-inner">
-                      <div id="text-1091460360" className="text">
-                        <h3 className="capitalize">Máy chụp X-quang</h3>
-                        <p>
-                          Hệ thống máy chụp X quang từ hãng Vikomed (Liên doanh Việt - Hàn) có thể thu nhận hình ảnh cả tư thế đứng &amp; nằm, được sử dụng để khảo sát các bệnh lý bụng ngoại khoa, liệt ruột, tắc ruột,....
-                        </p>
-                        <style>{`#text-1091460360 { font-size: 1.1rem; }`}</style>
-                      </div>
-                    </div>
+                <div className="facility-card">
+                  <img
+                    decoding="async"
+                    width="874"
+                    height="582"
+                    src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/d0946de2-a6a8-4c32-82c6-f2da3e64a300/w=874,h=582"
+                    alt="Máy Chụp X-Quang"
+                    className="facility-card-img"
+                  />
+                  <div className="facility-card-overlay"></div>
+                  <div className="facility-card-content">
+                    <h3>Máy Chụp X-Quang</h3>
+                    <p>
+                      Hệ thống máy chụp X quang từ hãng Vikomed (Liên doanh Việt - Hàn) có thể thu nhận hình ảnh cả tư thế đứng &amp; nằm, được sử dụng để khảo sát các bệnh lý bụng ngoại khoa, liệt ruột, tắc ruột,....
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Box 5 */}
-            <div id="col-2051872659" className="col medium-4 small-12 large-4">
+            <div className="col medium-4 small-12 large-4">
               <div className="col-inner">
-                <div className="box has-hover box-overlay dark box-text-bottom">
-                  <div className="box-image">
-                    <div className="image-overlay-add">
-                      <img
-                        decoding="async"
-                        width="874"
-                        height="582"
-                        src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/5635de35-86cf-437c-07a6-91b577176c00/w=874,h=582"
-                        alt="Máy đo điện tim Fukuda FX 8100"
-                      />
-                      <div className="overlay" style={{ backgroundColor: 'rgba(0, 71, 91, 0.4)' }}></div>
-                    </div>
-                  </div>
-                  <div className="box-text text-center">
-                    <div className="box-text-inner">
-                      <div id="text-3104017917" className="text">
-                        <h3 className="capitalize">Máy đo điện tim 3 kênh</h3>
-                        <p>
-                          Máy FX 8100 từ hãng Fukuda (Nhật Bản) có màn hình màu LCD 7” giúp quan sát rõ dạng sóng ECG, sóng lâm sàng và nhịp tim. Kết quả in được ở nhiều định dạng, cho người dùng dễ đọc dữ liệu.
-                        </p>
-                        <style>{`#text-3104017917 { font-size: 1.1rem; }`}</style>
-                      </div>
-                    </div>
+                <div className="facility-card">
+                  <img
+                    decoding="async"
+                    width="874"
+                    height="582"
+                    src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/5635de35-86cf-437c-07a6-91b577176c00/w=874,h=582"
+                    alt="Máy Đo Điện Tim 3 Kênh"
+                    className="facility-card-img"
+                  />
+                  <div className="facility-card-overlay"></div>
+                  <div className="facility-card-content">
+                    <h3>Máy Đo Điện Tim 3 Kênh</h3>
+                    <p>
+                      Máy FX 8100 từ hãng Fukuda (Nhật Bản) có màn hình màu LCD 7” giúp quan sát rõ dạng sóng ECG, sóng lâm sàng và nhịp tim. Kết quả in được ở nhiều định dạng, cho người dùng dễ đọc dữ liệu.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Box 6 */}
-            <div id="col-28170877" className="col medium-4 small-12 large-4">
+            <div className="col medium-4 small-12 large-4">
               <div className="col-inner">
-                <div className="box has-hover box-overlay dark box-text-bottom">
-                  <div className="box-image">
-                    <div className="image-overlay-add">
-                      <img
-                        decoding="async"
-                        width="874"
-                        height="582"
-                        src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/878ede28-24d7-4976-be0d-f183342b3600/w=874,h=582"
-                        alt="Máy Đo vi khuẩn H. pylori qua hơi thở"
-                      />
-                      <div className="overlay" style={{ backgroundColor: 'rgba(0, 71, 91, 0.4)' }}></div>
-                    </div>
-                  </div>
-                  <div className="box-text text-center">
-                    <div className="box-text-inner">
-                      <div id="text-3568759124" className="text">
-                        <h3>Máy Đo H. pylori</h3>
-                        <p>
-                          Máy FanHp từ hãng Fisher (Đức) được sử dụng để phân tích urease nhanh thông qua hơi thở, giúp sớm phát hiện nguy cơ mắc vi khuẩn Helicobacter pylori (HP) gây các bệnh lý trong dạ dày.
-                        </p>
-                        <style>{`#text-3568759124 { font-size: 1.1rem; }`}</style>
-                      </div>
-                    </div>
+                <div className="facility-card">
+                  <img
+                    decoding="async"
+                    width="874"
+                    height="582"
+                    src="https://imagedelivery.net/VX_wpsBa_s5hNlg6_mgdXg/878ede28-24d7-4976-be0d-f183342b3600/w=874,h=582"
+                    alt="Máy Đo H. pylori"
+                    className="facility-card-img"
+                  />
+                  <div className="facility-card-overlay"></div>
+                  <div className="facility-card-content">
+                    <h3>Máy Đo H. pylori</h3>
+                    <p>
+                      Máy FanHp từ hãng Fisher (Đức) được sử dụng để phân tích urease nhanh thông qua hơi thở, giúp sớm phát hiện nguy cơ mắc vi khuẩn Helicobacter pylori (HP) gây các bệnh lý trong dạ dày.
+                    </p>
                   </div>
                 </div>
               </div>

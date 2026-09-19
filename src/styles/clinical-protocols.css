@@ -172,61 +172,896 @@
 }
 
 /* ================================================================
-   4. INSURANCE & BHYT / BHTN TABLES (quyen-loi-bhyt-bhtn)
+   4. BHYT & BHTN BENEFITS SYSTEM (quyen-loi-bhyt-bhtn - AUTHENTIC 1:1)
    ================================================================ */
 
-.clinical-protocols-page .table-responsive,
-.clinical-protocols-page .bhyt-table-wrap {
+/* Section 1: Hero Section (section-dear) */
+.clinical-protocols-page .section-dear {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  background-color: #FFFFFF;
+}
+
+.clinical-protocols-page .section-dear #text-510863948 p strong {
+  font-family: 'SVN-Sofia Pro', 'Sofia Pro', sans-serif;
+  font-size: 26px;
+  color: #005570;
+  line-height: 1.3;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.clinical-protocols-page .section-dear p {
+  color: #2A2F38;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.clinical-protocols-page .section-dear p:last-child strong {
+  color: #005570;
+  font-size: 16.5px;
+  line-height: 1.5;
+}
+
+.clinical-protocols-page .section-dear img {
+  border-radius: 20px;
   width: 100%;
-  max-width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  margin: 1.5rem 0 2.5rem 0;
-  border-radius: 14px;
+  height: auto;
+  display: block;
+}
+
+/* Tab Labels with Fancy Cut Corners (.label-bhyt) */
+.clinical-protocols-page .label-bhyt {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  margin-top: -1px;
+}
+
+.clinical-protocols-page .label-bhyt .label-wrap {
+  background-color: #FDFDF6;
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 0 0 16px 16px;
+  padding: 14px 32px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.clinical-protocols-page .label-bhyt h2 {
+  font-family: 'SVN-Sofia Pro', 'Sofia Pro', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #00475B !important;
+  margin: 0;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.clinical-protocols-page .label-bhyt .label-wrap::before {
+  content: '';
+  left: -24px;
+  top: 0;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #FDFDF6;
+}
+
+.clinical-protocols-page .label-bhyt h2::before {
+  content: '';
+  left: -24px;
+  top: 0;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #005570;
+  border-top-right-radius: 16px;
+}
+
+.clinical-protocols-page .label-bhyt .label-wrap::after {
+  content: '';
+  right: -24px;
+  top: 0;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #FDFDF6;
+}
+
+.clinical-protocols-page .label-bhyt h2::after {
+  content: '';
+  right: -24px;
+  top: 0;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #005570;
+  border-top-left-radius: 16px;
+  z-index: 8;
+}
+
+/* Section 2: BHYT Benefits (.section-bhyt) */
+.clinical-protocols-page .section-bhyt {
+  background-color: #005570;
+  padding-top: 0 !important;
+  padding-bottom: 40px !important;
+  position: relative;
+}
+
+.clinical-protocols-page .section-bhyt #text-456193473 h3 {
+  font-family: 'SVN-Sofia Pro', 'Sofia Pro', sans-serif;
+  color: #FFE202 !important;
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 24px;
+  line-height: 1.35;
+}
+
+.clinical-protocols-page .section-bhyt .icon-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.clinical-protocols-page .section-bhyt .icon-box:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.clinical-protocols-page .section-bhyt .icon-box-img {
+  width: 44px !important;
+  min-width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.clinical-protocols-page .section-bhyt .icon-box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.clinical-protocols-page .section-bhyt .icon-box-text p {
+  color: #FFFFFF !important;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 500;
+}
+
+.clinical-protocols-page .section-bhyt .col.white {
+  border-radius: 20px;
+  padding: 28px 24px;
+  background-color: #F7F7EF !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.clinical-protocols-page .section-bhyt .col.white h3 {
+  font-family: 'SVN-Sofia Pro', 'Sofia Pro', sans-serif;
+  color: #005570 !important;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.clinical-protocols-page .section-bhyt .col.white ol {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.clinical-protocols-page .section-bhyt .col.white ol li {
+  color: #2A2F38 !important;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.clinical-protocols-page .bg-red {
+  background-color: #CB0000;
+}
+
+.clinical-protocols-page .bg-red.circle {
+  border-radius: 99px;
+  padding: 8px 24px;
+  margin: 16px auto 14px;
+  display: table;
+  text-align: center;
+}
+
+.clinical-protocols-page .bg-red.circle p {
+  color: #FFFFFF !important;
+  font-size: 14.5px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0;
+  text-align: center;
+}
+
+.clinical-protocols-page .section-bhyt .col.white ul {
+  padding-left: 18px;
+  margin: 6px 0;
+  list-style-type: disc;
+}
+
+.clinical-protocols-page .section-bhyt .col.white ul li {
+  color: #334155 !important;
+  font-size: 14.5px;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.clinical-protocols-page .section-bhyt .col.white p {
+  color: #2A2F38 !important;
+  font-size: 14.5px;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.clinical-protocols-page .section-bhyt .is-divider {
+  height: 1px;
+  width: 100% !important;
+  max-width: 100% !important;
+  background-color: #CB0000;
+  margin: 10px 0;
+  opacity: 0.6;
+}
+
+/* Section 4: BHTN Benefits (.section-bhtn) */
+.clinical-protocols-page .section-bhtn {
+  background-color: #005570;
+  padding-top: 0 !important;
+  padding-bottom: 50px !important;
+  position: relative;
+}
+
+.clinical-protocols-page .section-bhtn .section-bg img {
+  filter: blur(5px);
+  object-fit: cover;
+  opacity: 0.25;
+}
+
+.clinical-protocols-page .secondary.circle,
+.clinical-protocols-page h4.secondary.circle {
+  background-color: #FDB714;
+  color: #00475B !important;
+  border-radius: 99px;
+  padding: 8px 24px;
+  margin: 24px auto 8px;
+  display: table;
+  font-weight: 800;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.clinical-protocols-page .section-bhtn #text-1163792289 p {
+  color: #FFFFFF;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 30 Insurance Logos Grid (.dc-insurance-gallery) */
+.clinical-protocols-page .dc-insurance-gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.clinical-protocols-page .dc-ig__item {
+  display: flex;
+  width: 100%;
+}
+
+.clinical-protocols-page .dc-ig__box {
   background: #FFFFFF;
-  border: 1px solid #DDE4EA;
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 100%;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.clinical-protocols-page .dc-ig__box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
+}
+
+.clinical-protocols-page .dc-ig__img {
+  max-height: 40px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Section 5 & 6: Steps System (.section-bltt, .dc-steps) */
+.clinical-protocols-page .section-bltt {
+  background: linear-gradient(180deg, rgba(3, 86, 110, 0.06) 0%, rgba(253, 253, 246, 0) 100%);
+  padding-top: 36px !important;
+  padding-bottom: 36px !important;
+}
+
+.clinical-protocols-page .section-bltt h2 {
+  font-family: 'SVN-Sofia Pro', 'Sofia Pro', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #005570;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.clinical-protocols-page .primary.circle,
+.clinical-protocols-page h2.primary.circle {
+  background-color: #005570;
+  color: #FFFFFF !important;
+  border-radius: 99px;
+  padding: 10px 28px;
+  margin: 0 auto 12px;
+  display: table;
+  font-weight: 800;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.clinical-protocols-page #text-2803443694 p {
+  color: #005570;
+  font-size: 16px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+}
+
+.clinical-protocols-page .dc-steps {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.clinical-protocols-page .dc-steps__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.clinical-protocols-page .dc-step {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 14px 18px;
+  box-shadow: 0 2px 8px rgba(0, 85, 112, 0.05);
+  border: 1px solid #E5EDF0;
+}
+
+.clinical-protocols-page .dc-step__badge {
+  background: #0A5A68;
+  color: #FFD200;
+  font-weight: 800;
+  font-size: 14.5px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 85px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.clinical-protocols-page .dc-step__card p {
+  font-size: 14.5px;
+  color: #0C1B1F;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Section 7: Warning Box (.section-warning.bhtn) */
+.clinical-protocols-page .section-warning.bhtn {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.clinical-protocols-page .section-warning h2 {
+  font-family: 'SVN-Sofia Pro', 'Sofia Pro', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #005570;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.clinical-protocols-page .row-warning {
+  background-color: #FFF5DE;
+  border-radius: 20px;
+  padding: 28px 24px;
+  border: 1px solid #F5E5BE;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.clinical-protocols-page .row-warning .icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.clinical-protocols-page .row-warning .icon-box-img {
+  width: 40px !important;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clinical-protocols-page .row-warning .icon-box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.clinical-protocols-page .row-warning .icon-box-text p {
+  font-size: 14.5px;
+  color: #005570;
+  line-height: 1.55;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Section 8: Payment Methods (.section-payment) */
+.clinical-protocols-page .section-payment {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.clinical-protocols-page .section-payment .label-wrap {
+  background-color: #005570;
+}
+
+.clinical-protocols-page .section-payment .label-bhyt .label-wrap::before,
+.clinical-protocols-page .section-payment .label-bhyt .label-wrap::after {
+  background-color: #005570;
+}
+
+.clinical-protocols-page .section-payment .label-bhyt h2::before,
+.clinical-protocols-page .section-payment .label-bhyt h2::after {
+  background-color: #FFFFFF;
+}
+
+.clinical-protocols-page .section-payment .label-bhyt h2 {
+  color: #FFFFFF !important;
+}
+
+.clinical-protocols-page .section-payment #text-1536081539 p {
+  color: #005570;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin: 16px 0 20px;
+}
+
+.clinical-protocols-page .section-payment .stack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.clinical-protocols-page .section-payment .stack .img {
+  width: calc(25% - 15px);
+  min-width: 140px;
+  max-width: 240px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.clinical-protocols-page .section-payment .stack .img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Section 9: Installment (.section-tragop) */
+.clinical-protocols-page .section-tragop {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.clinical-protocols-page .section-tragop .label-wrap {
+  background-color: #FDB715;
+}
+
+.clinical-protocols-page .section-tragop .label-bhyt .label-wrap::before,
+.clinical-protocols-page .section-tragop .label-bhyt .label-wrap::after {
+  background-color: #FDB715;
+}
+
+.clinical-protocols-page .section-tragop .label-bhyt h2::before,
+.clinical-protocols-page .section-tragop .label-bhyt h2::after {
+  background-color: #FFFFFF;
+}
+
+.clinical-protocols-page .section-tragop .label-bhyt h2 {
+  color: #00475B !important;
+}
+
+/* Installment - Left Column (Credit Card) */
+.clinical-protocols-page .section-tragop .row .col:first-child .row {
+  background-color: #004559;
+  border-radius: 20px 0 0 20px;
+  padding: 30px 24px;
+}
+
+.clinical-protocols-page .section-tragop .row .col:first-child h2.primary.circle {
+  background-color: #FFFFFF;
+  color: #004559 !important;
+}
+
+.clinical-protocols-page .section-tragop .row .col:first-child .guide p {
+  color: #FFFFFF;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.clinical-protocols-page .section-tragop .row .col:first-child .dc-step {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.clinical-protocols-page .section-tragop .row .col:first-child .dc-step__badge {
+  background-color: #FFFFFF;
+  color: #004559;
+  font-weight: 800;
+}
+
+.clinical-protocols-page .section-tragop .row .col:first-child .dc-step p {
+  color: #FFFFFF;
+}
+
+.clinical-protocols-page .section-tragop .row .col:first-child .row .col:last-child .col-inner,
+.clinical-protocols-page .section-tragop .row .col:last-child .row .col:last-child .col-inner {
+  background-color: #FFF5DE;
+  border-radius: 16px;
+  padding: 18px 20px;
+  margin-top: 18px;
+}
+
+.clinical-protocols-page .section-tragop .box-note p:first-child {
+  font-weight: 700;
+  color: #004559;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.clinical-protocols-page .section-tragop .box-note .icon-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.clinical-protocols-page .section-tragop .box-note .icon-box-img {
+  width: 20px !important;
+  min-width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.clinical-protocols-page .section-tragop .box-note .icon-box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.clinical-protocols-page .section-tragop .box-note .icon-box-text p {
+  color: #004559 !important;
+  font-size: 14px;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* Installment - Right Column (Momo) */
+.clinical-protocols-page .section-tragop .row .col:last-child .row {
+  background-color: #FFFFFF;
+  border-radius: 0 20px 20px 0;
+  padding: 30px 24px;
+  border: 1.5px solid #E2E8F0;
+  border-left: none;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
 
-.clinical-protocols-page table {
-  width: 100%;
-  min-width: 700px;
-  border-collapse: collapse;
+.clinical-protocols-page .section-tragop .row .col:last-child h2.primary.circle {
+  background-color: #A50064;
+  color: #FFFFFF !important;
 }
 
-.clinical-protocols-page table thead tr {
-  background-color: #005570;
-  color: #FFFFFF;
+.clinical-protocols-page .section-tragop .row .col:last-child .guide p {
+  color: #4D5565;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.clinical-protocols-page table thead th {
-  padding: 14px 16px;
-  font-weight: 700;
-  font-size: 0.9rem;
-  color: #FFFFFF;
-  text-align: left;
-  border: 1px solid #00475B;
-}
-
-.clinical-protocols-page table tbody tr {
-  border-bottom: 1px solid #EDF2F7;
-  transition: background-color 0.15s ease;
-}
-
-.clinical-protocols-page table tbody tr:nth-child(even) {
+.clinical-protocols-page .section-tragop .row .col:last-child .dc-step {
   background-color: #F8FBFC;
+  border: 1px solid #E5EDF0;
 }
 
-.clinical-protocols-page table tbody tr:hover {
-  background-color: #EEF7FA;
+.clinical-protocols-page .section-tragop .row .col:last-child .dc-step__badge {
+  background: #A50064;
+  color: #FFFFFF;
+  font-weight: 800;
+  border: 1px solid #0BB1D3;
 }
 
-.clinical-protocols-page table tbody td {
-  padding: 12px 16px;
-  font-size: 0.875rem;
-  color: #334155;
-  border: 1px solid #E2E8F0;
+.clinical-protocols-page .section-tragop .row .col:last-child .dc-step p {
+  color: #0C1B1F;
+}
+
+/* Section 10: 4 Benefits (.section-quyenloi) */
+.clinical-protocols-page .section-quyenloi {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.clinical-protocols-page .section-quyenloi h2 {
+  font-family: 'SVN-Sofia Pro', 'Sofia Pro', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #005570;
+  text-align: center;
+  margin-bottom: 28px;
+  line-height: 1.35;
+}
+
+.clinical-protocols-page .benefit-block {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.clinical-protocols-page .benefit-item {
+  display: flex;
+  align-items: center;
+  background: #004D61;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+
+.clinical-protocols-page .benefit-number {
+  background: #FFFFFF;
+  color: #004D61;
+  font-weight: 800;
+  border-radius: 50%;
+  min-width: 36px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  flex-shrink: 0;
+  font-size: 17px;
+}
+
+.clinical-protocols-page .benefit-item p {
+  font-size: 16px !important;
+  color: #FFFFFF !important;
+  margin: 0;
   line-height: 1.5;
+  font-weight: 500;
+}
+
+.clinical-protocols-page .section-quyenloi img {
+  border-radius: 16px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Section 11: AACI Accreditation (.section.bg-aaci) */
+.clinical-protocols-page .section.bg-aaci {
+  background: linear-gradient(180deg, #EEF7FA 0%, #FFFFFF 100%);
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  text-align: center;
+}
+
+.clinical-protocols-page .section.bg-aaci p {
+  font-size: 18px;
+  color: #005570;
+  margin-bottom: 6px;
+}
+
+.clinical-protocols-page .section.bg-aaci strong {
+  font-family: 'SVN-Sofia Pro', 'Sofia Pro', sans-serif;
+  font-size: 22px;
+  color: #005570;
+  font-weight: 700;
+}
+
+.clinical-protocols-page .swiper-gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 24px 10px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.clinical-protocols-page .swiper-gallery .swiper-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.clinical-protocols-page .swiper-gallery .swiper-slide {
+  flex: 0 0 320px;
+  width: 320px;
+  height: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #F8FBFC;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.clinical-protocols-page .swiper-gallery .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Section 12: Consultation & Booking Form (form-v3) */
+.clinical-protocols-page .form-v3 {
+  background-color: #EEF7FA;
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid #DDE4EA;
+}
+
+.clinical-protocols-page .form-v3 h2 {
+  font-family: 'SVN-Sofia Pro', 'Sofia Pro', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #005570;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.clinical-protocols-page .form-v3 p {
+  font-size: 15px;
+  color: #4D5565;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.clinical-protocols-page .form-v3 .dc_input {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.clinical-protocols-page .form-v3 .dc_input input,
+.clinical-protocols-page .form-v3 .dc_input select {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border: 1.5px solid #DDE4EA;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #FFFFFF;
+  color: #2A2F38;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.clinical-protocols-page .form-v3 .dc_input input:focus,
+.clinical-protocols-page .form-v3 .dc_input select:focus {
+  border-color: #005570;
+  box-shadow: 0 0 0 3px rgba(0, 85, 112, 0.15);
+}
+
+.clinical-protocols-page .form-v3 .btn-booking {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(135deg, #FFB500 0%, #E6A300 100%);
+  color: #00475B;
+  font-size: 17px;
+  font-weight: 800;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 181, 0, 0.35);
+  transition: all 0.2s ease;
+}
+
+.clinical-protocols-page .form-v3 .btn-booking:hover {
+  background: linear-gradient(135deg, #FFC024 0%, #F5AB00 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(255, 181, 0, 0.45);
+}
+
+/* Responsive Overrides */
+@media (max-width: 1024px) {
+  .clinical-protocols-page .dc-insurance-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 849px) {
+  .clinical-protocols-page .section-tragop .row .col:first-child .row {
+    border-radius: 20px 20px 0 0;
+  }
+  .clinical-protocols-page .section-tragop .row .col:last-child .row {
+    border-radius: 0 0 20px 20px;
+    border-left: 1.5px solid #E2E8F0;
+    border-top: none;
+  }
+  .clinical-protocols-page .section-quyenloi .row .col:first-child {
+    order: 2;
+  }
+  .clinical-protocols-page .section-quyenloi .row .col:last-child {
+    order: 1;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .clinical-protocols-page .dc-insurance-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .clinical-protocols-page .label-bhyt .label-wrap {
+    padding: 10px 16px;
+  }
+  .clinical-protocols-page .label-bhyt h2 {
+    font-size: 18px;
+  }
+  .clinical-protocols-page .section-payment .stack .img {
+    width: calc(50% - 10px);
+  }
+  .clinical-protocols-page .row-warning {
+    padding: 20px 16px;
+  }
 }
 
 /* ================================================================

@@ -24,387 +24,373 @@
 }
 
 /* ================================================================
-   1. HERO BANNER & AUDIENCE HEADERS (section-banner-v3, male, female)
+   0. FLATSOME GRID & LAYOUT RECONSTRUCTION
    ================================================================ */
 
-.package-family-page .section-banner-v3 {
-  position: relative;
-  padding: 2.5rem 0 3.5rem 0;
-  background-color: #F8FBFC;
-}
-
-.package-family-page .section-banner-v3.male {
-  background: linear-gradient(180deg, #EEF7FA 0%, #FFFFFF 100%);
-}
-
-.package-family-page .section-banner-v3.female {
-  background: linear-gradient(180deg, #FFF5F7 0%, #FFFFFF 100%);
-}
-
-.package-family-page .title-left {
+.package-family-page .row {
+  display: flex;
+  flex-flow: row wrap;
   width: 100%;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.package-family-page .row.row-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.package-family-page .col {
+  position: relative;
+  margin: 0;
+  padding: 0 15px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 1px;
+}
+
+.package-family-page .row.row-collapse > .col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.package-family-page .col-inner {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.package-family-page .align-center {
+  justify-content: center;
+}
+
+.package-family-page .align-middle {
+  align-items: center;
+}
+
+.package-family-page .small-12 {
+  flex-basis: 100%;
   max-width: 100%;
 }
 
-.package-family-page .title-bold {
-  font-weight: 900 !important;
-  font-size: 36px !important;
-  line-height: 44px !important;
-  color: #005570;
-  margin-bottom: 0.75rem;
+.package-family-page .medium-6 {
+  flex-basis: 50%;
+  max-width: 50%;
 }
 
-@media screen and (min-width: 768px) {
-  .package-family-page .title-bold {
-    font-size: 44px !important;
-    line-height: 52px !important;
+.package-family-page .medium-9 {
+  flex-basis: 75%;
+  max-width: 75%;
+}
+
+.package-family-page .large-12 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.package-family-page .large-6 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.package-family-page .large-9 {
+  flex-basis: 75%;
+  max-width: 75%;
+}
+
+.package-family-page .hide-for-small {
+  display: block;
+}
+
+.package-family-page .show-for-small {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .package-family-page .medium-6,
+  .package-family-page .medium-9,
+  .package-family-page .large-6,
+  .package-family-page .large-9 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .package-family-page .hide-for-small {
+    display: none !important;
+  }
+
+  .package-family-page .show-for-small {
+    display: block !important;
   }
 }
 
-.package-family-page .bg-text-gradient {
-  background: linear-gradient(135deg, #005570 0%, #0088B0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* ================================================================
+   1. SECTION 1: YELLOW GRADIENT HERO BANNER
+   ================================================================ */
+
+.package-family-page .section.yellow-gradient,
+.package-family-page #section_1994557876,
+.package-family-page #section_195603182 {
+  background: linear-gradient(180deg, #FFF9E6 0%, #FFFFFF 100%);
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
-.package-family-page .bg-text-gradient.red {
-  background: linear-gradient(135deg, #CD0000 0%, #E63946 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.package-family-page .yellow-gradient h2,
+.package-family-page #section_1994557876 h2,
+.package-family-page #section_195603182 h2 {
+  text-align: center;
+  color: #005570;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-bottom: 12px;
 }
 
-.package-family-page .text-has-bg {
-  display: inline-block;
-  background-color: #005570;
-  color: #FFFFFF;
-  font-size: 1.1rem;
-  font-weight: 700;
-  padding: 6px 16px;
-  border-radius: 9999px;
-  margin-bottom: 0.75rem;
+.package-family-page .yellow-gradient p,
+.package-family-page #section_1994557876 p,
+.package-family-page #section_195603182 p {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2A2F38;
 }
 
 /* ================================================================
-   2. DID YOU KNOW / CONTEXT STATS (section-dyk)
+   2. SECTION 2: COMPARISON TABLE (SECTION-SERVICE)
    ================================================================ */
 
-.package-family-page .section-dyk {
-  background-color: #FEFFE9;
-  border-top: 1px solid #FFE699;
-  border-bottom: 1px solid #FFE699;
-  padding: 2.5rem 0;
-}
-
-.package-family-page .section-dyk .col-inner {
-  background: #FFFFFF;
-  border-radius: 14px;
-  padding: 1.5rem;
-  border: 1px solid #FFE699;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-}
-
-/* ================================================================
-   3. RISK TIMELINE & AGE GROUPS (section-risk, timeline)
-   ================================================================ */
-
-.package-family-page .section-risk {
-  padding: 3.5rem 0;
+.package-family-page .section.section-service,
+.package-family-page #section_1277051734,
+.package-family-page #section_1341890111 {
+  padding-top: 10px;
+  padding-bottom: 25px;
   background-color: #FFFFFF;
 }
 
-.package-family-page .timeline-container {
-  position: relative;
-  margin: 2rem 0;
-}
-
-.package-family-page .timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  position: relative;
-}
-
-.package-family-page .timeline-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.25rem;
-  background: #F8FBFC;
-  border: 1px solid #E2E8F0;
-  border-radius: 14px;
-  padding: 1.25rem 1.5rem;
-}
-
-.package-family-page .age-badge {
-  background-color: #005570;
-  color: #FFFFFF;
-  font-weight: 800;
-  font-size: 1rem;
-  padding: 8px 14px;
-  border-radius: 9999px;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-.package-family-page .symptoms-content {
-  color: #334155;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-/* ================================================================
-   4. TABBED PACKAGE SYSTEM (section-product-pricing, dc-tab-pricing)
-   ================================================================ */
-
-.package-family-page .tabbed-content {
-  width: 100%;
-  margin: 2rem 0;
-}
-
-.package-family-page .tabbed-content .nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0 0 2rem 0;
-  gap: 0.75rem;
-}
-
-.package-family-page .tabbed-content .nav li.tab {
-  margin: 0;
-}
-
-.package-family-page .tabbed-content .nav li.tab a {
+.package-family-page #tab-kham-tong-quat-nu a,
+.package-family-page #tab-kham-tong-quat-nam a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.85rem 1.75rem;
-  border-radius: 12px;
-  background-color: #EEF7FA;
-  color: #005570;
+  padding: 10px 32px;
+  border-radius: 9999px;
+  background-color: #005570;
+  color: #FFFFFF !important;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.3;
-  text-align: center;
   text-decoration: none;
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1.5px solid #DDE4EA;
-  user-select: none;
+  box-shadow: 0 4px 14px rgba(0, 85, 112, 0.25);
+  border: none;
 }
 
-.package-family-page .tabbed-content .nav li.tab a h3,
-.package-family-page .tabbed-content .nav li.tab a span {
+.package-family-page #tab-kham-tong-quat-nu a h3,
+.package-family-page #tab-kham-tong-quat-nam a h3 {
+  color: #FFFFFF !important;
+  margin: 0;
   font-size: inherit;
   font-weight: inherit;
-  color: inherit;
-  margin: 0;
-  padding: 0;
-  line-height: inherit;
 }
 
-.package-family-page .tabbed-content .nav li.tab.active a,
-.package-family-page .tabbed-content .nav li.tab a:hover {
-  background-color: #005570;
-  color: #FFFFFF;
-  border-color: #005570;
-  box-shadow: 0 4px 14px rgba(0, 85, 112, 0.25);
-}
-
-.package-family-page .tabbed-content .nav li.tab.active a h3,
-.package-family-page .tabbed-content .nav li.tab.active a span {
-  color: #FFFFFF;
-}
-
-/* Tab Panels Handling */
-.package-family-page .tab-panels {
-  position: relative;
-  width: 100%;
-}
-
-.package-family-page .tab-panels > .panel {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.25s ease-in-out;
-}
-
-.package-family-page .tab-panels > .panel.active,
-.package-family-page .tab-panels > .panel:first-child {
-  display: block;
-  opacity: 1;
-}
-
-/* When a panel has active class, hide default first-child if another is active */
-.package-family-page .tab-panels:has(> .panel.active) > .panel:not(.active) {
-  display: none;
-  opacity: 0;
-}
-
-/* ================================================================
-   5. PACKAGE CARDS & BENEFIT CARDS (package-ldp, benefit-card)
-   ================================================================ */
-
-.package-family-page .benefit-card,
-.package-family-page .package-ldp,
-.package-family-page .kdn_plan_card {
-  background: #FFFFFF;
-  border: 1.5px solid #DDE4EA;
-  border-radius: 16px;
-  padding: 1.75rem 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-  position: relative;
-  height: 100%;
-}
-
-.package-family-page .benefit-card:hover,
-.package-family-page .package-ldp:hover,
-.package-family-page .kdn_plan_card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px -4px rgba(0, 85, 112, 0.15);
-  border-color: #005570;
-}
-
-.package-family-page .dc-package-title,
-.package-family-page .package-title {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: #005570;
-  margin-bottom: 0.5rem;
-}
-
-.package-family-page .dc-package-pricing,
-.package-family-page .package-price,
-.package-family-page .service-price,
-.package-family-page .dc-medpro-price {
-  font-size: 1.75rem;
-  font-weight: 900;
-  color: #CD0000;
-  margin: 0.5rem 0 1rem 0;
-  display: block;
-}
-
-.package-family-page .kdn_badge_popular,
-.package-family-page .kdn_badge_vip,
-.package-family-page .img-badge {
-  position: absolute;
-  top: -12px;
-  right: 16px;
-  background-color: #FFB500;
-  color: #00475B;
-  font-size: 0.75rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  padding: 4px 12px;
-  border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* ================================================================
-   6. COMPARISON MATRIX & SERVICE TABLES (PAGE-LEVEL OVERFLOW = 0)
-   ================================================================ */
-
-.package-family-page .comparison-table,
-.package-family-page .price-table,
-.package-family-page .kkg-scroll,
-.package-family-page .table-responsive {
+.package-family-page .comparison-table {
   width: 100%;
   max-width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   margin: 1.5rem 0 2.5rem 0;
-  border-radius: 14px;
+  border-radius: 12px;
   background: #FFFFFF;
-  border: 1px solid #DDE4EA;
+  border: 1px solid #6495A7;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
 
-.package-family-page .pricing-table,
-.package-family-page table {
+.package-family-page .pricing-table {
   width: 100%;
-  min-width: 720px;
-  border-collapse: collapse;
+  min-width: 900px;
+  display: flex;
+  flex-direction: column;
 }
 
-.package-family-page .pricing-table .header-table,
-.package-family-page table thead tr {
-  background-color: #005570;
-  color: #FFFFFF;
+.package-family-page .header-table {
+  background-color: #CDDAE1;
+  font-weight: bold;
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
-.package-family-page .pricing-table .header-table .pricing-cell,
-.package-family-page table thead th {
-  padding: 14px 16px;
-  font-weight: 700;
-  font-size: 0.9rem;
+.package-family-page .header-table .pricing-row {
+  display: flex;
+  border-bottom: 1px solid #6495A7;
+  flex-wrap: wrap;
+  background-color: #FFFFFF;
+}
+
+.package-family-page .pricing-row:first-child .pricing-cell {
   color: #FFFFFF;
-  text-align: center;
-  border: 1px solid #00475B;
 }
 
-.package-family-page .pricing-table .header-table .pricing-cell:first-child,
-.package-family-page table thead th:first-child {
-  text-align: left;
+.package-family-page .pricing-row:first-child .pricing-cell:not(.header-packages):first-child {
+  background-color: #FDB714;
+  color: #005570;
+  font-weight: 800;
 }
 
-.package-family-page .pricing-row,
-.package-family-page table tbody tr {
+.package-family-page .pricing-row:first-child .pricing-cell:not(:first-child) {
+  background-color: #005570;
+}
+
+.package-family-page .pricing-row {
   display: flex;
   width: 100%;
-  border-bottom: 1px solid #EDF2F7;
+  align-items: stretch;
+  border-bottom: 1px solid #6495A7;
   transition: background-color 0.15s ease;
+  background-color: #FFFFFF;
 }
 
-.package-family-page table tbody tr {
-  display: table-row;
+.package-family-page .pricing-row:nth-child(even) {
+  background-color: #FAFCFD;
 }
 
-.package-family-page .pricing-row:nth-child(even),
-.package-family-page table tbody tr:nth-child(even) {
-  background-color: #F8FBFC;
+.package-family-page .pricing-row:hover {
+  background-color: #F0F9FB;
 }
 
-.package-family-page .pricing-row:hover,
-.package-family-page table tbody tr:hover {
-  background-color: #EEF7FA;
-}
-
-.package-family-page .pricing-cell,
-.package-family-page table tbody td {
-  flex: 1;
-  padding: 12px 14px;
-  font-size: 0.875rem;
-  color: #334155;
+.package-family-page .pricing-cell {
+  position: relative;
+  padding: 10px 14px;
+  border-right: 1px solid #6495A7;
+  text-align: left;
+  font-size: 15px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
   line-height: 1.45;
-  border-right: 1px solid #F1F5F9;
+  color: #2A2F38;
 }
 
-.package-family-page table tbody td {
-  display: table-cell;
-  border: 1px solid #E2E8F0;
-  vertical-align: middle;
+.package-family-page .pricing-cell:last-child {
+  border-right: none;
 }
 
-.package-family-page .pricing-cell:first-child,
-.package-family-page table tbody td:first-child {
-  flex: 1.4;
+.package-family-page .pricing-row > .pricing-cell:first-child {
+  flex: 20%;
+  flex-basis: 20%;
+  max-width: 20%;
   justify-content: flex-start;
-  text-align: left;
   font-weight: 600;
   color: #005570;
-  background-color: rgba(240, 247, 249, 0.4);
+}
+
+.package-family-page .pricing-cell.header-packages {
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  flex: 65%;
+  flex-basis: 65%;
+  max-width: 65% !important;
+}
+
+.package-family-page .pricing-row.header-table > .pricing-cell:nth-child(2) {
+  flex: 65%;
+  flex-basis: 65%;
+  max-width: 65%;
+  padding: 0 !important;
+}
+
+.package-family-page .pricing-row:not(.header-table) > .pricing-cell:not(:first-child):not(:last-child) {
+  flex: calc(65% / 3);
+  flex-basis: calc(65% / 3);
+  max-width: calc(65% / 3);
+  justify-content: center;
+  text-align: center;
+}
+
+.package-family-page .pricing-row > .pricing-cell:last-child {
+  flex: 15%;
+  flex-basis: 15%;
+  max-width: 15%;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+}
+
+.package-family-page .package-grid {
+  display: flex;
+  width: 100%;
+}
+
+.package-family-page .package-grid .pricing-cell {
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  min-height: 52px;
+}
+
+.package-family-page .newest-tag {
+  position: absolute;
+  top: -8px;
+  right: 8px;
+  background-color: #FFB500;
+  color: #00475B;
+  font-size: 10.5px;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.package-family-page .package-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.package-family-page .pricing-row:not(:first-child) .package-price,
+.package-family-page .service-price {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #CD0000;
+}
+
+.package-family-page .special-service {
+  background-color: #FFF9E6 !important;
+  font-weight: 700;
+  color: #005570 !important;
+}
+
+.package-family-page .special-service .special-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #005570;
+}
+
+.package-family-page .special-service .special-description {
+  font-size: 0.85rem;
+  color: #555E6D;
+  font-weight: normal;
+  margin-top: 4px;
 }
 
 .package-family-page .pricing-cell img[src*="check"],
-.package-family-page table img[src*="check"] {
+.package-family-page .pricing-cell img[alt="check"] {
   width: 20px;
   height: 20px;
   display: inline-block;
@@ -412,145 +398,563 @@
 }
 
 /* ================================================================
-   7. TRUST, CUSTOMER REVIEWS & 6 REASONS
+   3. SECTION 3: TABBED 3-PACKAGE CARDS (DC-TAB-PRICING)
    ================================================================ */
 
-.package-family-page .dc-review-card {
-  background: #FFFFFF;
-  border-radius: 16px;
-  padding: 1.5rem;
-  border: 1px solid #E2E8F0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+.package-family-page .section#section_82769419,
+.package-family-page .section#section_1134203595 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #FFFFFF;
 }
 
-.package-family-page .section-customer-ns {
-  background-color: #00475B;
+.package-family-page .dc-tab-pricing {
+  width: 100%;
+}
+
+.package-family-page .dc-tab-pricing .nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  gap: 16px;
+}
+
+.package-family-page .dc-tab-pricing .nav li.tab {
+  margin: 0;
+  flex: 1 1 200px;
+  max-width: 280px;
+}
+
+.package-family-page .dc-tab-pricing .nav li.tab a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 20px;
+  border-radius: 12px;
+  background-color: #EEF7FA;
+  color: #005570;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.35;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1.5px solid #DDE4EA;
+  user-select: none;
+  height: 100%;
+  min-height: 90px;
+}
+
+.package-family-page .dc-tab-pricing .nav li.tab a h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #005570;
+  margin: 0;
+  padding: 0;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.package-family-page .dc-tab-pricing .nav li.tab.active a,
+.package-family-page .dc-tab-pricing .nav li.tab a:hover {
+  background-color: #005570;
   color: #FFFFFF;
-  padding: 3.5rem 0;
+  border-color: #005570;
+  box-shadow: 0 4px 14px rgba(0, 85, 112, 0.25);
 }
 
-.package-family-page .section-customer-ns h2,
-.package-family-page .section-customer-ns h3 {
+.package-family-page .dc-tab-pricing .nav li.tab.active a h3 {
   color: #FFFFFF !important;
 }
 
-/* ================================================================
-   8. ACCORDIONS & FAQS (accordion-benifit, accordion)
-   ================================================================ */
-
-.package-family-page .accordion {
+.package-family-page .dc-tab-pricing .tab-panels {
+  position: relative;
   width: 100%;
 }
 
-.package-family-page .accordion-item {
-  border-bottom: 1px solid #E2E8F0;
-  padding: 0.75rem 0;
+.package-family-page .dc-tab-pricing .tab-panels > .panel {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
 }
 
-.package-family-page .accordion-title {
+.package-family-page .dc-tab-pricing .tab-panels > .panel.active,
+.package-family-page .dc-tab-pricing .tab-panels > .panel:first-child {
+  display: block;
+  opacity: 1;
+}
+
+.package-family-page .dc-tab-pricing .tab-panels:has(> .panel.active) > .panel:not(.active) {
+  display: none;
+  opacity: 0;
+}
+
+.package-family-page .dc-tab-pricing .img {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.package-family-page .dc-tab-pricing .img img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+}
+
+.package-family-page .btn-detail {
+  background: #FFB500;
+  color: #00475B !important;
   font-weight: 700;
-  font-size: 1rem;
-  color: #005570;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
+  font-size: 15px;
+  border-radius: 10px !important;
+  padding: 12px 24px;
+  display: inline-flex;
   align-items: center;
-  user-select: none;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  transition: all 0.2s ease;
+  margin-top: 14px;
+  box-shadow: 0 4px 12px rgba(255, 181, 0, 0.3);
 }
 
-.package-family-page .accordion-inner {
-  padding: 0.75rem 0;
-  color: #4A5568;
-  font-size: 0.9rem;
-  line-height: 1.6;
+.package-family-page .btn-detail:hover {
+  background: #FFA800;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(255, 181, 0, 0.4);
+}
+
+.package-family-page .icon-box.featured-box.icon-box-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+  background: #FFFFFF;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #F0F4F7;
+  text-align: left;
+}
+
+.package-family-page .icon-box-img {
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.package-family-page .icon-box-img .icon-inner img,
+.package-family-page .icon-box-img img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  display: block;
+}
+
+.package-family-page .icon-box-text p {
+  margin: 0;
+  font-size: 14.5px;
+  color: #2A2F38;
+  line-height: 1.45;
+  font-weight: 500;
 }
 
 /* ================================================================
-   9. CTA & BOOKING FORM (dc_form, form-v3, btn-booking)
+   4. SECTION 4 & 5: NOTES BEFORE & AFTER CHECKUP (SECTION-NOTE)
    ================================================================ */
 
-.package-family-page .dc_form,
-.package-family-page .form-v3 {
+.package-family-page .section.section-note,
+.package-family-page #section_1566832593,
+.package-family-page #section_398337790 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #FFFFFF;
+}
+
+.package-family-page .section.section-note.after,
+.package-family-page #section_1481932485,
+.package-family-page #section_1535029218 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #FDFDF6;
+}
+
+.package-family-page .section-note h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #005570;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.package-family-page .section-note .img img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  display: block;
+}
+
+.package-family-page .section-note .icon-box {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  max-width: 700px;
-  margin: 1.5rem auto 0 auto;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #F8FBFC;
+  border: 1px solid #EEF7FA;
 }
 
-.package-family-page .dc_input {
-  flex: 1 1 260px;
+.package-family-page .section-note.after .icon-box {
+  background: #FFFFFF;
+  border: 1px solid #FFE699;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
 
-.package-family-page .dc_input input,
-.package-family-page .dc_input select {
+.package-family-page .section-note .icon-box-img {
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+}
+
+.package-family-page .section-note .icon-box-img .icon-inner img,
+.package-family-page .section-note .icon-box-img img {
+  width: 36px;
+  height: 36px;
+}
+
+/* ================================================================
+   5. SECTION 6: CUSTOMER REVIEWS SWIPER (SECTION-CUSTOMER)
+   ================================================================ */
+
+.package-family-page .section.section-customer,
+.package-family-page #section_359846707,
+.package-family-page #section_1012739098 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #FFFFFF;
+}
+
+.package-family-page .section-customer h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #005570;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.package-family-page .section-customer .text p {
+  text-align: center;
+  font-size: 15px;
+  color: #4D5565;
+  margin-bottom: 24px;
+}
+
+.package-family-page .feedback-swiper-wrap {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.package-family-page .feedback-swiper .swiper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .package-family-page .feedback-swiper .swiper-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .package-family-page .feedback-swiper .swiper-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+.package-family-page .feedback-swiper .swiper-slide {
+  height: auto;
+  width: 100% !important;
+}
+
+.package-family-page .feedback-swiper .col-inner {
+  background: #FFFFFF;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid #EAEAEA;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.package-family-page .feedback-swiper .banner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: #1A202C;
+}
+
+.package-family-page .feedback-swiper .banner-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.package-family-page .video-button-wrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.package-family-page .video-button-wrapper a.button.open-video {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(255, 181, 0, 0.95);
+  color: #00475B !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.package-family-page .video-button-wrapper a.button.open-video:hover {
+  transform: scale(1.08);
+}
+
+.package-family-page .video-button-wrapper .icon-play {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 14px solid #00475B;
+  margin-left: 3px;
+}
+
+.package-family-page .feedback-swiper .box-content {
+  padding: 18px 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.package-family-page .feedback-swiper .box-content h3 {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #005570;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.package-family-page .feedback-swiper .box-content p {
+  font-size: 13.5px;
+  color: #555E6D;
+  line-height: 1.5;
+  margin-bottom: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.package-family-page .feedback-swiper .box-content a.button.primary.is-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  border: 1.5px solid #005570;
+  color: #005570 !important;
+  font-size: 13.5px;
+  font-weight: 600;
+  border-radius: 99px;
+  text-decoration: none;
+  align-self: flex-start;
+  transition: all 0.2s ease;
+}
+
+.package-family-page .feedback-swiper .box-content a.button.primary.is-outline:hover {
+  background: #005570;
+  color: #FFFFFF !important;
+}
+
+.package-family-page a[href="/cau-chuyen-khach-hang"] {
+  background: #005570;
+  color: #FFFFFF !important;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 99px;
+  padding: 10px 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  margin: 24px auto 0 auto;
+  box-shadow: 0 4px 14px rgba(0, 85, 112, 0.2);
+  transition: all 0.2s ease;
+}
+
+.package-family-page a[href="/cau-chuyen-khach-hang"]:hover {
+  background: #FFB500;
+  color: #00475B !important;
+}
+
+/* ================================================================
+   6. SECTION 7: BOOKING & CONSULTATION FORM (FORM-V3 / WPCF7)
+   ================================================================ */
+
+.package-family-page #row-206736132,
+.package-family-page #row-1972859328 {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.package-family-page .form-v3 {
+  max-width: 680px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 10px 30px rgba(0, 85, 112, 0.08);
+  border: 1.5px solid #DDE4EA;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.package-family-page .form-v3 h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #005570;
+  text-align: center;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.package-family-page .form-v3 p {
+  text-align: center;
+  font-size: 14px;
+  color: #4D5565;
+  margin-bottom: 12px;
+}
+
+.package-family-page .form-v3 .dc_input {
+  width: 100%;
+}
+
+.package-family-page .form-v3 .dc_input input,
+.package-family-page .form-v3 .dc_input select {
   width: 100%;
   height: 48px;
-  padding: 0 1rem;
   border: 1.5px solid #DDE4EA;
   border-radius: 8px;
-  font-size: 0.95rem;
+  padding: 0 14px;
+  font-size: 15px;
   color: #2A2F38;
-  background-color: #FFFFFF;
+  background: #FFFFFF;
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
 }
 
-.package-family-page .dc_input input:focus,
-.package-family-page .dc_input select:focus {
+.package-family-page .form-v3 .dc_input input:focus,
+.package-family-page .form-v3 .dc_input select:focus {
   border-color: #005570;
   box-shadow: 0 0 0 3px rgba(0, 85, 112, 0.15);
 }
 
-.package-family-page .btn-booking,
-.package-family-page .dc_submit input[type="submit"],
-.package-family-page a.button.primary,
-.package-family-page button.button.primary {
+.package-family-page .form-v3 .dc_submit {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.package-family-page .form-v3 .btn-booking {
+  width: 100%;
+  height: 50px;
   background: linear-gradient(135deg, #FFB500 0%, #E6A300 100%);
   color: #00475B !important;
   font-weight: 800;
-  font-size: 1.05rem;
-  border: none;
+  font-size: 16px;
   border-radius: 8px;
+  border: none;
   cursor: pointer;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.75rem 1.75rem;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(255, 181, 0, 0.35);
   transition: all 0.2s ease;
-  box-shadow: 0 4px 12px rgba(255, 181, 0, 0.35);
-  text-decoration: none;
 }
 
-.package-family-page .btn-booking:hover,
-.package-family-page .dc_submit input[type="submit"]:hover,
-.package-family-page a.button.primary:hover,
-.package-family-page button.button.primary:hover {
+.package-family-page .form-v3 .btn-booking:hover {
   background: linear-gradient(135deg, #FFC024 0%, #F5AB00 100%);
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(255, 181, 0, 0.45);
+}
+
+.package-family-page .form-v3 p em {
+  font-size: 13.5px;
+  color: #005570 !important;
+  text-align: center;
+  display: block;
+  margin-top: 8px;
+  font-style: italic;
 }
 
 /* ================================================================
-   10. RESPONSIVE CONSTRAINTS (390px Mobile & Tablet Safety)
+   7. RESPONSIVE CONSTRAINTS (390px Mobile & Tablet Safety)
    ================================================================ */
 
 @media screen and (max-width: 768px) {
-  .package-family-page .tabbed-content .nav li.tab a {
-    padding: 0.65rem 1.25rem;
-    font-size: 0.9rem;
+  .package-family-page .yellow-gradient h2,
+  .package-family-page .section-note h2,
+  .package-family-page .section-customer h2,
+  .package-family-page .form-v3 h2 {
+    font-size: 1.45rem !important;
   }
-}
 
-@media screen and (max-width: 550px) {
-  .package-family-page .title-bold {
-    font-size: 26px !important;
-    line-height: 34px !important;
+  .package-family-page .dc-tab-pricing .nav {
+    flex-direction: column;
+    align-items: stretch;
   }
-  
-  .package-family-page .dc-package-pricing,
-  .package-family-page .package-price,
-  .package-family-page .service-price {
-    font-size: 1.4rem;
+
+  .package-family-page .dc-tab-pricing .nav li.tab {
+    max-width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .package-family-page .form-v3 {
+    padding: 24px 18px;
   }
 }
